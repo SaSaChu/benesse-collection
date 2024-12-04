@@ -1,0 +1,242 @@
+@import "Ginkgo";
+@import "public";
+
+
+  .category-section {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .cloud-bg {
+    img {
+  
+      @include media-breakpoint-down(3xl) {
+        object-fit: contain;
+      }
+    }
+  }
+
+// 分類區塊
+
+
+main {
+  position: relative;
+  z-index: 1;
+
+  // 精選區塊
+  .featured-section {
+    // padding: 2rem 0;
+
+    h3 {
+      padding: 0 2rem;
+    }
+
+    .swiper {
+      padding-bottom: 2rem;
+      .swiper-slide {
+        padding: 0 2rem;
+      }
+
+      &.featured-book-swiper {
+        .featured-item {
+          border: 2px solid #F0B154;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: #F0B154;
+        }
+      }
+
+      &.featured-video-swiper {
+        .featured-item {
+          border: 2px solid #E39DA7;
+
+          img {
+            object-fit: cover;
+          }
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: #E39DA7;
+        }
+
+        .swiper-pagination {
+          
+          .swiper-pagination-bullet-active {
+            background-color: #E39DA7;
+          }
+        }
+      }
+
+      .swiper-button-prev {
+        left: 0;
+
+        &:after {
+          font-size: 2rem;
+        }
+      }
+
+      .swiper-button-next {
+        right: 0;
+        &:after {
+          font-size: 2rem;
+        }
+      }
+
+      .swiper-pagination {
+        bottom: 0;
+
+        .swiper-pagination-bullet-active {
+          background-color: #F0B154;
+          width: 1rem;
+          border-radius: 2rem;
+        }
+      }
+    }
+    
+
+    .featured-item {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 1rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+
+      .featured-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0.5rem 1rem;
+
+        span {
+          display: block;
+          padding: 0.5rem;
+          margin: 0;
+          text-align: left;
+          color: $white;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+
+  // 輪播區塊
+  .carousel-section {
+    margin-top: 6rem;
+    background-color: #A4D3AD;
+    position: relative;
+    // overflow: hidden;
+
+    .footer_bg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 0;
+
+      @media (max-width: 768px) {
+        height: calc(100% + 1.5rem);
+      }
+
+      img {
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &_left {
+        left: -40px;
+
+        @media (max-width: 768px) {
+          left: 0;
+        }
+      }
+
+      &_right {
+        right: -40px;
+        transform: translateY(-50%) rotate(180deg);
+
+        @media (max-width: 768px) {
+          right: 0;
+        }
+      }
+    }
+
+    .footer_tree {
+      position: absolute;
+      top: 0;
+      transform: translateY(-100%);
+      right: 0;
+      z-index: 0;
+    }
+
+    .carousel-swiper {
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 15%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      &:before {
+        left: 0;
+        background: linear-gradient(to right, 
+          rgba(164, 211, 173, 1) 0%, 
+          rgba(164, 211, 173, 0) 100%
+        );
+      }
+
+      &:after {
+        right: 0;
+        background: linear-gradient(to left, 
+          rgba(164, 211, 173, 1) 0%, 
+          rgba(164, 211, 173, 0) 100%
+        );
+      }
+    }
+
+    .carousel-item {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 1rem;
+
+      a {
+        display: block;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}
+
+// 頁尾
+footer {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+  
+  .copyright {
+    color: $gray-700;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}

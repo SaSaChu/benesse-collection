@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧連智</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- 自定義樣式 -->
+    <link href="css/unit.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!-- 導航欄 -->
+		<div class="navbar-section">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-gradient">
+					<!-- 左側區域：品牌和社群連結 -->
+					<div class="col-6 col-lg-5">
+						<div class="navbar-left">
+							<a class="navbar-brand d-none d-lg-block" href="#" title="巧連智">
+								<img src="images/s-logo.webp" alt="巧連智" height="50">
+							</a>
+
+							<div class="social-links">
+								<a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+								<a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+								<a href="#" class="social-link"><i class="bi bi-line"></i></a>
+								<a href="#" class="social-link"><i class="bi bi-book"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- 右側區域：導航選項 -->
+					<div class="col-6 col-lg-7">
+						<div class="navbar-right justify-content-end">
+							<div class="action-buttons">
+								<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
+								<a href="#" class="nav-link d-none d-lg-block">付費方案與常見問題</a>
+								<a href="#" class="btn btn-login">登入</a>
+								<a href="#" class="btn btn-search d-none d-lg-block">搜尋</a>
+							</div>
+
+							<button class="btn btn-mobile-menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+								<i class="bi bi-list"></i>
+							</button>
+
+							<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								<div class="offcanvas-header">
+									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body">
+									<div class="action-buttons">
+										<a href="#" class="btn btn-login w-100">登入</a>
+										<a href="#" class="btn btn-search w-100">搜尋</a>  
+									</div>
+
+									<div class="action-links">
+										<a href="#" class="nav-link">關於數位典藏學習網</a>
+										<a href="#" class="nav-link">付費方案與常見問題</a>
+									</div>
+
+									<div class="action-category">
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+											</a>
+										</div> 
+									</div>
+
+									<div class="action-social text-center">
+										<a href="#" class="social-link mx-2"><i class="bi bi-facebook"></i></a>
+										<a href="#" class="social-link mx-2"><i class="bi bi-youtube"></i></a>
+										<a href="#" class="social-link mx-2"><i class="bi bi-line"></i></a>
+										<a href="#" class="social-link mx-2"><i class="bi bi-book"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- 標題區域 -->
+		<div class="hero-section text-center">
+			<div class="container">
+				<h1>
+					<img src="images/logo.webp" alt="巧連智數位典藏學習網" class="img-fluid main-title">
+				</h1>
+			</div>
+		</div>
+
+		<!-- 分類區域 -->
+		<div class="category-section bg-white mt-3">
+			<div class="container">
+				<div class="row justify-content-between">
+					<!-- 月刊有聲書 -->
+					<div class="col p-0 p-lg-2 category-col active">
+						<div class="category-item">
+							<a href="#">
+								<picture class="default-img">
+									<source media="(max-width: 768px)" srcset="images/menu01.svg">
+									<img src="https://fakeimg.pl/200x70/" alt="">
+								</picture>
+
+								<picture class="active-img">
+									<source media="(max-width: 768px)" srcset="images/m01-hover.webp">
+									<img src="https://fakeimg.pl/200x70/?text=1" alt="">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<!-- 月刊學習影音 -->
+					<div class="col p-0 p-lg-2 category-col">
+						<div class="category-item">
+							<a href="#">
+								<picture class="default-img">
+									<source media="(max-width: 768px)" srcset="images/menu02.svg">
+									<img src="https://fakeimg.pl/200x70/" alt="">
+								</picture>
+								<picture class="active-img">
+									<source media="(max-width: 768px)" srcset="images/m02-hover.webp">
+									<img src="https://fakeimg.pl/200x70/?text=2" alt="">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<!-- 巧虎卡通 -->
+					<div class="col p-0 p-lg-2 category-col">
+						<div class="category-item">
+							<a href="#">
+								<picture class="default-img">
+									<source media="(max-width: 768px)" srcset="images/menu03.svg">
+									<img src="https://fakeimg.pl/200x70/" alt="">
+								</picture>
+								<picture class="active-img">
+									<source media="(max-width: 768px)" srcset="images/m03-hover.webp">
+									<img src="https://fakeimg.pl/200x70/?text=3" alt="">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<!-- 遊戲樂園 -->
+					<div class="col p-0 p-lg-2 category-col">
+						<div class="category-item">
+							<a href="#">
+								<picture class="default-img">
+									<source media="(max-width: 768px)" srcset="images/menu04.svg">
+									<img src="https://fakeimg.pl/200x70/" alt="">
+								</picture>
+								<picture class="active-img">
+									<source media="(max-width: 768px)" srcset="images/m04-hover.webp">
+									<img src="https://fakeimg.pl/200x70/?text=4" alt="">
+								</picture>
+							</a>
+						</div>
+					</div>
+					<!-- 奇酷網影音 -->
+					<div class="col p-0 p-lg-2 category-col">
+						<div class="category-item">
+							<a href="#">
+								<picture class="default-img">
+									<source media="(max-width: 768px)" srcset="images/menu05.svg">
+									<img src="https://fakeimg.pl/200x70/" alt="">
+								</picture>
+								<picture class="active-img">
+									<source media="(max-width: 768px)" srcset="images/m05-hover.webp">
+									<img src="https://fakeimg.pl/200x70/?text=5" alt="">
+								</picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cloud-bg">
+			<img src="images/cloud.webp" alt="雲朵" class="img-fluid">
+		</div>
+    </header>
+
+    <!-- 主要內容 -->
+    <main class="my-3">
+		<!-- 年齡 -->
+		<div class="age-section mb-3">
+			<div class="container">
+				<!-- 手機版 -->
+                <div class="swiper age-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="age-item">
+                                <a href="#">
+                                    <img src="https://fakeimg.pl/100x70/" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="age-item">
+                                <a href="#">
+                                    <img src="https://fakeimg.pl/100x70/">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="age-item">
+                                <a href="#">
+                                    <img src="https://fakeimg.pl/100x70/">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="age-item">
+                                <a href="#">
+                                    <img src="https://fakeimg.pl/100x70/">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="age-item">
+                                <a href="#">
+                                    <img src="https://fakeimg.pl/100x70/">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+					<!-- 加入箭頭導航 -->
+					<div class="swiper-button-prev d-lg-none"></div>
+					<div class="swiper-button-next d-lg-none"></div>
+                </div>
+			</div>
+		</div>
+		
+		<!-- 麵包屑 -->
+		<div class="breadcrumb-section mt-3 d-none d-lg-block">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">首頁</a></li>
+						<li class="breadcrumb-item"><a href="#">月刊有聲書</a></li>
+						<li class="breadcrumb-item active" aria-current="page">幼幼版</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+
+		<div class="main-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-3 px-0 px-lg-3 mb-3 mb-lg-0">
+						<!-- 年份選擇手機版 -->
+						<div class="swiper sidebar-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sidebar-item">
+										<a href="#">
+											<span>
+												<i class="bi bi-house-door"></i>
+												2024年度
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sidebar-item active">
+										<a href="#">
+											<span>
+												<i class="bi bi-house-door"></i>
+												2023年度
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sidebar-item">
+										<a href="#">
+											<span>
+												<i class="bi bi-house-door"></i>
+												2022年度
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sidebar-item">
+										<a href="#">
+											<span>
+												<i class="bi bi-house-door"></i>
+												2021年度
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sidebar-item">
+										<a href="#">
+											<span>
+												<i class="bi bi-house-door"></i>
+												2020年度
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sidebar-item">
+										<a href="#">
+											<span>
+												<i class="bi bi-house-door"></i>
+												2019年度
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-9">
+						<div class="content">
+							<div class="item">
+								<a href="#">
+									<picture>
+										<img src="https://fakeimg.pl/300x400/" alt="">
+										<div class="overlay">
+											<div class="text">
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+											</div>
+											<span class="more">看更多</span>
+										</div>
+									</picture>
+									<span>2023年 9月號</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<picture>
+										<img src="https://fakeimg.pl/300x400/" alt="">
+										<div class="overlay">
+											<div class="text">
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+											</div>
+											<span class="more">看更多</span>
+										</div>
+									</picture>
+									<span>2023年 8月號</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<picture>
+										<img src="https://fakeimg.pl/300x400/" alt="">
+										<div class="overlay">
+											<div class="text">
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+											</div>
+											<span class="more">看更多</span>
+										</div>
+									</picture>
+									<span>2023年 7月號</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<picture>
+										<img src="https://fakeimg.pl/300x400/" alt="">
+										<div class="overlay">
+											<div class="text">
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+											</div>
+											<span class="more">看更多</span>
+										</div>
+									</picture>
+									<span>2023年 6月號</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<picture>
+										<img src="https://fakeimg.pl/300x400/" alt="">
+										<div class="overlay">
+											<div class="text">
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+												<p>我最有禮貌</p>
+											</div>
+											<span class="more">看更多</span>
+										</div>
+									</picture>
+									<span>2023年 6月號</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="py-4">
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定義 JS -->
+    <script src="js/public.js"></script>
+    <script src="js/unit.js"></script>
+</body>
+</html>
