@@ -1,9 +1,13 @@
 // 變數定義
-$primary: #FFB74D;
+$primary: #fbb03b;
 $success: #4CAF50;
 $white: #FFFFFF;
 $gray-700: #495057;
+
 $border-radius: 1rem;
+
+$brown-light: #6e4435;
+$yellow-light: #fffdf9;
 
 // 斷點設定
 $breakpoints: (
@@ -48,18 +52,20 @@ body {
   padding: 0;
   color: rgba(90, 90, 90, 1.00);
 
-  font-size: medium;
+  font-size: 16px;
   text-align: center;
-  font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans TC", "Roboto", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
   
   // 文字染色，背景色、文字色
   @include selection(rgba(120, 186, 255, 1.00), rgba(255, 255, 255, 1));
 }
 
+
+
 // 導航欄
 header {
 	position: relative;
-	background: linear-gradient(to bottom, #8FC6EB, rgba(143, 198, 235, 0.7));
+	background: linear-gradient(to bottom, rgba(121, 196, 240, 1.00) 0%, rgba(188, 226, 247, 1.00) 81% , rgba(189, 226, 247, 1.00) 81%);
 
   // 導航區塊
 	.navbar {
@@ -97,7 +103,7 @@ header {
       gap: 0.5rem;
       
         @include media-breakpoint-down(md) {
-          gap: 1rem;
+          gap: .5rem;
         }
 			
 				.social-link {
@@ -132,6 +138,7 @@ header {
           color: $white;
           text-decoration: none;
           transition: color 0.3s ease;
+          text-shadow: rgba(48, 56, 65, .5) 1px 2px 2px;
       
           &:first-of-type {
             position: relative;
@@ -153,42 +160,66 @@ header {
       
           &:hover {
             color: $primary;
+            text-shadow: rgba(0, 0, 0, .0) 1px 2px 2px;
           }
         }
       
         .btn {
-          padding: 0.5rem 1.5rem;
+          padding: 0.3rem 1.5rem 0.4rem 1.5rem;
           text-decoration: none;
           border-radius: 0;
           color: $white;
+          font-weight: 400;
+          text-shadow: rgba(48, 56, 65, .5) 1px 2px 2px;
+
+          @media (max-width: 768px) {
+            padding: 0.3rem .8rem 0.4rem .8rem;
+          }
         
           &-login {
-            background-color: #F2AD53;
-            box-shadow: 4px -4px 5px #F08D3E inset,
-            -4px 4px 5px #F7C766 inset;
+            background-color: rgba(255, 171, 59, 1.00);
+            box-shadow: 5px -5px 0 rgba(240, 141, 62, 1.00) inset,
+            -5px 5px 0 rgba(247, 199, 102, 1.00) inset;
+
+            &:hover {
+              box-shadow: 5px -5px 0 rgba(240, 141, 62, .5) inset,
+            -5px 5px 0 rgba(247, 199, 102, .5) inset;
+            }
           }
           
           &-search {
-            background-color: #BE9768;
-            box-shadow: 4px -4px 5px #BA7C41 inset,
-            -4px 4px 5px #DCB97C inset;
+            background-color: rgba(196, 150, 95, 1.00);
+            box-shadow: 5px -5px 0 rgba(186, 124, 65, 1.00) inset,
+            -5px 5px 0 rgba(220, 185, 124, 1.00) inset;
+
+            &:hover {
+              box-shadow: 5px -5px 0 rgba(186, 124, 65, .5) inset,
+            -5px 5px 0 rgba(220, 185, 124, .5) inset;
+            }
           }
         }
       }
 
       .btn-mobile-menu {
-        padding: 0.5rem 1rem;
+        padding: 0.2rem .8rem 0.3rem .8rem;
         border-radius: 0;
-        background-color: #BE9768;
-        box-shadow: 4px -4px 5px #BA7C41 inset,
-        -4px 4px 5px #DCB97C inset;
+        background-color: rgba(196, 150, 95, 1.00);
+        box-shadow: 5px -5px 0 rgba(186, 124, 65, 1.00) inset,
+            -5px 5px 0 rgba(220, 185, 124, 1.00) inset;
+        text-shadow: rgba(48, 56, 65, .5) 1px 2px 2px;
 
         i {
           color: $white;
+          font-size: .9rem;
 
           &:before {
             transform: scale(1.5);
           }
+        }
+
+        &:hover {
+          box-shadow: 5px -5px 0 rgba(186, 124, 65, .5) inset,
+        -5px 5px 0 rgba(220, 185, 124, .5) inset;
         }
       }
 
@@ -205,7 +236,7 @@ header {
             }
 
             &:not(:last-child) {
-              border-bottom: 1px dashed #E39DA7;
+              border-bottom: 2px dashed #ffce87;
             }
           }
         } 
@@ -301,7 +332,11 @@ header {
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		margin-bottom: -1px;
+		margin-bottom: 35px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 11px;
+    }
 		
 		&:after {
 			content: '';
@@ -325,3 +360,27 @@ header {
 		}
 	}
 }
+
+
+
+// color
+.brown-light {
+  color: $brown-light;
+}
+
+
+// other
+.h-22 {
+  height: 22px;
+}
+.w-10 {
+  width: 10%;
+}
+
+
+// text
+.text-shadow-sm {
+  text-shadow: rgba(48, 56, 65, .5) 1px 2px 2px;
+}
+
+

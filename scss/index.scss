@@ -39,7 +39,7 @@ main {
 
       &.featured-book-swiper {
         .featured-item {
-          border: 2px solid #F0B154;
+          border: 4px solid #F0B154;
         }
 
         .swiper-button-prev,
@@ -50,7 +50,7 @@ main {
 
       &.featured-video-swiper {
         .featured-item {
-          border: 2px solid #E39DA7;
+          border: 4px solid #E39DA7;
 
           img {
             object-fit: cover;
@@ -131,7 +131,7 @@ main {
 
   // 輪播區塊
   .carousel-section {
-    margin-top: 6rem;
+    margin-top: 4rem;
     background-color: #A4D3AD;
     position: relative;
     // overflow: hidden;
@@ -230,13 +230,15 @@ main {
 
 // 頁尾
 footer {
+  background-color: $yellow-light;
+
   @media (max-width: 768px) {
     text-align: center;
   }
   
   .copyright {
-    color: $gray-700;
-    font-size: 0.9rem;
+    color: $brown-light;
+    font-size: .8rem;
     margin: 0;
   }
 }
