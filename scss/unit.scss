@@ -149,50 +149,6 @@ main {
 			}
 		}
 
-		// .sidebar {
-		// 	padding: 1rem;
-		// 	background-color: #FEFBEF;
-
-		// 	h3 {
-		// 		padding: 1rem;
-		// 		font-size: 20px;
-		// 		font-weight: 500;
-		// 		color: $white;
-		// 		background-color: #FFB74D;
-		// 		border-radius: 30px;
-		// 		box-shadow: 0px 5px 0px 0px rgba(206, 145, 67, 1.00);
-		// 	}
-
-		// 	.sidebar-item {
-		// 		border-radius: 25px;
-		// 		background-color: #FFFFFF;
-		// 		text-align: start;
-		// 		cursor: pointer;
-
-		// 		&:not(:last-child) {
-		// 			margin-bottom: 1rem;
-		// 		}
-
-		// 		&:hover {
-		// 			background-color: #FFB74D;
-
-		// 			span {
-		// 				color: $white;
-		// 			}
-		// 		}
-		// 		a {
-		// 			display: block;
-		// 			padding: 0.5rem;
-		// 			text-decoration: none;
-
-		// 			span {
-		// 				color: #5B2B00;
-		// 				font-weight: 500;
-		// 			}
-		// 		}
-		// 	}
-		// }
-
 		.content {
 			display: flex;
 			flex-wrap: wrap;
@@ -288,6 +244,6 @@ main {
 }
 
 footer {
-	background-image: url(../images/footer-bg.webp);
+	background-image: url(../images/page-footer-bg.svg);
 	background-color: #A4D3AD;
 }

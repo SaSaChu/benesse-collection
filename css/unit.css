@@ -108,4 +108,4 @@ main .main-section .content .item picture .overlay .text { font-size: 14px; colo
 main .main-section .content .item picture .overlay span.more { position: absolute; bottom: 1rem; left: 1rem; padding: 0.5rem 0; width: calc(100% - 2rem); font-size: 14px; color: #FFFFFF; background-color: #FFB74D; border-radius: 30px; }
 main .main-section .content .item span { display: block; font-size: 14px; color: #A1A1A1; }
 
-footer { background-image: url(../images/footer-bg.webp); background-color: #A4D3AD; }
+footer { background-image: url(../images/page-footer-bg.svg); background-color: #A4D3AD; }

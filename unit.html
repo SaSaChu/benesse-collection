@@ -26,79 +26,87 @@
 					<div class="col-6 col-lg-5">
 						<div class="navbar-left">
 							<a class="navbar-brand d-none d-lg-block" href="#" title="巧連智">
-								<img src="images/s-logo.webp" alt="巧連智" height="50">
+								<img src="images/s-logo.svg" alt="巧連智" height="50">
 							</a>
 
 							<div class="social-links">
-								<a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-								<a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
-								<a href="#" class="social-link"><i class="bi bi-line"></i></a>
-								<a href="#" class="social-link"><i class="bi bi-book"></i></a>
+								<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+								<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+								<a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+								<a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a>
 							</div>
 						</div>
 					</div>
+
 					<!-- 右側區域：導航選項 -->
 					<div class="col-6 col-lg-7">
 						<div class="navbar-right justify-content-end">
 							<div class="action-buttons">
 								<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
-								<a href="#" class="nav-link d-none d-lg-block">付費方案與常見問題</a>
-								<a href="#" class="btn btn-login">登入</a>
-								<a href="#" class="btn btn-search d-none d-lg-block">搜尋</a>
+								<a href="#" class="nav-link d-none d-lg-block">付費方案</a>
+                <a href="#" class="nav-link d-none d-lg-block">常見問題</a>
+								<a href="#" class="fs-6 btn btn-login">登入</a>
+								<a href="#" class="fs-6 btn btn-search d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchbox">搜尋</a>
+
 							</div>
 
+              <!-- 手機-搜尋按鈕 -->
+              <button class="btn btn-mobile-menu d-lg-none me-2" data-bs-toggle="modal" data-bs-target="#searchbox"><img src="images/icon-search.svg" class="img-fluid">
+              </button>
+              <!-- 手機-list按鈕 -->
 							<button class="btn btn-mobile-menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-								<i class="bi bi-list"></i>
+								<img src="images/icon-list.svg" class="img-fluid">
 							</button>
 
+              <!-- 手機選單 -->
 							<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 								<div class="offcanvas-header">
 									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 								</div>
 								<div class="offcanvas-body">
-									<div class="action-buttons">
+									<div class="action-buttons me-0">
 										<a href="#" class="btn btn-login w-100">登入</a>
-										<a href="#" class="btn btn-search w-100">搜尋</a>  
 									</div>
 
-									<div class="action-links">
-										<a href="#" class="nav-link">關於數位典藏學習網</a>
-										<a href="#" class="nav-link">付費方案與常見問題</a>
+									<div class="action-links text-start">
+										<a href="#" class="nav-link brown-light"><img src="images/star-p.svg" class="w-10 me-2">關於數位典藏學習網</a>
+										<a href="#" class="nav-link brown-light"><img src="images/star-p.svg" class="w-10 me-2">付費方案</a>
+                    <a href="#" class="nav-link brown-light"><img src="images/star-p.svg" class="w-10 me-2">常見問題</a>
 									</div>
 
 									<div class="action-category">
 										<div class="category-item my-2">
 											<a href="#">
-												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+												<img src="images/s-menu01.png" alt="月刊有聲書" class="img-fluid">
 											</a>
 										</div> 
 										<div class="category-item my-2">
 											<a href="#">
-												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+												<img src="images/s-menu02.png" alt="月刊有聲書" class="img-fluid">
 											</a>
 										</div> 
 										<div class="category-item my-2">
 											<a href="#">
-												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+												<img src="images/s-menu03.png" alt="月刊有聲書" class="img-fluid">
 											</a>
 										</div> 
 										<div class="category-item my-2">
 											<a href="#">
-												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+												<img src="images/s-menu04.png" alt="月刊有聲書" class="img-fluid">
 											</a>
 										</div> 
 										<div class="category-item my-2">
 											<a href="#">
-												<img src="https://fakeimg.pl/200x70/" alt="月刊有聲書">
+												<img src="images/s-menu05.png" alt="月刊有聲書" class="img-fluid">
 											</a>
 										</div> 
 									</div>
 
 									<div class="action-social text-center">
-										<a href="#" class="social-link mx-2"><i class="bi bi-facebook"></i></a>
-										<a href="#" class="social-link mx-2"><i class="bi bi-youtube"></i></a>
-										<a href="#" class="social-link mx-2"><i class="bi bi-line"></i></a>
-										<a href="#" class="social-link mx-2"><i class="bi bi-book"></i></a>
+										<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+                    <a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+                    <a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+                    <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a>
 									</div>
 								</div>
 							</div>
@@ -212,48 +220,48 @@
 		<div class="age-section mb-3">
 			<div class="container">
 				<!-- 手機版 -->
-          <div class="swiper age-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="age-item">
-                  <a href="#">
-                    <img src="https://fakeimg.pl/100x70/" class="img-fluid">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="age-item">
-                  <a href="#">
-                    <img src="https://fakeimg.pl/100x70/">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="age-item">
-                  <a href="#">
-                    <img src="https://fakeimg.pl/100x70/">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="age-item">
-                  <a href="#">
-                    <img src="https://fakeimg.pl/100x70/">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="age-item">
-                  <a href="#">
-                    <img src="https://fakeimg.pl/100x70/">
-                  </a>
-                </div>
+        <div class="swiper age-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="age-item">
+                <a href="#">
+                  <img src="https://fakeimg.pl/100x70/" class="img-fluid">
+                </a>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="age-item">
+                <a href="#">
+                  <img src="https://fakeimg.pl/100x70/">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="age-item">
+                <a href="#">
+                  <img src="https://fakeimg.pl/100x70/">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="age-item">
+                <a href="#">
+                  <img src="https://fakeimg.pl/100x70/">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="age-item">
+                <a href="#">
+                  <img src="https://fakeimg.pl/100x70/">
+                </a>
+              </div>
+            </div>
+          </div>
 
-						<!-- 加入箭頭導航 -->
-						<div class="swiper-button-prev d-lg-none"></div>
-						<div class="swiper-button-next d-lg-none"></div>
+					<!-- 加入箭頭導航 -->
+					<div class="swiper-button-prev d-lg-none"></div>
+					<div class="swiper-button-next d-lg-none"></div>
         </div>
 			</div>
 		</div>
