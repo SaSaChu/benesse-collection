@@ -74,6 +74,8 @@ header .cloud-bg img { width: 100%; height: 100%; }
 
 .text-shadow-sm { text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 
+.btn-slash { display: inline-block; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: black; padding: 1rem; }
+
 @media (min-width: 992px) { .category-col { padding: 0 12px !important; }
   .category-col picture { position: relative; width: 100%; height: auto; aspect-ratio: auto; }
   .category-col picture img { width: 100%; height: auto; object-fit: cover; } }
