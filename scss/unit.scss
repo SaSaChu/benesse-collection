@@ -57,10 +57,17 @@ main {
 		.age-item {
 		  text-align: center;
 		  cursor: pointer;
+
+		  a {
+		  	color: $brown;
+
+		  	&:hover, &.active {
+		  		color: $primary;
+		  	}
+		  }
 	
 		  img {
-			width: 100%;
-			height: auto;
+			transform: scale(0.5);
 		  }
 		}
 	}
@@ -78,6 +85,10 @@ main {
 		a {
 			color: #A1A1A1;
 			text-decoration: none;
+
+			&:hover, &:active {
+				color: $brown;
+			}
 		}
 	}
 
@@ -97,9 +108,23 @@ main {
 
 		.sidebar-swiper {
 			padding: 1rem;
-			background-color: #FEFBEF;
-			@include border-radius(10px);
+			@include border-radius(20px);
 			
+			&.list-bg-unit01 {
+				background-color: #FEFBEF;
+			}
+			&.list-bg-unit02 {
+				background-color: #F7E8EA;
+			}
+			&.list-bg-unit03 {
+				background-color: #DFECF2;
+			}
+			&.list-bg-unit04 {
+				background-color: #E4F4E9;
+			}
+			&.list-bg-unit05 {
+				background-color: #F2EAF4;
+			}
 
 			h3 {
 				padding: 1rem;

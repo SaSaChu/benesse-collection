@@ -417,17 +417,42 @@ header {
   width: 10%;
 }
 
-.border-orange {
+.border-orange, .border-pink, .border-blue, .border-green, .border-purple {
   &:after {
     display: inline-block;
     width: 100%;
     height: 3px;
     content: '';
-    background-image: url(../images/doll-orange-light.svg);
     background-repeat: repeat-x;
   }
 }
 
+.border-orange {
+  &:after {
+    background-image: url(../images/doll-orange.svg);
+  }
+}
+
+.border-pink {
+  &:after {
+    background-image: url(../images/doll-pink.svg);
+  }
+}
+.border-blue {
+  &:after {
+    background-image: url(../images/doll-blue.svg);
+  }
+}
+.border-green {
+  &:after {
+    background-image: url(../images/doll-green.svg);
+  }
+}
+.border-purple {
+  &:after {
+    background-image: url(../images/doll-purple.svg);
+  }
+}
 
 
 // text
@@ -437,19 +462,53 @@ header {
 
 
 //btn+link
-.title-slash01 {
+.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 {
   display: inline-block;
   width: 100%;
   font-size: 1.1rem;
   font-weight: 500;
   color: white;
   @include border-radius(30px);
-  text-shadow: rgba(240, 141, 62, .8) 1px 2px 2px;
-  box-shadow: 0 -5px 0 #f08d3e inset;
   padding: .5rem;
+}
+.title-slash01 {
+  text-shadow: rgba(240, 141, 62, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 $primary2 inset;
   background: repeating-linear-gradient(
                     130deg, 
                     $primary 0 13px,
                     rgba(250, 189, 94, 1.00) 0 25px);
+}
+.title-slash02 {
+  text-shadow: rgba(198, 102, 125, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 $pink2 inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    $pink 0 13px,
+                    rgba(241, 171, 181, 1.00) 0 25px);
+}
+.title-slash03 {
+  text-shadow: rgba(36, 103, 137, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 $blue2 inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    $blue 0 13px,
+                    rgba(118, 186, 227, 1.00) 0 25px);
+}
+.title-slash04 {
+  text-shadow: rgba(46, 117, 61, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 $green2 inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    $green 0 13px,
+                    rgba(142, 211, 163, 1.00) 0 25px);
+}
+.title-slash05 {
+  text-shadow: rgba(143, 93, 155, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 $purple2 inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    $purple 0 13px,
+                    rgba(205, 160, 212, 1.00) 0 25px);
 }
 

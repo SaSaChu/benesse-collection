@@ -72,11 +72,31 @@ header .cloud-bg img { width: 100%; height: 100%; }
 
 .w-10 { width: 10%; }
 
-.border-orange:after { display: inline-block; width: 100%; height: 3px; content: ''; background-image: url(../images/doll-orange-light.svg); background-repeat: repeat-x; }
+.border-orange:after, .border-pink:after, .border-blue:after, .border-green:after, .border-purple:after { display: inline-block; width: 100%; height: 3px; content: ''; background-repeat: repeat-x; }
+
+.border-orange:after { background-image: url(../images/doll-orange.svg); }
+
+.border-pink:after { background-image: url(../images/doll-pink.svg); }
+
+.border-blue:after { background-image: url(../images/doll-blue.svg); }
+
+.border-green:after { background-image: url(../images/doll-green.svg); }
+
+.border-purple:after { background-image: url(../images/doll-purple.svg); }
 
 .text-shadow-sm { text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 
-.title-slash01 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-shadow: rgba(240, 141, 62, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #f08d3e inset; padding: .5rem; background: repeating-linear-gradient(130deg, #fbb03b 0 13px, #fabd5e 0 25px); }
+.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .5rem; }
+
+.title-slash01 { text-shadow: rgba(240, 141, 62, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #d89032 inset; background: repeating-linear-gradient(130deg, #fbb03b 0 13px, #fabd5e 0 25px); }
+
+.title-slash02 { text-shadow: rgba(198, 102, 125, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #dd7a8d inset; background: repeating-linear-gradient(130deg, #f09aa8 0 13px, #f1abb5 0 25px); }
+
+.title-slash03 { text-shadow: rgba(36, 103, 137, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #3e99c6 inset; background: repeating-linear-gradient(130deg, #56ace2 0 13px, #76bae3 0 25px); }
+
+.title-slash04 { text-shadow: rgba(46, 117, 61, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #4aaf64 inset; background: repeating-linear-gradient(130deg, #75cc92 0 13px, #8ed3a3 0 25px); }
+
+.title-slash05 { text-shadow: rgba(143, 93, 155, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #bd7fcc inset; background: repeating-linear-gradient(130deg, #c38ccf 0 13px, #cda0d4 0 25px); }
 
 .category-section { max-width: 1080px; margin: 0 auto; }
 
