@@ -4,6 +4,14 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 body::-moz-selection { color: white; background-color: #78baff; }
 body::selection { color: white; background-color: #78baff; }
 
+a { color: black; cursor: pointer; text-decoration: none !important; }
+a:after, a:before { color: black; vertical-align: middle !important; }
+a:hover { text-decoration: underline; }
+
+button, select { outline: none !important; box-shadow: none !important; border-width: 0; }
+
+p { margin-bottom: 0; }
+
 header { position: relative; background: linear-gradient(to bottom, #79c4f0 0%, #bce2f7 81%, #bde2f7 81%); }
 header .navbar { position: relative; padding: 1rem 0; z-index: 1; }
 @media (max-width: 992px) { header .navbar { z-index: 1050; } }
@@ -99,13 +107,17 @@ main .main-section .content { display: flex; flex-wrap: wrap; row-gap: 1rem; col
 main .main-section .content .item { flex: 0 0 calc(25% - 0.5rem); max-width: calc(25% - 1rem); }
 @media (max-width: 992px) { main .main-section .content .item { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
 main .main-section .content .item:hover .overlay { display: block; }
-main .main-section .content .item picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border: 1px solid #A1A1A1; border-radius: 15px; aspect-ratio: 1/1; }
-@media (max-width: 992px) { main .main-section .content .item picture { border: 0; } }
+main .main-section .content .item picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: 1/1; overflow: hidden; }
 main .main-section .content .item picture img { width: auto; max-width: 100%; height: auto; max-height: 100%; object-fit: contain; }
 @media (max-width: 992px) { main .main-section .content .item picture img { width: 100%; height: auto; border-radius: 15px; object-fit: cover; } }
-main .main-section .content .item picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: 1rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); border-radius: 15px; }
+main .main-section .content .item picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: .5rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 15px; }
 main .main-section .content .item picture .overlay .text { font-size: 14px; color: #FFFFFF; text-align: start; }
-main .main-section .content .item picture .overlay span.more { position: absolute; bottom: 1rem; left: 1rem; padding: 0.5rem 0; width: calc(100% - 2rem); font-size: 14px; color: #FFFFFF; background-color: #FFB74D; border-radius: 30px; }
-main .main-section .content .item span { display: block; font-size: 14px; color: #A1A1A1; }
+main .main-section .content .item picture .overlay a.booklist { font-size: .8rem; display: inline-block; width: 100%; color: white; }
+main .main-section .content .item picture .overlay a.booklist:hover { color: #fbb03b; }
+main .main-section .content .item picture .overlay a.booklist:before { content: '\F309'; font-family: bootstrap-icons; color: white; }
+main .main-section .content .item picture .overlay a.more { position: absolute; bottom: 1rem; left: 1rem; padding: 0.3rem 0; width: calc(100% - 2rem); font-size: .9rem; color: #FFFFFF; background-color: #fbb03b; border-radius: 30px; }
+main .main-section .content .item picture .overlay a.more:hover { background-color: #d89032; }
+main .main-section .content .item .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
+main .main-section .content .item .book-name:hover { text-decoration: underline !important; }
 
 footer { background-image: url(../images/page-footer-bg.svg); background-color: #A4D3AD; }

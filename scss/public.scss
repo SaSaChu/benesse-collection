@@ -1,5 +1,6 @@
 // 變數定義
-$primary: #fbb03b;
+$primary: #fbb03b; // 橘色
+$primary2: #d89032; // 深橘色
 $success: #4CAF50;
 $white: #FFFFFF;
 $gray-700: #495057;
@@ -60,6 +61,31 @@ body {
   @include selection(rgba(120, 186, 255, 1.00), rgba(255, 255, 255, 1));
 }
 
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:after,
+  &:before {
+    color: black;
+    vertical-align: middle !important;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button, select{
+  outline: none !important;
+  box-shadow: none !important;
+  border-width: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
 
 
 // 導航欄

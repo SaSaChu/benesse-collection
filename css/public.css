@@ -4,6 +4,14 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 body::-moz-selection { color: white; background-color: #78baff; }
 body::selection { color: white; background-color: #78baff; }
 
+a { color: black; cursor: pointer; text-decoration: none !important; }
+a:after, a:before { color: black; vertical-align: middle !important; }
+a:hover { text-decoration: underline; }
+
+button, select { outline: none !important; box-shadow: none !important; border-width: 0; }
+
+p { margin-bottom: 0; }
+
 header { position: relative; background: linear-gradient(to bottom, #79c4f0 0%, #bce2f7 81%, #bde2f7 81%); }
 header .navbar { position: relative; padding: 1rem 0; z-index: 1; }
 @media (max-width: 992px) { header .navbar { z-index: 1050; } }
