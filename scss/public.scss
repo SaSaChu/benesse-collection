@@ -1,13 +1,26 @@
 // 變數定義
 $primary: #fbb03b; // 橘色
 $primary2: #d89032; // 深橘色
-$success: #4CAF50;
+$success: #4CAF50; // 綠色
 $white: #FFFFFF;
 $gray-700: #495057;
 
+$pink: #f09aa8;
+$pink2: #dd7a8d;
+
+$blue: #56ace2;
+$blue2: #3e99c6;
+
+$green: #75cc92;
+$green2: #4aaf64;
+
+$purple: #c38ccf;
+$purple2: #bd7fcc;
+
+
 $border-radius: 1rem;
 
-$brown-light: #6e4435;
+$brown: #6e4435; // 咖啡色
 $yellow-light: #fffdf9;
 
 // 斷點設定
@@ -390,8 +403,8 @@ header {
 
 
 // color
-.brown-light {
-  color: $brown-light;
+.brown {
+  color: $brown;
 }
 
 
