@@ -408,6 +408,7 @@ header {
 }
 
 
+
 // other
 .h-22 {
   height: 22px;
@@ -415,6 +416,18 @@ header {
 .w-10 {
   width: 10%;
 }
+
+.border-orange {
+  &:after {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    content: '';
+    background-image: url(../images/doll-orange-light.svg);
+    background-repeat: repeat-x;
+  }
+}
+
 
 
 // text
