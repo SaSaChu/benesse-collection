@@ -98,6 +98,8 @@ main {
 		.sidebar-swiper {
 			padding: 1rem;
 			background-color: #FEFBEF;
+			@include border-radius(10px);
+			
 
 			h3 {
 				padding: 1rem;
@@ -122,25 +124,30 @@ main {
 				&:hover, &.active {
 					background-color: #FFB74D;
 
-					span {
+					p {
 						color: $white;
 					}
 				}
+
 				a {
 					display: block;
-					padding: 0.5rem;
+					// padding: 0.5rem;
 					text-decoration: none;
 
 					@include media-breakpoint-down(lg) {
 						text-align: center;
 					}
 
-					span {
+					p {
 						color: #5B2B00;
 						font-weight: 500;
 
+						> img {
+							transform: scale(0.5);
+						}
+
 						@include media-breakpoint-down(sm) {
-							font-size: 14px;
+							font-size: .9rem;
 						}
 					}
 

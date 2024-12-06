@@ -90,7 +90,7 @@ a {
   }
 }
 
-button, select{
+select{
   outline: none !important;
   box-shadow: none !important;
   border-width: 0;
@@ -424,10 +424,19 @@ header {
 
 
 //btn+link
-.btn-slash {
+.title-slash01 {
   display: inline-block;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
   @include border-radius(30px);
-  background-color: black;
-  padding: 1rem;
+  text-shadow: rgba(240, 141, 62, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 #f08d3e inset;
+  padding: .5rem;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    $primary 0 13px,
+                    rgba(250, 189, 94, 1.00) 0 25px);
 }
 
