@@ -7,14 +7,15 @@
     margin: 0 auto;
   }
   
-  .cloud-bg {
-    img {
+  // 1205 雲朵背景移除
+  // .cloud-bg {
+  //   img {
   
-      @include media-breakpoint-down(3xl) {
-        object-fit: contain;
-      }
-    }
-  }
+  //     @include media-breakpoint-down(3xl) {
+  //       object-fit: contain;
+  //     }
+  //   }
+  // }
 
 // 分類區塊
 
@@ -35,6 +36,11 @@ main {
       padding-bottom: 2rem;
       .swiper-slide {
         padding: 0 2rem;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: calc(50% - 16px);
       }
 
       &.featured-book-swiper {
@@ -153,8 +159,9 @@ main {
         }
       }
 
+      // 1205 footer bg 移致 container 外部，scss 設定 left right 0
       &_left {
-        left: -40px;
+        left: 12px;
 
         @media (max-width: 768px) {
           left: 0;
@@ -162,7 +169,7 @@ main {
       }
 
       &_right {
-        right: -40px;
+        right: 12px;
         transform: translateY(-50%) rotate(180deg);
 
         @media (max-width: 768px) {
@@ -177,6 +184,12 @@ main {
       transform: translateY(-100%);
       right: 0;
       z-index: 0;
+
+      > img { 
+        @include media-breakpoint-down(lg) {
+          max-width: 60%;
+        }
+      }
     }
 
     .carousel-swiper {

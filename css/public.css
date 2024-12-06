@@ -5,6 +5,7 @@ body::-moz-selection { color: white; background-color: #78baff; }
 body::selection { color: white; background-color: #78baff; }
 
 header { position: relative; background: linear-gradient(to bottom, #79c4f0 0%, #bce2f7 81%, #bde2f7 81%); }
+header:after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; height: 50%; background-color: white; z-index: 0; }
 header .navbar { position: relative; padding: 1rem 0; z-index: 1; }
 @media (max-width: 992px) { header .navbar { z-index: 1050; } }
 header .navbar .container { display: flex; justify-content: space-between; align-items: center; }
@@ -19,8 +20,8 @@ header .navbar-right { display: flex; align-items: center; }
 header .navbar-right .action-buttons { display: flex; align-items: center; gap: 1rem; }
 @media (max-width: 992px) { header .navbar-right .action-buttons { margin-right: 12px; flex-direction: column; align-items: flex-start; } }
 header .navbar-right .action-buttons .nav-link { color: #FFFFFF; text-decoration: none; transition: color 0.3s ease; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
-header .navbar-right .action-buttons .nav-link:first-of-type { position: relative; }
-header .navbar-right .action-buttons .nav-link:first-of-type:after { content: ''; position: absolute; top: 50%; right: -0.5rem; transform: translateY(-50%) translateX(50%); display: inline-block; width: 4px; height: 4px; border-radius: 50%; background-color: #FFFFFF; }
+header .navbar-right .action-buttons .nav-link:first-of-type, header .navbar-right .action-buttons .nav-link:nth-of-type(2) { position: relative; }
+header .navbar-right .action-buttons .nav-link:first-of-type:after, header .navbar-right .action-buttons .nav-link:nth-of-type(2):after { content: ''; position: absolute; top: 50%; right: -0.5rem; transform: translateY(-50%) translateX(50%); display: inline-block; width: 4px; height: 4px; border-radius: 50%; background-color: #FFFFFF; }
 header .navbar-right .action-buttons .nav-link:hover { color: #fbb03b; text-shadow: transparent 1px 2px 2px; }
 header .navbar-right .action-buttons .btn { padding: 0.3rem 1.5rem 0.4rem 1.5rem; text-decoration: none; border-radius: 0; color: #FFFFFF; font-weight: 400; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 @media (max-width: 768px) { header .navbar-right .action-buttons .btn { padding: 0.3rem .8rem 0.4rem .8rem; } }
@@ -56,7 +57,7 @@ header .cloud-bg { position: absolute; bottom: 0; left: 0; width: 100%; height: 
 @media (max-width: 768px) { header .cloud-bg { margin-bottom: 11px; } }
 header .cloud-bg:after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; height: 50%; background-color: white; z-index: 0; }
 header .cloud-bg img { width: 100%; height: 100%; }
-@media (max-width: 1200px) { header .cloud-bg img { object-fit: contain; } }
+@media (max-width: 1920px) { header .cloud-bg img { object-fit: contain; } }
 
 .brown-light { color: #6e4435; }
 
