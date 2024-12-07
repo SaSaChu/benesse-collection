@@ -59,10 +59,17 @@ main {
 		.age-item {
 		  text-align: center;
 		  cursor: pointer;
+
+		  a {
+		  	color: $brown;
+
+		  	&:hover, &.active {
+		  		color: $primary;
+		  	}
+		  }
 	
 		  img {
-			width: 100%;
-			height: auto;
+			transform: scale(0.5);
 		  }
 		}
 	}
@@ -80,6 +87,10 @@ main {
 		a {
 			color: #A1A1A1;
 			text-decoration: none;
+
+			&:hover, &:active {
+				color: $brown;
+			}
 		}
 	}
 
@@ -99,7 +110,23 @@ main {
 
 		.sidebar-swiper {
 			padding: 1rem;
-			background-color: #FEFBEF;
+			@include border-radius(20px);
+			
+			&.list-bg-unit01 {
+				background-color: #FEFBEF;
+			}
+			&.list-bg-unit02 {
+				background-color: #F7E8EA;
+			}
+			&.list-bg-unit03 {
+				background-color: #DFECF2;
+			}
+			&.list-bg-unit04 {
+				background-color: #E4F4E9;
+			}
+			&.list-bg-unit05 {
+				background-color: #F2EAF4;
+			}
 
 			h3 {
 				padding: 1rem;
@@ -124,25 +151,30 @@ main {
 				&:hover, &.active {
 					background-color: #FFB74D;
 
-					span {
+					p {
 						color: $white;
 					}
 				}
+
 				a {
 					display: block;
-					padding: 0.5rem;
+					// padding: 0.5rem;
 					text-decoration: none;
 
 					@include media-breakpoint-down(lg) {
 						text-align: center;
 					}
 
-					span {
+					p {
 						color: #5B2B00;
 						font-weight: 500;
 
+						> img {
+							transform: scale(0.5);
+						}
+
 						@include media-breakpoint-down(sm) {
-							font-size: 14px;
+							font-size: .9rem;
 						}
 					}
 
