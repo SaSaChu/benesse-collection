@@ -216,41 +216,6 @@ header {
             text-shadow: rgba(0, 0, 0, .0) 1px 2px 2px;
           }
         }
-      
-        .btn {
-          padding: 0.3rem 1.5rem 0.4rem 1.5rem;
-          text-decoration: none;
-          border-radius: 0;
-          color: $white;
-          font-weight: 400;
-          text-shadow: rgba(48, 56, 65, .5) 1px 2px 2px;
-
-          @media (max-width: 768px) {
-            padding: 0.3rem .8rem 0.4rem .8rem;
-          }
-        
-          &-login {
-            background-color: rgba(255, 171, 59, 1.00);
-            box-shadow: 5px -5px 0 rgba(240, 141, 62, 1.00) inset,
-            -5px 5px 0 rgba(247, 199, 102, 1.00) inset;
-
-            &:hover {
-              box-shadow: 5px -5px 0 rgba(240, 141, 62, .5) inset,
-            -5px 5px 0 rgba(247, 199, 102, .5) inset;
-            }
-          }
-          
-          &-search {
-            background-color: rgba(196, 150, 95, 1.00);
-            box-shadow: 5px -5px 0 rgba(186, 124, 65, 1.00) inset,
-            -5px 5px 0 rgba(220, 185, 124, 1.00) inset;
-
-            &:hover {
-              box-shadow: 5px -5px 0 rgba(186, 124, 65, .5) inset,
-            -5px 5px 0 rgba(220, 185, 124, .5) inset;
-            }
-          }
-        }
       }
 
       .btn-mobile-menu {
@@ -387,7 +352,7 @@ header {
 		overflow: hidden;
 		margin-bottom: 35px;
 
-    @media (max-width: 768px) {
+    @include media-breakpoint-down(lg) {
       margin-bottom: 11px;
     }
 		
@@ -444,5 +409,41 @@ header {
   @include border-radius(30px);
   background-color: black;
   padding: 1rem;
+}
+
+// 1205 導航欄按鈕
+.nav-btn {
+  padding: 0.3rem 1.5rem 0.4rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0;
+  color: $white;
+  font-weight: 400;
+  text-shadow: rgba(48, 56, 65, .5) 1px 2px 2px;
+
+  @media (max-width: 768px) {
+    padding: 0.3rem .8rem 0.4rem .8rem;
+  }
+
+  &-login {
+    background-color: rgba(255, 171, 59, 1.00);
+    box-shadow: 5px -5px 0 rgba(240, 141, 62, 1.00) inset,
+    -5px 5px 0 rgba(247, 199, 102, 1.00) inset;
+
+    &:hover {
+      box-shadow: 5px -5px 0 rgba(240, 141, 62, .5) inset,
+    -5px 5px 0 rgba(247, 199, 102, .5) inset;
+    }
+  }
+  
+  &-search {
+    background-color: rgba(196, 150, 95, 1.00);
+    box-shadow: 5px -5px 0 rgba(186, 124, 65, 1.00) inset,
+    -5px 5px 0 rgba(220, 185, 124, 1.00) inset;
+
+    &:hover {
+      box-shadow: 5px -5px 0 rgba(186, 124, 65, .5) inset,
+    -5px 5px 0 rgba(220, 185, 124, .5) inset;
+    }
+  }
 }
 
