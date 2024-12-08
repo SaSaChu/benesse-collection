@@ -60,17 +60,63 @@ main {
 		  text-align: center;
 		  cursor: pointer;
 
-		  a {
-		  	color: $brown;
+		  	a {
+				color: $brown;
 
-		  	&:hover, &.active {
-		  		color: $primary;
+				@include media-breakpoint-down(sm) {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				&:hover, &.active {
+					color: $primary;
+
+					.age-item-img {
+						&-default {
+							display: none;
+						}
+		
+						&-active {
+							display: inline-block;
+						}
+					}
+					
+				}
+
+				.age-item-img {
+					flex: 1;
+					// width: auto;
+					// max-width: 50%;
+					// height: auto;
+
+					@include media-breakpoint-down(sm) {
+						// flex: 0 0 40%;
+						// max-width: 40%;
+					}
+
+					&-default {
+						display: inline-block;
+					}
+
+					&-active {
+						display: none;
+					}
+
+					> img {
+						transform: scale(0.5);
+					}
+				}
+
+				> span {
+					flex: 1;
+					@include media-breakpoint-down(sm) {
+						display: inline-block;
+						flex-basis: 60%;
+						max-width: 60%;
+					}
+				}
 		  	}
-		  }
-	
-		  img {
-			transform: scale(0.5);
-		  }
 		}
 	}
 
@@ -151,34 +197,74 @@ main {
 				&:hover, &.active {
 					background-color: #FFB74D;
 
-					p {
-						color: $white;
-					}
+					// .sidebar-item-div {
+						// color: $white;
+
+						.sidebar-item-img {
+
+							&-default {
+								display: none;
+							}
+
+							&-active {
+								display: inline-block;
+							}
+						}
+					// }
 				}
 
 				a {
-					display: block;
-					// padding: 0.5rem;
+					display: block;					
 					text-decoration: none;
+					color: #5B2B00;
+					font-weight: 500;
 
 					@include media-breakpoint-down(lg) {
 						text-align: center;
 					}
 
-					p {
-						color: #5B2B00;
-						font-weight: 500;
+					@include media-breakpoint-down(sm) {
+						font-size: .9rem;
+						padding: 0 0.5rem;
+					}
+
+					@include media-breakpoint-down(xxs) {
+						font-size: 12px;
+					}
+
+					.sidebar-item-img {
+
+						@include media-breakpoint-down(sm) {
+							padding: 0.5rem 0;
+							max-width: 25%;
+						}
 
 						> img {
 							transform: scale(0.5);
+							width: 100%;	
+							height: 100%;
+
+							@include media-breakpoint-down(lg) {
+								transform: scale(0.7);
+							}
+
+							@include media-breakpoint-down(sm) {
+								transform: scale(1);
+							}
 						}
 
-						@include media-breakpoint-down(sm) {
-							font-size: .9rem;
+						&-default {
+							display: inline-block;
+						}
+
+						&-active {
+							display: none;
 						}
 					}
 
-
+					> span {
+						// display: inline-block;
+					}
 				}
 			}
 		}

@@ -26,6 +26,9 @@ $(function() {
 		spaceBetween: 10,
 		loop: true,
 		breakpoints: {
+			768: {
+				spaceBetween: 15,
+			},
 			1024: {
 				direction: 'vertical',
 				slidesPerView: 'auto',
