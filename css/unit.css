@@ -78,6 +78,16 @@ header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
 .border-purple { background-image: url(../images/doll-purple.svg); }
 
+.list-bg-unit01 { background-color: #FEFBEF; }
+
+.list-bg-unit02 { background-color: #F7E8EA; }
+
+.list-bg-unit03 { background-color: #DFECF2; }
+
+.list-bg-unit04 { background-color: #E4F4E9; }
+
+.list-bg-unit05 { background-color: #F2EAF4; }
+
 .text-shadow-sm { text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 
 .title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .5rem; }
@@ -133,11 +143,6 @@ main .breadcrumb-section a:hover, main .breadcrumb-section a:active { color: #6e
 @media (min-width: 992px) { main .main-section .col-lg-9:has(.content) { max-width: 80%; } }
 main .main-section .sidebar-swiper { padding: 1rem; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
 @media (max-width: 768px) { main .main-section .sidebar-swiper { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; } }
-main .main-section .sidebar-swiper.list-bg-unit01 { background-color: #FEFBEF; }
-main .main-section .sidebar-swiper.list-bg-unit02 { background-color: #F7E8EA; }
-main .main-section .sidebar-swiper.list-bg-unit03 { background-color: #DFECF2; }
-main .main-section .sidebar-swiper.list-bg-unit04 { background-color: #E4F4E9; }
-main .main-section .sidebar-swiper.list-bg-unit05 { background-color: #F2EAF4; }
 main .main-section .sidebar-swiper h3 { padding: 1rem; font-size: 20px; font-weight: 500; color: #FFFFFF; background-color: #FFB74D; border-radius: 30px; box-shadow: 0px 5px 0px 0px #ce9143; }
 main .main-section .sidebar-swiper .sidebar-item { border-radius: 25px; background-color: #FFFFFF; text-align: start; cursor: pointer; overflow: hidden; }
 main .main-section .sidebar-swiper .sidebar-item:not(:last-child) { margin-bottom: 1rem; }
