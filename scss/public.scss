@@ -374,7 +374,7 @@ header {
 
 
 // color
-.brown {
+.text-brown {
   color: $brown;
 }
 
@@ -486,6 +486,28 @@ header {
                     rgba(205, 160, 212, 1.00) 0 25px);
 }
 
+// 方形按鈕
+.btn-square {
+  display: inline-block;
+  padding: 0.3rem 1.5rem 0.4rem 1.5rem;
+  text-decoration: none;
+  border: 0 !important;
+  color: white;
+  font-weight: 400;
+  text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px;
+
+  &.orange {
+    background-color: #ffab3b;
+    box-shadow: 5px -5px 0 #f08d3e inset, -5px 5px 0 #f7c766 inset;
+  
+    &:hover, &:active {
+      box-shadow: 5px -5px 0 rgba(240, 141, 62, 0.5) inset,
+                  -5px 5px 0 rgba(247, 199, 102, 0.5) inset;
+    }
+  }
+}
+
+
 // 1205 導航欄按鈕
 .nav-btn {
   padding: 0.3rem 1.5rem 0.4rem 1.5rem;
@@ -519,6 +541,32 @@ header {
       box-shadow: 5px -5px 0 rgba(186, 124, 65, .5) inset,
     -5px 5px 0 rgba(220, 185, 124, .5) inset;
     }
+  }
+}
+
+
+
+// boostrap
+.modal-header {
+  border-bottom: 0 !important;
+}
+.modal-footer {
+  border-top: 0 !important;
+}
+
+.form-select, .form-control {
+  color: $brown;
+
+  &.border-brown-box {
+    border: 1px solid #9a836c !important;
+  }
+
+  &:focus {
+    color: $brown !important;
+  }
+
+  &::placeholder {
+    color: #c1c1c1;
   }
 }
 

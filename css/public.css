@@ -60,7 +60,7 @@ header .cloud-bg { position: absolute; bottom: 0; left: 0; width: 100%; overflow
 @media (max-width: 768px) { header .cloud-bg { top: 0; bottom: auto; } }
 header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
-.brown { color: #6e4435; }
+.text-brown { color: #6e4435; }
 
 .h-22 { height: 22px; }
 
@@ -102,9 +102,22 @@ header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
 .title-slash05 { text-shadow: rgba(143, 93, 155, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #bd7fcc inset; background: repeating-linear-gradient(130deg, #c38ccf 0 13px, #cda0d4 0 25px); }
 
+.btn-square { display: inline-block; padding: 0.3rem 1.5rem 0.4rem 1.5rem; text-decoration: none; border: 0 !important; color: white; font-weight: 400; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
+.btn-square.orange { background-color: #ffab3b; box-shadow: 5px -5px 0 #f08d3e inset, -5px 5px 0 #f7c766 inset; }
+.btn-square.orange:hover, .btn-square.orange:active { box-shadow: 5px -5px 0 rgba(240, 141, 62, 0.5) inset, -5px 5px 0 rgba(247, 199, 102, 0.5) inset; }
+
 .nav-btn { padding: 0.3rem 1.5rem 0.4rem 1.5rem; text-decoration: none; border-radius: 0; color: #FFFFFF; font-weight: 400; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 @media (max-width: 768px) { .nav-btn { padding: 0.3rem .8rem 0.4rem .8rem; } }
 .nav-btn-login { background-color: #ffab3b; box-shadow: 5px -5px 0 #f08d3e inset, -5px 5px 0 #f7c766 inset; }
 .nav-btn-login:hover { box-shadow: 5px -5px 0 rgba(240, 141, 62, 0.5) inset, -5px 5px 0 rgba(247, 199, 102, 0.5) inset; }
 .nav-btn-search { background-color: #c4965f; box-shadow: 5px -5px 0 #ba7c41 inset, -5px 5px 0 #dcb97c inset; }
 .nav-btn-search:hover { box-shadow: 5px -5px 0 rgba(186, 124, 65, 0.5) inset, -5px 5px 0 rgba(220, 185, 124, 0.5) inset; }
+
+.modal-header { border-bottom: 0 !important; }
+
+.modal-footer { border-top: 0 !important; }
+
+.form-select, .form-control { color: #6e4435; }
+.form-select.border-brown-box, .form-control.border-brown-box { border: 1px solid #9a836c !important; }
+.form-select:focus, .form-control:focus { color: #6e4435 !important; }
+.form-select::placeholder, .form-control::placeholder { color: #c1c1c1; }
