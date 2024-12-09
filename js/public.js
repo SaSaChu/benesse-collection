@@ -37,4 +37,8 @@ $(function() {
 		// 初始化順序
 		updateOrder();
 	}
+
+	 // 共用區域
+  $("#page-header").load("page-header.html");
+
 });
