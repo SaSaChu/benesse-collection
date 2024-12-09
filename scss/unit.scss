@@ -129,6 +129,8 @@ main {
 	}
 
 	.breadcrumb-section {
+		margin-top: 16px;
+
 		li {
 			font-size: 14px;
 			color: #A1A1A1;
@@ -201,31 +203,143 @@ main {
 				background-color: #FFFFFF;
 				text-align: start;
 				cursor: pointer;
+				overflow: hidden;
 
 				&:not(:last-child) {
 					margin-bottom: 1rem;
 				}
 
-				&:hover, &.active {
-					background-color: #FFB74D;
+				.page01 {
+					&.active01, &:hover  {
+					 background-color: $primary;
+					
+						a {
+							
+							span {
+								color: white;
+							}
 
-					a {
-						span {
-							color: white;
-						}
-					}
-
-					.sidebar-item-img {
-
-						&-default {
-							display: none;
 						}
 
-						&-active {
-							display: inline-block;
+						.sidebar-item-img {
+
+							&-default {
+								display: none;
+							}
+
+							&-active {
+								display: inline-block;
+							}
 						}
 					}
 				}
+
+				
+				.page02 {
+					&.active02, &:hover {
+					 background-color: $pink;
+					
+						a {
+							
+							span {
+								color: white;
+							}
+
+						}
+
+						.sidebar-item-img {
+
+							&-default {
+								display: none;
+							}
+
+							&-active {
+								display: inline-block;
+							}
+						}
+					}
+				}
+
+				
+				.page03 {
+					&.active03, &:hover {
+					 background-color: $blue;
+					
+						a {
+							
+							span {
+								color: white;
+							}
+
+						}
+
+						.sidebar-item-img {
+
+							&-default {
+								display: none;
+							}
+
+							&-active {
+								display: inline-block;
+							}
+						}
+					}
+				}
+				
+				.page04 {
+					&.active04, &:hover {
+					 background-color: $green;
+					
+						a {
+							
+							span {
+								color: white;
+							}
+
+						}
+
+						.sidebar-item-img {
+
+							&-default {
+								display: none;
+							}
+
+							&-active {
+								display: inline-block;
+							}
+						}
+					}
+				}
+
+				
+				.page05 {
+					&.active05, &:hover {
+					 background-color: $purple;
+					
+						a {
+							
+							span {
+								color: white;
+							}
+
+						}
+
+						.sidebar-item-img {
+
+							&-default {
+								display: none;
+							}
+
+							&-active {
+								display: inline-block;
+							}
+						}
+					}
+				}
+
+				
+
+				
 
 				a {
 					display: block;					

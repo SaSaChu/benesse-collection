@@ -124,6 +124,7 @@ main .age-section .age-item a .age-item-img > img { transform: scale(0.5); }
 main .age-section .age-item a > span { text-align: left; flex: 1; }
 main .age-section .age-item a > span.sm-text-age { font-size: .9rem; }
 @media (max-width: 576px) { main .age-section .age-item a > span { display: inline-block; flex-basis: 60%; max-width: 60%; } }
+main .breadcrumb-section { margin-top: 16px; }
 main .breadcrumb-section li { font-size: 14px; color: #A1A1A1; }
 main .breadcrumb-section li.active { color: #A1A1A1; }
 main .breadcrumb-section a { color: #A1A1A1; text-decoration: none; }
@@ -138,12 +139,28 @@ main .main-section .sidebar-swiper.list-bg-unit03 { background-color: #DFECF2; }
 main .main-section .sidebar-swiper.list-bg-unit04 { background-color: #E4F4E9; }
 main .main-section .sidebar-swiper.list-bg-unit05 { background-color: #F2EAF4; }
 main .main-section .sidebar-swiper h3 { padding: 1rem; font-size: 20px; font-weight: 500; color: #FFFFFF; background-color: #FFB74D; border-radius: 30px; box-shadow: 0px 5px 0px 0px #ce9143; }
-main .main-section .sidebar-swiper .sidebar-item { border-radius: 25px; background-color: #FFFFFF; text-align: start; cursor: pointer; }
+main .main-section .sidebar-swiper .sidebar-item { border-radius: 25px; background-color: #FFFFFF; text-align: start; cursor: pointer; overflow: hidden; }
 main .main-section .sidebar-swiper .sidebar-item:not(:last-child) { margin-bottom: 1rem; }
-main .main-section .sidebar-swiper .sidebar-item:hover, main .main-section .sidebar-swiper .sidebar-item.active { background-color: #FFB74D; }
-main .main-section .sidebar-swiper .sidebar-item:hover a span, main .main-section .sidebar-swiper .sidebar-item.active a span { color: white; }
-main .main-section .sidebar-swiper .sidebar-item:hover .sidebar-item-img-default, main .main-section .sidebar-swiper .sidebar-item.active .sidebar-item-img-default { display: none; }
-main .main-section .sidebar-swiper .sidebar-item:hover .sidebar-item-img-active, main .main-section .sidebar-swiper .sidebar-item.active .sidebar-item-img-active { display: inline-block; }
+main .main-section .sidebar-swiper .sidebar-item .page01.active01, main .main-section .sidebar-swiper .sidebar-item .page01:hover { background-color: #fbb03b; }
+main .main-section .sidebar-swiper .sidebar-item .page01.active01 a span, main .main-section .sidebar-swiper .sidebar-item .page01:hover a span { color: white; }
+main .main-section .sidebar-swiper .sidebar-item .page01.active01 .sidebar-item-img-default, main .main-section .sidebar-swiper .sidebar-item .page01:hover .sidebar-item-img-default { display: none; }
+main .main-section .sidebar-swiper .sidebar-item .page01.active01 .sidebar-item-img-active, main .main-section .sidebar-swiper .sidebar-item .page01:hover .sidebar-item-img-active { display: inline-block; }
+main .main-section .sidebar-swiper .sidebar-item .page02.active02, main .main-section .sidebar-swiper .sidebar-item .page02:hover { background-color: #f09aa8; }
+main .main-section .sidebar-swiper .sidebar-item .page02.active02 a span, main .main-section .sidebar-swiper .sidebar-item .page02:hover a span { color: white; }
+main .main-section .sidebar-swiper .sidebar-item .page02.active02 .sidebar-item-img-default, main .main-section .sidebar-swiper .sidebar-item .page02:hover .sidebar-item-img-default { display: none; }
+main .main-section .sidebar-swiper .sidebar-item .page02.active02 .sidebar-item-img-active, main .main-section .sidebar-swiper .sidebar-item .page02:hover .sidebar-item-img-active { display: inline-block; }
+main .main-section .sidebar-swiper .sidebar-item .page03.active03, main .main-section .sidebar-swiper .sidebar-item .page03:hover { background-color: #56ace2; }
+main .main-section .sidebar-swiper .sidebar-item .page03.active03 a span, main .main-section .sidebar-swiper .sidebar-item .page03:hover a span { color: white; }
+main .main-section .sidebar-swiper .sidebar-item .page03.active03 .sidebar-item-img-default, main .main-section .sidebar-swiper .sidebar-item .page03:hover .sidebar-item-img-default { display: none; }
+main .main-section .sidebar-swiper .sidebar-item .page03.active03 .sidebar-item-img-active, main .main-section .sidebar-swiper .sidebar-item .page03:hover .sidebar-item-img-active { display: inline-block; }
+main .main-section .sidebar-swiper .sidebar-item .page04.active04, main .main-section .sidebar-swiper .sidebar-item .page04:hover { background-color: #75cc92; }
+main .main-section .sidebar-swiper .sidebar-item .page04.active04 a span, main .main-section .sidebar-swiper .sidebar-item .page04:hover a span { color: white; }
+main .main-section .sidebar-swiper .sidebar-item .page04.active04 .sidebar-item-img-default, main .main-section .sidebar-swiper .sidebar-item .page04:hover .sidebar-item-img-default { display: none; }
+main .main-section .sidebar-swiper .sidebar-item .page04.active04 .sidebar-item-img-active, main .main-section .sidebar-swiper .sidebar-item .page04:hover .sidebar-item-img-active { display: inline-block; }
+main .main-section .sidebar-swiper .sidebar-item .page05.active05, main .main-section .sidebar-swiper .sidebar-item .page05:hover { background-color: #c38ccf; }
+main .main-section .sidebar-swiper .sidebar-item .page05.active05 a span, main .main-section .sidebar-swiper .sidebar-item .page05:hover a span { color: white; }
+main .main-section .sidebar-swiper .sidebar-item .page05.active05 .sidebar-item-img-default, main .main-section .sidebar-swiper .sidebar-item .page05:hover .sidebar-item-img-default { display: none; }
+main .main-section .sidebar-swiper .sidebar-item .page05.active05 .sidebar-item-img-active, main .main-section .sidebar-swiper .sidebar-item .page05:hover .sidebar-item-img-active { display: inline-block; }
 main .main-section .sidebar-swiper .sidebar-item a { display: block; text-decoration: none; color: #5B2B00; font-weight: 500; }
 @media (max-width: 992px) { main .main-section .sidebar-swiper .sidebar-item a { text-align: center; } }
 @media (max-width: 576px) { main .main-section .sidebar-swiper .sidebar-item a { font-size: .9rem; padding: 0 0.5rem; } }
