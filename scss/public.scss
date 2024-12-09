@@ -177,6 +177,7 @@ header {
         }
     
         .nav-link {
+          cursor: pointer;
           color: $white;
           text-decoration: none;
           transition: color 0.3s ease;
@@ -388,40 +389,26 @@ header {
 }
 
 .border-orange, .border-pink, .border-blue, .border-green, .border-purple {
-  &:after {
-    display: inline-block;
-    width: 100%;
-    height: 3px;
-    content: '';
-    background-repeat: repeat-x;
-  }
+  height: 3px;
+  content: '';
+  background-repeat: repeat-x;
 }
 
 .border-orange {
-  &:after {
-    background-image: url(../images/doll-orange.svg);
-  }
+  background-image: url(../images/doll-orange.svg);
 }
 
 .border-pink {
-  &:after {
-    background-image: url(../images/doll-pink.svg);
-  }
+  background-image: url(../images/doll-pink.svg);
 }
 .border-blue {
-  &:after {
-    background-image: url(../images/doll-blue.svg);
-  }
+  background-image: url(../images/doll-blue.svg);
 }
 .border-green {
-  &:after {
-    background-image: url(../images/doll-green.svg);
-  }
+  background-image: url(../images/doll-green.svg);
 }
 .border-purple {
-  &:after {
-    background-image: url(../images/doll-purple.svg);
-  }
+  background-image: url(../images/doll-purple.svg);
 }
 
 

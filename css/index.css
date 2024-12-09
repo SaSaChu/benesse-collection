@@ -26,7 +26,7 @@ header .navbar-left .social-links .social-link:hover { color: #fa9c09; }
 header .navbar-right { display: flex; align-items: center; }
 header .navbar-right .action-buttons { display: flex; align-items: center; gap: 1rem; }
 @media (max-width: 992px) { header .navbar-right .action-buttons { margin-right: 12px; flex-direction: column; align-items: flex-start; } }
-header .navbar-right .action-buttons .nav-link { color: #FFFFFF; text-decoration: none; transition: color 0.3s ease; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
+header .navbar-right .action-buttons .nav-link { cursor: pointer; color: #FFFFFF; text-decoration: none; transition: color 0.3s ease; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 header .navbar-right .action-buttons .nav-link:first-of-type, header .navbar-right .action-buttons .nav-link:nth-of-type(2) { position: relative; }
 header .navbar-right .action-buttons .nav-link:first-of-type:after, header .navbar-right .action-buttons .nav-link:nth-of-type(2):after { content: ''; position: absolute; top: 50%; right: -0.5rem; transform: translateY(-50%) translateX(50%); display: inline-block; width: 4px; height: 4px; border-radius: 50%; background-color: #FFFFFF; }
 header .navbar-right .action-buttons .nav-link:hover { color: #fbb03b; text-shadow: transparent 1px 2px 2px; }
@@ -66,17 +66,17 @@ header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
 .w-10 { width: 10%; }
 
-.border-orange:after, .border-pink:after, .border-blue:after, .border-green:after, .border-purple:after { display: inline-block; width: 100%; height: 3px; content: ''; background-repeat: repeat-x; }
+.border-orange, .border-pink, .border-blue, .border-green, .border-purple { height: 3px; content: ''; background-repeat: repeat-x; }
 
-.border-orange:after { background-image: url(../images/doll-orange.svg); }
+.border-orange { background-image: url(../images/doll-orange.svg); }
 
-.border-pink:after { background-image: url(../images/doll-pink.svg); }
+.border-pink { background-image: url(../images/doll-pink.svg); }
 
-.border-blue:after { background-image: url(../images/doll-blue.svg); }
+.border-blue { background-image: url(../images/doll-blue.svg); }
 
-.border-green:after { background-image: url(../images/doll-green.svg); }
+.border-green { background-image: url(../images/doll-green.svg); }
 
-.border-purple:after { background-image: url(../images/doll-purple.svg); }
+.border-purple { background-image: url(../images/doll-purple.svg); }
 
 .text-shadow-sm { text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 

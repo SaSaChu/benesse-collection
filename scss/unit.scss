@@ -61,7 +61,9 @@ main {
 		  cursor: pointer;
 
 		  	a {
-				color: $brown;
+		  	 display: flex;
+		  	 align-items: center;
+				 color: $brown;
 
 				@include media-breakpoint-down(sm) {
 					display: flex;
@@ -109,14 +111,20 @@ main {
 				}
 
 				> span {
+					text-align: left;
 					flex: 1;
+
+					&.sm-text-age {
+						font-size: .9rem;
+					}
+					
 					@include media-breakpoint-down(sm) {
 						display: inline-block;
 						flex-basis: 60%;
 						max-width: 60%;
 					}
 				}
-		  	}
+		  }
 		}
 	}
 
@@ -157,6 +165,10 @@ main {
 		.sidebar-swiper {
 			padding: 1rem;
 			@include border-radius(20px);
+
+			@include media-breakpoint-down(md) {
+				@include border-radius(0);
+			}
 			
 			&.list-bg-unit01 {
 				background-color: #FEFBEF;
@@ -197,20 +209,22 @@ main {
 				&:hover, &.active {
 					background-color: #FFB74D;
 
-					// .sidebar-item-div {
-						// color: $white;
-
-						.sidebar-item-img {
-
-							&-default {
-								display: none;
-							}
-
-							&-active {
-								display: inline-block;
-							}
+					a {
+						span {
+							color: white;
 						}
-					// }
+					}
+
+					.sidebar-item-img {
+
+						&-default {
+							display: none;
+						}
+
+						&-active {
+							display: inline-block;
+						}
+					}
 				}
 
 				a {
@@ -297,9 +311,9 @@ main {
 					width: 100%;
 					height: auto;
 					background-color: $white;
-					// border-radius: 15px;
-					aspect-ratio: 1/1;
-					// overflow: hidden;
+					border-radius: 15px;
+					aspect-ratio: 1/.959;
+					overflow: hidden;
 
 					// 確保陰影正確顯示
 					// &:has(img) {
