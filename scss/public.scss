@@ -428,7 +428,7 @@ input[type=number] {
 }
 
 .border-brown-left {
-  border-left:2px dotted #aa9272 ;
+  border-left:3px dotted #aa9272 ;
 }
 
 .border-orange, .border-pink, .border-blue, .border-green, .border-purple {
@@ -475,7 +475,9 @@ input[type=number] {
 .text-shadow-sm {
   text-shadow: rgba(48, 56, 65, .5) 1px 2px 2px;
 }
-
+.f-13 {
+  font-size: .8rem;
+}
 
 //btn+link
 // 斜線按鈕
@@ -566,6 +568,16 @@ input[type=number] {
     &:hover, &:active {
       box-shadow: 5px -5px 0 rgba(237, 97, 121, 0.5) inset,
                   -5px 5px 0 rgba(255, 182, 197, .5) inset;
+    }
+  }
+
+  &.blue {
+    background-color: rgba(47, 173, 231, 1.00);
+    box-shadow: 5px -5px 0 rgba(0, 154, 203, 1.00) inset, -5px 5px 0 rgba(102, 208, 244, 1.00) inset;
+  
+    &:hover, &:active {
+      box-shadow: 5px -5px 0 rgba(0, 154, 203, .5) inset,
+                  -5px 5px 0 rgba(102, 208, 244, .5) inset;
     }
   }
 }

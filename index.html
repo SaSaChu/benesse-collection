@@ -382,8 +382,9 @@
       <div class="modal-content list-bg-unit01">
         <div class="modal-body">
           <div class="row">
-            <div class="col-6">
-              <h5 class="modal-title text-brown mb-3" id="staticBackdropLabel">登 入
+            <!-- 登 入 -->
+            <div class="col-6 px-4">
+              <h5 class="modal-title text-brown mb-3">登 入
               </h5>
               <div class="mb-3 text-start">
                 <label for="loginbox1" class="form-label float-start text-brown">帳號：</label>
@@ -397,9 +398,24 @@
                 <!-- 忘記密碼 -->
                 <small class="link-primary float-end mt-2"  data-bs-target="#forgetpwbox" data-bs-toggle="modal" data-bs-dismiss="modal"><a><i class="bi bi-lock-fill align-baseline me-1"></i>忘記密碼</a></small>
               </div>
+
+              <button type="button" class="my-3 w-100 btn-square orange"  data-bs-target="#forgetpwbox3" data-bs-toggle="modal" data-bs-dismiss="modal">登 入</button>
             </div>
 
-            <div class="col-6 border-brown-left"></div>
+            <!-- 註 冊 -->
+            <div class="col-6 border-brown-left px-4">
+              <h6 class="modal-title text-brown text-start">還不是會員嗎？
+              </h6>
+              <a href="login.html" class="my-3 w-100 py-2 btn-square blue">註 冊</a>
+              <div class="notebox">
+                <h5 class="text-pink2 fw-bold mb-3">注意</h5>
+                <p class="text-brown f-13 text-start">
+                  若您已在其他平台購買訂閱巧連智數位典藏序號，且尚未成為本平臺之會員，<span class=" align-baseline text-pink2 mx-2">請先進行會員註冊</span>，在註冊過程中輸入序號，以便完成序號資料綁定。
+                  </br></br>
+                  若您已有本平臺之會員，請您登入後至<span class=" align-baseline text-pink2 mx-2">設定 / 訂閱方案</span>中輸入您的購買序號綁定即可。
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
