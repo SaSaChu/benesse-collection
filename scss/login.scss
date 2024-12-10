@@ -1,0 +1,86 @@
+@import "Ginkgo";
+@import "public";
+
+.loginbox-650 {
+	display: inline-block;
+	max-width: 100%;
+	width: 650px;
+}
+
+.planboxs {
+	display: inline-block;
+	width: 100%;
+	background-color: rgba(255, 252, 236, 1.00);
+	border: 5px solid #c9a681;
+	padding: 15px;
+	@include border-radius(20px);
+	
+	&.pink {
+		border: 5px solid rgba(254, 149, 167, 1.00);
+	}
+}
+
+.step {
+	display: inline-block;
+	border: 1px solid rgba(255, 0, 0, .3);
+
+	&.step-ok {
+		p {
+			color: white;
+		}
+
+		span {
+			color: #c4965f;
+		}
+	}
+
+	p {
+		display: inline-block;
+		width: 68px;
+		height: 68px;
+		line-height: 63px;
+		background-color: rgba(204, 149, 85, 1.00);
+		color: rgba(231, 198, 172, 1.00);
+		font-size: 2.25rem;
+		font-weight: bolder;
+		@include border-radius(70px);
+
+		@include media-breakpoint-down(md) {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 1.6rem;
+		}
+
+
+		&.rl-line {
+			position: relative;
+
+			&:after, &:before {
+				display: inline-block;
+				content: '';
+				position: absolute;
+				top: 40%;
+				width: 100%;
+				border: 8px solid rgba(204, 149, 85, 1.00);
+			}
+
+			&:after {
+				right: -75%;
+		    
+			}
+
+			&:before {
+				left: -75%;
+			}
+		}
+	}
+
+	span {
+		display: block;
+		padding: 10px 0;
+		font-size: .8rem;
+		font-weight: 300;
+		color: rgba(231, 198, 172, 1.00);
+	}
+}

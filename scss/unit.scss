@@ -640,6 +640,22 @@ main {
 }
 
 footer {
-	background-image: url(../images/page-footer-bg.svg);
-	background-color: #A4D3AD;
+	background-color: $yellow-light;
+	
+	.page-footer {
+		background-image: url(../images/page-footer-bg.svg);
+		background-color: #A4D3AD;
+	}
+
+	@include media-breakpoint-down(lg) {
+    text-align: center;
+  }
+  
+  .copyright {
+    color: $brown;
+    font-size: .8rem;
+    margin: 0;
+  }
 }
+
+

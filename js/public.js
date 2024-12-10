@@ -40,5 +40,6 @@ $(function() {
 
 	 // 共用區域
   $("#page-header").load("page-header.html");
+  $("#member-footer").load("member-footer.html");
 
 });
