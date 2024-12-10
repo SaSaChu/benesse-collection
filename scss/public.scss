@@ -377,6 +377,21 @@ header {
 .text-brown {
   color: $brown;
 }
+.text-primary {
+  color: $primary !important;
+}
+.text-pink {
+  color: $pink;
+}
+.text-blue {
+  color: $blue;
+}
+.text-green {
+  color: $green;
+}
+.text-purple {
+  color: $purple;
+}
 
 
 
@@ -506,6 +521,44 @@ header {
     }
   }
 }
+
+// 頁數
+.page-item {
+  margin: 0 3px;
+
+  &:first-child{
+    .page-link {
+      line-height: 18px;
+      border-top-left-radius: 20px !important;
+      border-bottom-left-radius: 20px !important;
+    }
+  }
+
+  &:last-child {
+    .page-link {
+      line-height: 18px;
+      border-top-right-radius: 20px !important;
+      border-bottom-right-radius: 20px !important;
+    }
+  } 
+
+  .page-link {
+    width: 35px;
+    height: 35px;
+    line-height: 23px;
+    color: #B3B7C6 !important;
+    @include border-radius(20px);
+    border-color: $brown !important;
+    color: $brown !important;
+    
+    &:hover, &:active, &.active-page {
+      color: white !important;
+      background-color: rgba(207, 165, 123, 1.00) !important;
+      border: 0;
+    }
+  }
+}
+
 
 
 // 1205 導航欄按鈕
