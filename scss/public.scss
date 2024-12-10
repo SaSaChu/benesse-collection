@@ -377,11 +377,14 @@ header {
 .text-brown {
   color: $brown;
 }
-.text-primary {
+.text-orange {
   color: $primary !important;
 }
 .text-pink {
   color: $pink;
+}
+.text-pink2 {
+  color: $pink2;
 }
 .text-blue {
   color: $blue;
@@ -396,11 +399,36 @@ header {
 
 
 // other
+.numH {
+  height: 95px;
+  font-size: 3rem;
+  text-align: center;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .h-22 {
   height: 22px;
 }
 .w-10 {
   width: 10%;
+}
+.w-650 {
+  max-width: 650px !important;
+}
+.w-115  {
+  width: 115px !important;
+}
+
+.border-brown-left {
+  border-left:2px dotted #aa9272 ;
 }
 
 .border-orange, .border-pink, .border-blue, .border-green, .border-purple {
@@ -520,6 +548,26 @@ header {
                   -5px 5px 0 rgba(247, 199, 102, 0.5) inset;
     }
   }
+
+  &.brown {
+    background-color: #c4965f;
+    box-shadow: 5px -5px 0 #ba7c41 inset, -5px 5px 0 #dcb97c inset;
+  
+    &:hover, &:active {
+      box-shadow: 5px -5px 0 rgba(186, 124, 65, 0.5) inset,
+                -5px 5px 0 rgba(220, 185, 124, 0.5) inset;
+    }
+  }
+
+  &.pink {
+    background-color: rgba(254, 149, 167, 1.00);
+    box-shadow: 5px -5px 0 rgba(237, 97, 121, 1.00) inset, -5px 5px 0 rgba(255, 182, 197, 1.00) inset;
+  
+    &:hover, &:active {
+      box-shadow: 5px -5px 0 rgba(237, 97, 121, 0.5) inset,
+                  -5px 5px 0 rgba(255, 182, 197, .5) inset;
+    }
+  }
 }
 
 // 頁數
@@ -609,7 +657,7 @@ header {
 
 .form-select, .form-control {
   color: $brown;
-
+  background-color: white !important;
   &.border-brown-box {
     border: 1px solid #9a836c !important;
   }

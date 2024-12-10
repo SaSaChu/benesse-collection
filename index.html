@@ -50,7 +50,7 @@
 								<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
 								<a href="#" class="nav-link d-none d-lg-block">付費方案</a>
                 <a href="#" class="nav-link d-none d-lg-block">常見問題</a>
-								<a href="#" class="fs-6 nav-btn nav-btn-login">登入</a>
+								<a href="#" class="fs-6 nav-btn nav-btn-login" data-bs-toggle="modal" data-bs-target="#loginbox">登入</a>
 								<a href="#" class="fs-6 nav-btn nav-btn-search d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchbox">搜尋</a>
 
 							</div>
@@ -309,52 +309,52 @@
 
     <!-- 輪播區塊 -->
     <section class="carousel-section py-4">
-        <div class="container position-relative">
-            <div class="col-12 col-lg-10 mx-auto position-relative">
-                <div class="swiper carousel-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="carousel-box">
-                                <a href="#">
-                                    <img src="images/swiper/2.jpg" alt="月刊有聲書1" class="img-fluid">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="carousel-box">
-                                <a href="#">
-                                    <img src="images/swiper/2.jpg" alt="月刊有聲書2" class="img-fluid">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="carousel-box">
-                                <a href="#">
-                                    <img src="images/swiper/2.jpg" alt="月刊有聲書3" class="img-fluid">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="carousel-box">
-                                <a href="#">
-                                    <img src="images/swiper/2.jpg" alt="月刊有聲書3" class="img-fluid">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="carousel-box">
-                                <a href="#">
-                                    <img src="images/swiper/2.jpg" alt="月刊有聲書3" class="img-fluid">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container position-relative">
+        <div class="col-12 col-lg-10 mx-auto position-relative">
+          <div class="swiper carousel-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="carousel-box">
+                  <a href="#">
+                    <img src="images/swiper/2.jpg" alt="月刊有聲書1" class="img-fluid">
+                  </a>
                 </div>
-                <div class="footer_tree">
-                    <img src="images/tree.webp" alt="footer_tree" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel-box">
+                  <a href="#">
+                    <img src="images/swiper/2.jpg" alt="月刊有聲書2" class="img-fluid">
+                  </a>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel-box">
+                  <a href="#">
+                    <img src="images/swiper/2.jpg" alt="月刊有聲書3" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel-box">
+                  <a href="#">
+                    <img src="images/swiper/2.jpg" alt="月刊有聲書3" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="carousel-box">
+                  <a href="#">
+                    <img src="images/swiper/2.jpg" alt="月刊有聲書3" class="img-fluid">
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="footer_tree">
+            <img src="images/tree.webp" alt="footer_tree" class="img-fluid">
+          </div>
         </div>
+      </div>
     </section>
   </main>
 
@@ -376,9 +376,100 @@
     </div>
   </footer>
 
+  <!-- 登入Modal -->
+  <div class="modal fade" id="loginbox" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered w-650">
+      <div class="modal-content list-bg-unit01">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <h5 class="modal-title text-brown mb-3" id="staticBackdropLabel">登 入
+              </h5>
+              <div class="mb-3 text-start">
+                <label for="loginbox1" class="form-label float-start text-brown">帳號：</label>
+                <input type="email" class="form-control border-brown-box" id="loginbox1">
+                <small class="text-danger">*請輸入註冊使用之Email或手機號碼</small>
+              </div>
+              <div class="mb-3 text-start">
+                <label for="loginbox1" class="form-label float-start text-brown">密碼：</label>
+                <input type="email" class="form-control border-brown-box" id="loginbox1">
+
+                <!-- 忘記密碼 -->
+                <small class="link-primary float-end mt-2"  data-bs-target="#forgetpwbox" data-bs-toggle="modal" data-bs-dismiss="modal"><a><i class="bi bi-lock-fill align-baseline me-1"></i>忘記密碼</a></small>
+              </div>
+            </div>
+
+            <div class="col-6 border-brown-left"></div>
+          </div>
+        </div>
+
+        <!-- <div class="modal-footer">
+          <a href="search.html" class="btn-square orange">搜 尋</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 忘記密碼 I -->
+  <div class="modal fade" id="forgetpwbox" aria-hidden="true" aria-labelledby="forgetpwbox2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content list-bg-unit01">
+        <div class="modal-body">
+           <h5 class="modal-title text-brown fw-bold mb-3" id="forgetpwbox2">忘記密碼</h5>
+           <p class="text-brown text-start mb-3">
+             親愛的使用者，請輸入您註冊的<span class=" align-baseline text-pink2 mx-2">手機/Email</span>。若您輸入的是手機，我們將發送一組六位數驗證碼；若您數入的是Email，我們將發送一組連結至您的信箱。
+           </p>
+           <div class="text-start">
+            <label for="loginbox1" class="form-label float-start text-brown">帳號：</label>
+            <input type="email" class="form-control border-brown-box" id="loginbox1">
+            <small class="text-danger">*請輸入註冊使用之Email或手機號碼</small>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="w-50 btn-square orange"  data-bs-target="#forgetpwbox3" data-bs-toggle="modal" data-bs-dismiss="modal">確 定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 忘記密碼 II -->
+  <div class="modal fade" id="forgetpwbox3" aria-hidden="true" aria-labelledby="forgetpwbox2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content list-bg-unit01">
+        <div class="modal-body">
+          <h5 class="modal-title text-brown fw-bold mb-3" id="forgetpwbox2">忘記密碼</h5>
+          <p class="text-brown text-start mb-3">
+           我們將發送一組六位數驗證碼至您的<span class=" align-baseline text-pink2 mx-2">手機/mail</span>，請輸入您收到的六位數字。
+          </p>
+          <div class="row g-3 mx-auto">
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="w-50 btn-square orange"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">確 定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 搜尋Modal -->
   <div class="modal fade" id="searchbox" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content list-bg-unit01">
         <div class="modal-header pb-0">
           <img src="images/icon-search.webp" class="me-1">
@@ -408,6 +499,63 @@
 
         <div class="modal-footer">
           <a href="search.html" class="btn-square orange">搜 尋</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 其他的登入提醒光箱 Modal -->
+  <div class="modal fade" id="otherbox" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content list-bg-unit01">
+        <div class="modal-body">
+          <h5 class="modal-title text-brown fw-bold mb-3" id="forgetpwbox2">注 意</h5>
+          <p class="text-brown text-start mb-3">
+           若您有在其他平台購買訂閱巧連智數位典藏序號，請先至您的<span class=" align-baseline text-pink2 mx-2">設定 / 訂閱方案</span>中輸入您的購買序號。
+          </p>
+        </div>
+
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="w-115 btn-square brown"   data-bs-dismiss="modal">取 消</button>
+          <a href="#" class="w-115 btn-square pink">前去設定</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 雙重驗證Modal -->
+  <div class="modal fade" id="doublecheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content list-bg-unit01">
+        <div class="modal-body">
+          <h5 class="modal-title text-brown fw-bold mb-3" id="forgetpwbox2">雙重驗證</h5>
+          <p class="text-brown text-start mb-3">
+             親愛的使用者，因系統偵測到您使用新的裝置登入平台，故需要雙重驗證，系統已將六位驗證碼，發送至您的註冊<span class=" align-baseline text-pink2 mx-2">手機/Email</span>再請協助收取簡訊或Email，已完成驗證程序。
+          </p>
+          <div class="row g-3 mx-auto mb-3">
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control numH" inputmode="numeric" oninput="if(value.length>1)value=value.slice(0,1)">
+            </div>
+          </div>
+          <p class="text-brown">沒有收到驗證碼？<a href="" class="link-primary align-baseline">重新發送</a></p>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="w-50 btn-square orange"   data-bs-dismiss="modal">確 定</button>
         </div>
       </div>
     </div>
