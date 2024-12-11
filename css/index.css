@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:after, *:before { vertical-align: middle; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: 16px; text-align: center; font-family: "Noto Sans TC", "Roboto", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif; }
@@ -87,6 +88,8 @@ input[type=number] { -moz-appearance: textfield; }
 
 .w-10 { width: 10%; }
 
+.w-5 { width: 5%; }
+
 .w-650 { max-width: 650px !important; }
 
 .w-115 { width: 115px !important; }
@@ -122,6 +125,10 @@ input[type=number] { -moz-appearance: textfield; }
 .text-shadow-sm { text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 
 .f-13 { font-size: .8rem; }
+
+.price { display: inline-block; width: 100%; font-weight: bolder; font-size: 3rem; color: #6e4435; text-align: right; position: relative; padding-right: 23px; }
+.price:before { display: inline-block; content: attr(title); position: absolute; top: 17px; left: 0; color: #6e4435; font-size: 1rem; }
+.price:after { display: inline-block; content: "元"; position: absolute; bottom: 11px; right: 0; color: #6e4435; font-size: 1rem; }
 
 .link-brown { display: inline-block; color: #6e4435; }
 .link-brown:hover { text-decoration: underline !important; }

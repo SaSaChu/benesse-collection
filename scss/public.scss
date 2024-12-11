@@ -424,6 +424,9 @@ input[type=number] {
 .w-10 {
   width: 10%;
 }
+.w-5 {
+  width: 5%;
+}
 .w-650 {
   max-width: 650px !important;
 }
@@ -489,6 +492,36 @@ input[type=number] {
 }
 .f-13 {
   font-size: .8rem;
+}
+.price {
+  display: inline-block;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: $brown;
+  text-align: right;
+  position: relative;
+  padding-right: 23px;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    position: absolute;
+    top: 17px;
+    left: 0;
+    color: $brown;
+    font-size: 1rem;
+  }
+
+  &:after {
+    display: inline-block;
+    content: "元";
+    position: absolute;
+    bottom: 11px;
+    right: 0;
+    color: $brown;
+    font-size: 1rem;
+  }
 }
 
 //btn+link
