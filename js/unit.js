@@ -23,7 +23,7 @@ $(function() {
 
 	let sidebarSwiper = new Swiper('.sidebar-swiper', {
 		direction: 'horizontal',
-		slidesPerView: 3,
+		slidesPerView: 2.2,	
 		spaceBetween: 10,
 		loop: true,
 		breakpoints: {
