@@ -399,6 +399,9 @@ header {
 
 
 // other
+.img-half {
+  transform: scale(0.5);
+}
 .numH {
   height: 95px;
   font-size: 3rem;
@@ -424,11 +427,17 @@ input[type=number] {
 .w-10 {
   width: 10%;
 }
+.w-5 {
+  width: 5%;
+}
 .w-650 {
   max-width: 650px !important;
 }
 .w-115  {
   width: 115px !important;
+}
+.w-165  {
+  width: 165px !important;
 }
 
 .border-brown-left {
@@ -437,6 +446,9 @@ input[type=number] {
 
 .border-brown-bottom {
   border-bottom:3px dotted #aa9272 ;
+}
+.border-yellow-bottom {
+  border-bottom:3px dotted #ffce87 ;
 }
 
 .border-brown {
@@ -489,6 +501,39 @@ input[type=number] {
 }
 .f-13 {
   font-size: .8rem;
+}
+.f-19 {
+  font-size: 1.2rem;
+}
+.price {
+  display: inline-block;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: $brown;
+  text-align: right;
+  position: relative;
+  padding-right: 23px;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    position: absolute;
+    top: 17px;
+    left: 0;
+    color: $brown;
+    font-size: 1rem;
+  }
+
+  &:after {
+    display: inline-block;
+    content: "元";
+    position: absolute;
+    bottom: 11px;
+    right: 0;
+    color: $brown;
+    font-size: 1rem;
+  }
 }
 
 //btn+link
@@ -693,9 +738,15 @@ input[type=number] {
   border-top: 0 !important;
 }
 
+.form-check-input {
+  border: 1px solid #9a836c !important;
+}
+
 .form-select, .form-control {
+  border-radius:0.375rem !important;
   color: $brown;
   background-color: white !important;
+
   &.border-brown-box {
     border: 1px solid #9a836c !important;
   }
@@ -707,5 +758,20 @@ input[type=number] {
   &::placeholder {
     color: #c1c1c1;
   }
+}
+
+
+// 密碼眼睛
+#checkEye {
+  position: absolute;
+  top: 73%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#checkEye2 {
+  position: absolute;
+  top: 73%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 

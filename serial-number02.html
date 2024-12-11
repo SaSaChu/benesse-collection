@@ -13,7 +13,7 @@
 
     <!-- 自定義樣式 -->
     <link href="css/unit.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
 
     <!-- 共用外部 font 檔案 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -130,37 +130,27 @@
   <main class="py-5">
     <div class="container loginbox-650">
       <div class="row mb-5 justify-content-center">
-        <div class="col-lg-6 col-10">
-          <div class="row">
-            <div class="col step step-ok">
-              <p>01</p>
-              <span>訂閱方案確認</span>
-            </div>
-            <div class="col step">
-              <p class="rl-line">02</p>
-              <span>填寫基本資料</span>
-            </div>
-            <div class="col step">
-              <p>03</p>
-              <span>完成註冊</span>
-            </div>
-          </div>
-        </div>
-      </div>
+	      <ul class="step">
+			    <li class="active">訂閱方案確認</li>
+			    <li>填寫基本資料</li>
+			    <li>完成註冊</li>
+				</ul>
+			</div>
 
       <div class="row mx-auto mb-5 justify-content-evenly">
         <div class="col-12 mb-2">
           <h6 class="text-brown mb-2">您的訂閱序號方案如下</h6>
         </div>
 
-        <div class="col-6 mb-2">
+        <div class="col-md-6 col-12 mb-2">
           <div class="planboxs pink">
           	<div class="title-slash02 login-btn-space">月繳</div>
+          	<p title="月費" class="price">99</p>
           	<div class="text-start">
-          		<div class="border-brown-bottom"></div>
-          		<p class="nav-link text-brown mb-2"><img src="images/star-p.svg" class="w-10 me-2">關於數位典藏學習網</p>
-							<p class="nav-link text-brown mb-2"><img src="images/star-p.svg" class="w-10 me-2">付費方案</p>
-              <p class="nav-link text-brown mb-2"><img src="images/star-p.svg" class="w-10 me-2">常見問題</p>
+          		<div class="border-brown-bottom mb-2"></div>
+          		<p class="nav-link text-brown mb-1"><img src="images/star-p.svg" class="w-5 me-1 align-baseline">關於數位典藏學習網</p>
+							<p class="nav-link text-brown mb-1"><img src="images/star-p.svg" class="w-5 me-1 align-baseline">付費方案</p>
+              <p class="nav-link text-brown mb-1"><img src="images/star-p.svg" class="w-5 me-1 align-baseline">常見問題</p>
           	</div>
           </div>
         </div>
