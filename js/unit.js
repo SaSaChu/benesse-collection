@@ -1,4 +1,5 @@
 $(function() {
+
 	let ageSwiper = new Swiper('.age-swiper', {
 		slidesPerView: 3,
 		spaceBetween: 16,
@@ -8,9 +9,9 @@ $(function() {
 			prevEl: '.swiper-button-prev',
 		},
 		breakpoints: {
-			1024: {
+			992: {
 				slidesPerView: 'auto',
-				spaceBetween: 12,
+				spaceBetween: 30,
 				direction: 'horizontal',
 				navigation: {
 					enabled: false
