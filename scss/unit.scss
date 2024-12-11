@@ -27,6 +27,23 @@ main {
   
 	.age-section {
 		margin: 0 auto;
+
+		&.pink {
+			.age-item {
+				&:hover, &.active {	
+					a {
+						color: $pink;
+					}
+				}
+
+				.age-item-img {
+					> img {
+						// transform 控制圖片眼睛對齊文字中間
+						transform: translateY(-15%);
+					}
+				}
+			}
+		}
 	
 		.age-swiper {
 		
@@ -57,74 +74,78 @@ main {
 		}
 	
 		.age-item {
-		  text-align: center;
-		  cursor: pointer;
+			text-align: center;
+		  	cursor: pointer;
 
-		  	a {
-		  	 display: flex;
-		  	 align-items: center;
-				 color: $brown;
-
-				@include media-breakpoint-down(sm) {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-				}
-
-				&:hover, &.active {
+			&:hover, &.active {
+				a {
 					color: $primary;
 
 					.age-item-img {
-						&-default {
+						.default-img {
 							display: none;
 						}
 		
-						&-active {
+						.active-img {
 							display: inline-block;
 						}
-					}
-					
+					}	
 				}
+			}
+
+		  	a {
+				display: flex;
+		  	 	align-items: center;
+				justify-content: center;
+				color: $brown;
 
 				.age-item-img {
-					flex: 1;
-					// width: auto;
-					// max-width: 50%;
-					// height: auto;
 
-					@include media-breakpoint-down(sm) {
-						// flex: 0 0 40%;
-						// max-width: 40%;
-					}
-
-					&-default {
+					.default-img {
 						display: inline-block;
 					}
 
-					&-active {
+					.active-img {
 						display: none;
 					}
 
 					> img {
-						transform: scale(0.5);
+						transform: translateY(-35%);
+						max-width: 35.5px;
+
+						@include media-breakpoint-down(sm) {
+							max-width: 20px;
+						}
 					}
 				}
 
-				> span {
-					text-align: left;
-					flex: 1;
+				.age-item-text {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin-left: 0.5rem;
 
-					&.sm-text-age {
-						font-size: .9rem;
-					}
-					
-					@include media-breakpoint-down(sm) {
-						display: inline-block;
-						flex-basis: 60%;
-						max-width: 60%;
+					span {
+						text-align: left;
+						font-size: 1.25rem;
+
+						@include media-breakpoint-down(sm) {
+							font-size: 1rem;
+						}
+
+						&.sm-text-age {
+							font-size: .9rem;
+
+							@include media-breakpoint-down(sm) {
+								font-size: 13px;
+								line-height: 1;
+							}
+							
+						}
 					}
 				}
-		  }
+		  	}
 		}
 	}
 
