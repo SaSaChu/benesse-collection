@@ -198,6 +198,8 @@ input[type=number] { -moz-appearance: textfield; }
 
 main { position: relative; z-index: 1; }
 main .age-section { margin: 0 auto; }
+main .age-section.pink .age-item:hover a, main .age-section.pink .age-item.active a { color: #f09aa8; }
+main .age-section.pink .age-item .age-item-img > img { transform: translateY(-15%); }
 @media (max-width: 992px) { main .age-section .age-swiper { padding: 0 15px; } }
 main .age-section .age-swiper .swiper-slide { width: auto; }
 main .age-section .age-swiper .swiper-button-prev, main .age-section .age-swiper .swiper-button-next { width: auto; color: #FFB74D; }
@@ -205,18 +207,19 @@ main .age-section .age-swiper .swiper-button-prev:after, main .age-section .age-
 main .age-section .age-swiper .swiper-button-prev { left: 0; }
 main .age-section .age-swiper .swiper-button-next { right: 0; }
 main .age-section .age-item { text-align: center; cursor: pointer; }
-main .age-section .age-item a { display: flex; align-items: center; color: #6e4435; }
-@media (max-width: 576px) { main .age-section .age-item a { display: flex; justify-content: space-between; align-items: center; } }
-main .age-section .age-item a:hover, main .age-section .age-item a.active { color: #fbb03b; }
-main .age-section .age-item a:hover .age-item-img-default, main .age-section .age-item a.active .age-item-img-default { display: none; }
-main .age-section .age-item a:hover .age-item-img-active, main .age-section .age-item a.active .age-item-img-active { display: inline-block; }
-main .age-section .age-item a .age-item-img { flex: 1; }
-main .age-section .age-item a .age-item-img-default { display: inline-block; }
-main .age-section .age-item a .age-item-img-active { display: none; }
-main .age-section .age-item a .age-item-img > img { transform: scale(0.5); }
-main .age-section .age-item a > span { text-align: left; flex: 1; }
-main .age-section .age-item a > span.sm-text-age { font-size: .9rem; }
-@media (max-width: 576px) { main .age-section .age-item a > span { display: inline-block; flex-basis: 60%; max-width: 60%; } }
+main .age-section .age-item:hover a, main .age-section .age-item.active a { color: #fbb03b; }
+main .age-section .age-item:hover a .age-item-img .default-img, main .age-section .age-item.active a .age-item-img .default-img { display: none; }
+main .age-section .age-item:hover a .age-item-img .active-img, main .age-section .age-item.active a .age-item-img .active-img { display: inline-block; }
+main .age-section .age-item a { display: flex; align-items: center; justify-content: center; color: #6e4435; }
+main .age-section .age-item a .age-item-img .default-img { display: inline-block; }
+main .age-section .age-item a .age-item-img .active-img { display: none; }
+main .age-section .age-item a .age-item-img > img { transform: translateY(-35%); max-width: 35.5px; }
+@media (max-width: 576px) { main .age-section .age-item a .age-item-img > img { max-width: 20px; } }
+main .age-section .age-item a .age-item-text { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 0.5rem; }
+main .age-section .age-item a .age-item-text span { text-align: left; font-size: 1.25rem; }
+@media (max-width: 576px) { main .age-section .age-item a .age-item-text span { font-size: 1rem; } }
+main .age-section .age-item a .age-item-text span.sm-text-age { font-size: .9rem; }
+@media (max-width: 576px) { main .age-section .age-item a .age-item-text span.sm-text-age { font-size: 13px; line-height: 1; } }
 main .breadcrumb-section { margin-top: 16px; }
 main .breadcrumb-section li { font-size: 14px; color: #A1A1A1; }
 main .breadcrumb-section li.active { color: #A1A1A1; }
