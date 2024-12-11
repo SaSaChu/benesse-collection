@@ -414,6 +414,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.login-btn-space {
+  padding: 10px 0 12px 0 !important;
+}
+
 .h-22 {
   height: 22px;
 }
@@ -429,6 +433,14 @@ input[type=number] {
 
 .border-brown-left {
   border-left:3px dotted #aa9272 ;
+}
+
+.border-brown-bottom {
+  border-bottom:3px dotted #aa9272 ;
+}
+
+.border-brown {
+   border:1px solid #aa9272 ;
 }
 
 .border-orange, .border-pink, .border-blue, .border-green, .border-purple {
@@ -480,6 +492,15 @@ input[type=number] {
 }
 
 //btn+link
+.link-brown {
+  display: inline-block;
+  color: $brown;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
 // 斜線按鈕
 .title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 {
   display: inline-block;
@@ -489,7 +510,12 @@ input[type=number] {
   color: white;
   @include border-radius(30px);
   padding: .5rem;
+
+  &.br15 {
+    @include border-radius(15px);
+  }
 }
+
 .title-slash01 {
   text-shadow: rgba(240, 141, 62, .8) 1px 2px 2px;
   box-shadow: 0 -5px 0 $primary2 inset;
