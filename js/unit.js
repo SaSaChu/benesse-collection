@@ -28,6 +28,7 @@ $(function() {
 		loop: true,
 		breakpoints: {
 			768: {
+				slidesPerView: 3,
 				spaceBetween: 15,
 			},
 			1024: {
