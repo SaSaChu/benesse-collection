@@ -11,12 +11,12 @@
 	display: inline-block;
 	width: 100%;
 	background-color: rgba(255, 252, 236, 1.00);
-	border: 5px solid #c9a681;
+	border: 8px solid #c9a681;
 	padding: 15px;
 	@include border-radius(20px);
 	
 	&.pink {
-		border: 10px solid rgba(254, 149, 167, 1.00);
+		border: 8px solid rgba(254, 149, 167, 1.00);
 	}
 }
 

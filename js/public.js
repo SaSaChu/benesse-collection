@@ -38,6 +38,25 @@ $(function() {
 		updateOrder();
 	}
 
+	// 密碼眼睛
+	$("#checkEye").click(function () {
+	  if($(this).hasClass('bi-eye')){
+	     $("#floatingPassword").attr('type', 'text');
+	  }else{
+	     $("#floatingPassword").attr('type', 'password');
+	  }
+	  $(this).toggleClass('bi-eye').toggleClass('bi-eye-slash');
+	});
+
+	$("#checkEye2").click(function () {
+	  if($(this).hasClass('bi-eye')){
+	     $("#floatingPassword2").attr('type', 'text');
+	  }else{
+	     $("#floatingPassword2").attr('type', 'password');
+	  }
+	  $(this).toggleClass('bi-eye').toggleClass('bi-eye-slash');
+	}); 
+
 	 // 共用區域
   $("#page-header").load("page-header.html");
   $("#member-footer").load("member-footer.html");

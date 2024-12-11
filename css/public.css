@@ -98,6 +98,8 @@ input[type=number] { -moz-appearance: textfield; }
 
 .border-brown-bottom { border-bottom: 3px dotted #aa9272; }
 
+.border-yellow-bottom { border-bottom: 3px dotted #ffce87; }
+
 .border-brown { border: 1px solid #aa9272; }
 
 .border-orange, .border-pink, .border-blue, .border-green, .border-purple { height: 3px; content: ''; background-repeat: repeat-x; }
@@ -173,7 +175,13 @@ input[type=number] { -moz-appearance: textfield; }
 
 .modal-footer { border-top: 0 !important; }
 
-.form-select, .form-control { color: #6e4435; background-color: white !important; }
+.form-check-input { border: 1px solid #9a836c !important; }
+
+.form-select, .form-control { border-radius: 0.375rem !important; color: #6e4435; background-color: white !important; }
 .form-select.border-brown-box, .form-control.border-brown-box { border: 1px solid #9a836c !important; }
 .form-select:focus, .form-control:focus { color: #6e4435 !important; }
 .form-select::placeholder, .form-control::placeholder { color: #c1c1c1; }
+
+#checkEye { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
+
+#checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
