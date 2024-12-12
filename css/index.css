@@ -1,75 +1,246 @@
-/*
-Error: Invalid CSS after "}": expected selector or at-rule, was "{"
-        on line 781 of /Users/Teresa/www/benesse-collection/scss/public.scss
-        from line 2 of /Users/Teresa/www/benesse-collection/cmd/../scss/index.scss
+@charset "UTF-8";
+*, *:after, *:before { vertical-align: middle; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-776:     top: 47%;
-777:     right: 14px;
-778:   }
-779: }
-780: 
-781:  {
-782:   position: absolute;
-783:   top: 73%;
-784:   right: 20px;
-785:   transform: translateY(-50%);
-786: 
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: 16px; text-align: center; font-family: "Noto Sans TC", "Roboto", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif; }
+body::-moz-selection { color: white; background-color: #78baff; }
+body::selection { color: white; background-color: #78baff; }
 
-Backtrace:
-/Users/Teresa/www/benesse-collection/scss/public.scss:781
-/Users/Teresa/www/benesse-collection/cmd/../scss/index.scss:2
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/scss/parser.rb:42:in `parse'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/bin/compass:44:in `call'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/compass:22:in `load'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/compass:22:in `<main>'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"{\"\A         on line 781 of /Users/Teresa/www/benesse-collection/scss/public.scss\A         from line 2 of /Users/Teresa/www/benesse-collection/cmd/../scss/index.scss\A \A 776:     top: 47%;\A 777:     right: 14px;\A 778:   }\A 779: }\A 780: \A 781:  {\A 782:   position: absolute;\A 783:   top: 73%;\A 784:   right: 20px;\A 785:   transform: translateY(-50%);\A 786: "; }
+a { color: black; cursor: pointer; text-decoration: none !important; }
+a:after, a:before { color: black; vertical-align: middle !important; }
+a:hover { text-decoration: underline; }
+
+select { outline: none !important; box-shadow: none !important; border-width: 0; }
+
+p { margin-bottom: 0; }
+
+header { position: relative; background: linear-gradient(to bottom, #79c4f0 0%, #bce2f7 81%, #bde2f7 81%); }
+header .navbar { position: relative; padding: 1rem 0; z-index: 1; }
+@media (max-width: 992px) { header .navbar { z-index: 1050; } }
+header .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+header .navbar-left { display: flex; align-items: center; }
+header .navbar-left .navbar-brand img { height: 50px; }
+@media (max-width: 768px) { header .navbar-left .navbar-brand img { height: 40px; } }
+header .navbar-left .social-links { display: flex; gap: 0.5rem; }
+@media (max-width: 768px) { header .navbar-left .social-links { gap: .5rem; } }
+header .navbar-left .social-links .social-link { color: #fbb03b; font-size: 1.25rem; transition: color 0.3s ease; }
+header .navbar-left .social-links .social-link:hover { color: #fa9c09; }
+header .navbar-right { display: flex; align-items: center; }
+header .navbar-right .action-buttons { display: flex; align-items: center; gap: 1rem; }
+@media (max-width: 992px) { header .navbar-right .action-buttons { margin-right: 12px; flex-direction: column; align-items: flex-start; } }
+header .navbar-right .action-buttons .nav-link { cursor: pointer; color: #FFFFFF; text-decoration: none; transition: color 0.3s ease; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
+header .navbar-right .action-buttons .nav-link:first-of-type, header .navbar-right .action-buttons .nav-link:nth-of-type(2) { position: relative; }
+header .navbar-right .action-buttons .nav-link:first-of-type:after, header .navbar-right .action-buttons .nav-link:nth-of-type(2):after { content: ''; position: absolute; top: 50%; right: -0.5rem; transform: translateY(-50%) translateX(50%); display: inline-block; width: 4px; height: 4px; border-radius: 50%; background-color: #FFFFFF; }
+header .navbar-right .action-buttons .nav-link:hover { color: #fbb03b; text-shadow: transparent 1px 2px 2px; }
+header .navbar-right .btn-mobile-menu { padding: 0.2rem .8rem 0.3rem .8rem; border-radius: 0; background-color: #c4965f; box-shadow: 5px -5px 0 #ba7c41 inset, -5px 5px 0 #dcb97c inset; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
+header .navbar-right .btn-mobile-menu i { color: #FFFFFF; font-size: .9rem; }
+header .navbar-right .btn-mobile-menu i:before { transform: scale(1.5); }
+header .navbar-right .btn-mobile-menu:hover { box-shadow: 5px -5px 0 rgba(186, 124, 65, 0.5) inset, -5px 5px 0 rgba(220, 185, 124, 0.5) inset; }
+header .navbar-right #offcanvasNavbar { background-color: #FEFBF0; max-width: 60%; }
+header .navbar-right #offcanvasNavbar .offcanvas-body > div { padding-bottom: 1rem; }
+header .navbar-right #offcanvasNavbar .offcanvas-body > div:not(:first-child) { padding-top: 1rem; }
+header .navbar-right #offcanvasNavbar .offcanvas-body > div:not(:last-child) { border-bottom: 2px dashed #ffce87; }
+header .hero-section { position: relative; z-index: 1; }
+@media (max-width: 768px) { header .hero-section:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background-color: white; } }
+@media (max-width: 992px) { header .hero-section:after { height: 60%; } }
+header .hero-section .container { position: relative; z-index: 2; }
+header .hero-section h1 { position: relative; margin-bottom: 0; z-index: 1; }
+header .category-section { position: relative; margin: 0 auto; z-index: 1; background-color: #FFFFFF; }
+header .category-section .category-col:hover .default-img, header .category-section .category-col.active .default-img { display: none; }
+header .category-section .category-col:hover .active-img, header .category-section .category-col.active .active-img { display: block; }
+header .category-section .category-col:nth-of-type(1) { order: 1; }
+header .category-section .category-col:nth-of-type(2) { order: 2; }
+header .category-section .category-col:nth-of-type(3) { order: 3; }
+header .category-section .category-col:nth-of-type(4) { order: 4; }
+header .category-section .category-col:nth-of-type(5) { order: 5; }
+header .category-section .category-item { flex-basis: calc(20%); padding: 0; text-align: center; cursor: pointer; }
+header .category-section .category-item .default-img { display: block; }
+header .category-section .category-item .active-img { display: none; }
+header .category-section .category-item picture { display: block; }
+header .category-section .category-item img { max-width: 100%; height: auto; }
+header .cloud-bg { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; }
+@media (max-width: 768px) { header .cloud-bg { top: 0; bottom: auto; } }
+header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
+
+.text-brown { color: #6e4435; }
+
+.text-orange { color: #fbb03b !important; }
+
+.text-pink { color: #f09aa8; }
+
+.text-pink2 { color: #dd7a8d; }
+
+.text-blue { color: #56ace2; }
+
+.text-green { color: #75cc92; }
+
+.text-purple { color: #c38ccf; }
+
+.notebox { display: inline-block; width: 100%; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 3px solid #fe9aab; background-color: #fffcec; padding: 1rem; }
+
+.img-half { transform: scale(0.5); }
+
+.numH { height: 95px; font-size: 3rem; text-align: center; }
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+/* Firefox */
+input[type=number] { -moz-appearance: textfield; }
+
+.login-btn-space { padding: 10px 0 12px 0 !important; }
+
+.h-22 { height: 22px; }
+
+.w-10 { width: 10%; }
+
+.w-5 { width: 5%; }
+
+.w-650 { max-width: 650px !important; }
+
+.w-115 { width: 115px !important; }
+
+.w-165 { width: 165px !important; }
+
+.border-brown-left { border-left: 4px dotted #aa9272; }
+@media (max-width: 768px) { .border-brown-left { border-left: 0; } }
+
+.border-pink-bottom { border-bottom: 3px solid #f09aa8; }
+
+.border-brown-bottom { border-bottom: 3px dotted #aa9272; }
+
+.border-yellow-bottom { border-bottom: 3px dotted #ffce87; }
+
+.border-brown-bottom-s { border-bottom: 1px solid #aa9272; }
+
+.border-brown { border: 1px solid #aa9272; }
+
+.border-orange, .border-pink, .border-blue, .border-green, .border-purple { height: 3px; content: ''; background-repeat: repeat-x; }
+
+.border-orange { background-image: url(../images/doll-orange.svg); }
+
+.border-pink { background-image: url(../images/doll-pink.svg); }
+
+.border-blue { background-image: url(../images/doll-blue.svg); }
+
+.border-green { background-image: url(../images/doll-green.svg); }
+
+.border-purple { background-image: url(../images/doll-purple.svg); }
+
+.list-bg-unit01 { background-color: #FEFBEF; }
+
+.list-bg-unit02 { background-color: #F7E8EA; }
+
+.list-bg-unit03 { background-color: #DFECF2; }
+
+.list-bg-unit04 { background-color: #E4F4E9; }
+
+.list-bg-unit05 { background-color: #F2EAF4; }
+
+.text-shadow-sm { text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
+
+.f-13 { font-size: .8rem; }
+
+.f-19 { font-size: 1.2rem; }
+
+.price { display: inline-block; width: 100%; font-weight: bolder; font-size: 3rem; color: #6e4435; text-align: right; position: relative; padding-right: 23px; }
+.price:before { display: inline-block; content: attr(title); position: absolute; top: 17px; left: 0; color: #6e4435; font-size: 1rem; }
+.price:after { display: inline-block; content: "元"; position: absolute; bottom: 11px; right: 0; color: #6e4435; font-size: 1rem; }
+
+.link-brown { display: inline-block; color: #6e4435; }
+.link-brown:hover { text-decoration: underline !important; }
+
+.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .3rem .5rem .5rem .5rem; }
+.title-slash01.br15, .title-slash02.br15, .title-slash03.br15, .title-slash04.br15, .title-slash05.br15 { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+
+.title-slash01 { text-shadow: rgba(240, 141, 62, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #d89032 inset; background: repeating-linear-gradient(130deg, #fbb03b 0 13px, #fabd5e 0 25px); }
+
+.title-slash02 { text-shadow: rgba(198, 102, 125, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #dd7a8d inset; background: repeating-linear-gradient(130deg, #f09aa8 0 13px, #f1abb5 0 25px); }
+
+.title-slash03 { text-shadow: rgba(36, 103, 137, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #3e99c6 inset; background: repeating-linear-gradient(130deg, #56ace2 0 13px, #76bae3 0 25px); }
+
+.title-slash04 { text-shadow: rgba(46, 117, 61, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #4aaf64 inset; background: repeating-linear-gradient(130deg, #75cc92 0 13px, #8ed3a3 0 25px); }
+
+.title-slash05 { text-shadow: rgba(143, 93, 155, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #bd7fcc inset; background: repeating-linear-gradient(130deg, #c38ccf 0 13px, #cda0d4 0 25px); }
+
+.btn-square { display: inline-block; padding: 0.3rem 1.5rem 0.4rem 1.5rem; text-decoration: none; border: 0 !important; color: white; font-weight: 400; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
+.btn-square.orange { background-color: #ffab3b; box-shadow: 5px -5px 0 #f08d3e inset, -5px 5px 0 #f7c766 inset; }
+.btn-square.orange:hover, .btn-square.orange:active { box-shadow: 5px -5px 0 rgba(240, 141, 62, 0.5) inset, -5px 5px 0 rgba(247, 199, 102, 0.5) inset; }
+.btn-square.brown { background-color: #c4965f; box-shadow: 5px -5px 0 #ba7c41 inset, -5px 5px 0 #dcb97c inset; }
+.btn-square.brown:hover, .btn-square.brown:active { box-shadow: 5px -5px 0 rgba(186, 124, 65, 0.5) inset, -5px 5px 0 rgba(220, 185, 124, 0.5) inset; }
+.btn-square.pink { background-color: #fe95a7; box-shadow: 5px -5px 0 #ed6179 inset, -5px 5px 0 #ffb6c5 inset; }
+.btn-square.pink:hover, .btn-square.pink:active { box-shadow: 5px -5px 0 rgba(237, 97, 121, 0.5) inset, -5px 5px 0 rgba(255, 182, 197, 0.5) inset; }
+.btn-square.blue { background-color: #2fade7; box-shadow: 5px -5px 0 #009acb inset, -5px 5px 0 #66d0f4 inset; }
+.btn-square.blue:hover, .btn-square.blue:active { box-shadow: 5px -5px 0 rgba(0, 154, 203, 0.5) inset, -5px 5px 0 rgba(102, 208, 244, 0.5) inset; }
+
+.page-item { margin: 0 3px; }
+.page-item:first-child .page-link { line-height: 18px; border-top-left-radius: 20px !important; border-bottom-left-radius: 20px !important; }
+.page-item:last-child .page-link { line-height: 18px; border-top-right-radius: 20px !important; border-bottom-right-radius: 20px !important; }
+.page-item .page-link { width: 35px; height: 35px; line-height: 23px; color: #B3B7C6 !important; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border-color: #6e4435 !important; color: #6e4435 !important; }
+.page-item .page-link:hover, .page-item .page-link:active, .page-item .page-link.active-page { color: white !important; background-color: #cfa57b !important; border: 0; }
+
+.nav-btn { padding: 0.3rem 1.5rem 0.4rem 1.5rem; text-decoration: none; border-radius: 0; color: #FFFFFF; font-weight: 400; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
+@media (max-width: 768px) { .nav-btn { padding: 0.3rem .8rem 0.4rem .8rem; } }
+.nav-btn-login { background-color: #ffab3b; box-shadow: 5px -5px 0 #f08d3e inset, -5px 5px 0 #f7c766 inset; }
+.nav-btn-login:hover { box-shadow: 5px -5px 0 rgba(240, 141, 62, 0.5) inset, -5px 5px 0 rgba(247, 199, 102, 0.5) inset; }
+.nav-btn-search { background-color: #c4965f; box-shadow: 5px -5px 0 #ba7c41 inset, -5px 5px 0 #dcb97c inset; }
+.nav-btn-search:hover { box-shadow: 5px -5px 0 rgba(186, 124, 65, 0.5) inset, -5px 5px 0 rgba(220, 185, 124, 0.5) inset; }
+
+.modal-header { border-bottom: 0 !important; }
+
+.modal-footer { border-top: 0 !important; }
+
+.form-check-input { border: 1px solid #9a836c !important; }
+
+.form-select, .form-control { border-radius: 0.375rem !important; color: #6e4435; background-color: white !important; }
+.form-select.border-brown-box, .form-control.border-brown-box { border: 1px solid #9a836c !important; }
+.form-select:focus, .form-control:focus { color: #6e4435 !important; }
+.form-select::placeholder, .form-control::placeholder { color: #c1c1c1; }
+
+.nav-pills .nav-link { padding: .5rem 1.5rem !important; border-radius: 5px 5px 0 0 !important; color: white; background-color: #d3c7bc !important; }
+.nav-pills .nav-link.active { background-color: #f09aa8 !important; }
+
+#checkEye, #checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
+#checkEye.m-use, #checkEye2.m-use { top: 47%; right: 14px; }
+
+.category-section { margin: 0 auto; }
+.category-section .container { max-width: 1080px; }
+.category-section .active-img { transform: scale(1.2); }
+
+main { position: relative; z-index: 1; }
+main .featured-section h2 { position: relative; z-index: 1; }
+main .featured-section h2:before, main .featured-section h2:after { content: ''; position: absolute; top: 50%; transform: translateY(-50%); background-image: url(../images/doll-orange.svg); background-position: center; background-repeat: repeat-x; width: 40%; height: 3px; pointer-events: none; }
+main .featured-section h2:before { left: 0; }
+main .featured-section h2:after { right: 0; }
+main .featured-section h3 { padding: 0 2rem; }
+main .featured-section .swiper { padding-bottom: 2rem; }
+main .featured-section .swiper .swiper-slide { padding: 0 2rem; }
+main .featured-section .swiper .swiper-button-prev, main .featured-section .swiper .swiper-button-next { top: calc(50% - 16px); }
+main .featured-section .swiper.featured-book-swiper .featured-item { border: 4px solid #F0B154; }
+main .featured-section .swiper.featured-book-swiper .swiper-button-prev, main .featured-section .swiper.featured-book-swiper .swiper-button-next { color: #F0B154; }
+main .featured-section .swiper.featured-video-swiper .featured-item { border: 4px solid #E39DA7; }
+main .featured-section .swiper.featured-video-swiper .featured-item img { object-fit: cover; }
+main .featured-section .swiper.featured-video-swiper .swiper-button-prev, main .featured-section .swiper.featured-video-swiper .swiper-button-next { color: #E39DA7; }
+main .featured-section .swiper.featured-video-swiper .swiper-pagination .swiper-pagination-bullet-active { background-color: #E39DA7; }
+main .featured-section .swiper .swiper-button-prev { left: 0; }
+main .featured-section .swiper .swiper-button-prev:after { font-size: 2rem; }
+main .featured-section .swiper .swiper-button-next { right: 0; }
+main .featured-section .swiper .swiper-button-next:after { font-size: 2rem; }
+main .featured-section .swiper .swiper-pagination { bottom: 0; }
+main .featured-section .swiper .swiper-pagination .swiper-pagination-bullet-active { background-color: #F0B154; width: 1rem; border-radius: 2rem; }
+main .featured-section .featured-item { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 1rem; }
+main .featured-section .featured-item img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+main .featured-section .featured-item .featured-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.5rem 1rem; }
+main .featured-section .featured-item .featured-content span { display: block; padding: 0.5rem; margin: 0; text-align: left; color: #FFFFFF; background-color: rgba(0, 0, 0, 0.7); }
+main .carousel-section { margin-top: 4rem; background-color: #A4D3AD; position: relative; }
+main .carousel-section .container { position: relative; background-image: url(../images/footer-bg.webp); background-size: contain; }
+main .carousel-section .footer_tree { position: absolute; top: 0; transform: translateY(-100%); right: 0; z-index: 0; }
+@media (max-width: 992px) { main .carousel-section .footer_tree > img { max-width: 60%; } }
+main .carousel-section .carousel-swiper:before, main .carousel-section .carousel-swiper:after { content: ''; position: absolute; top: 0; width: 15%; height: 100%; z-index: 2; pointer-events: none; }
+main .carousel-section .carousel-swiper:before { left: 0; background: linear-gradient(to right, #a4d3ad 0%, rgba(164, 211, 173, 0) 100%); }
+main .carousel-section .carousel-swiper:after { right: 0; background: linear-gradient(to left, #a4d3ad 0%, rgba(164, 211, 173, 0) 100%); }
+main .carousel-section .carousel-item { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 1rem; }
+main .carousel-section .carousel-item a { display: block; }
+main .carousel-section .carousel-item img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
+
+footer { background-color: #fffdf9; }
+@media (max-width: 992px) { footer { text-align: center; } }
+footer .copyright { color: #6e4435; font-size: .8rem; margin: 0; }

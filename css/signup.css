@@ -75,6 +75,8 @@ header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
 .text-purple { color: #c38ccf; }
 
+.notebox { display: inline-block; width: 100%; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 3px solid #fe9aab; background-color: #fffcec; padding: 1rem; }
+
 .img-half { transform: scale(0.5); }
 
 .numH { height: 95px; font-size: 3rem; text-align: center; }
@@ -98,7 +100,10 @@ input[type=number] { -moz-appearance: textfield; }
 
 .w-165 { width: 165px !important; }
 
-.border-brown-left { border-left: 3px dotted #aa9272; }
+.border-brown-left { border-left: 4px dotted #aa9272; }
+@media (max-width: 768px) { .border-brown-left { border-left: 0; } }
+
+.border-pink-bottom { border-bottom: 3px solid #f09aa8; }
 
 .border-brown-bottom { border-bottom: 3px dotted #aa9272; }
 
@@ -143,7 +148,7 @@ input[type=number] { -moz-appearance: textfield; }
 .link-brown { display: inline-block; color: #6e4435; }
 .link-brown:hover { text-decoration: underline !important; }
 
-.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .5rem; }
+.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .3rem .5rem .5rem .5rem; }
 .title-slash01.br15, .title-slash02.br15, .title-slash03.br15, .title-slash04.br15, .title-slash05.br15 { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 
 .title-slash01 { text-shadow: rgba(240, 141, 62, 0.8) 1px 2px 2px; box-shadow: 0 -5px 0 #d89032 inset; background: repeating-linear-gradient(130deg, #fbb03b 0 13px, #fabd5e 0 25px); }
@@ -189,6 +194,9 @@ input[type=number] { -moz-appearance: textfield; }
 .form-select.border-brown-box, .form-control.border-brown-box { border: 1px solid #9a836c !important; }
 .form-select:focus, .form-control:focus { color: #6e4435 !important; }
 .form-select::placeholder, .form-control::placeholder { color: #c1c1c1; }
+
+.nav-pills .nav-link { padding: .5rem 1.5rem !important; border-radius: 5px 5px 0 0 !important; color: white; background-color: #d3c7bc !important; }
+.nav-pills .nav-link.active { background-color: #f09aa8 !important; }
 
 #checkEye, #checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
 #checkEye.m-use, #checkEye2.m-use { top: 47%; right: 14px; }

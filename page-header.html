@@ -25,17 +25,18 @@
 						<div class="action-buttons">
 							<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
 							<a href="#" class="nav-link d-none d-lg-block">付費方案</a>
-              				<a href="#" class="nav-link d-none d-lg-block">常見問題</a>
-							<a href="#" class="fs-6 nav-btn nav-btn-login">登入</a>
+              <a href="#" class="nav-link d-none d-lg-block">常見問題</a>
+							<a href="#" class="fs-6 nav-btn nav-btn-login" data-bs-toggle="modal" data-bs-target="#loginbox">登入</a>
 							<a href="#" class="fs-6 nav-btn nav-btn-search d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchbox">搜尋</a>
 						</div>
 
             <!-- 手機-搜尋按鈕 -->
-            <button class="btn btn-mobile-menu d-lg-none me-2" data-bs-toggle="modal" data-bs-target="#searchbox"><img src="images/icon-search.svg" class="img-fluid">
+            <button class="btn btn-mobile-menu d-lg-none me-2" data-bs-toggle="modal" data-bs-target="#searchbox"><i class="bi bi-search align-baseline"></i><!-- <img src="images/icon-search.svg" class="img-fluid"> -->
             </button>
             <!-- 手機-list按鈕 -->
 						<button class="btn btn-mobile-menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-							<img src="images/icon-list.svg" class="img-fluid">
+							<i class="bi bi-list align-baseline"></i>
+							<!-- <img src="images/icon-list.svg" class="img-fluid"> -->
 						</button>
 
             <!-- 手機選單 -->
@@ -45,7 +46,7 @@
 							</div>
 							<div class="offcanvas-body">
 								<div class="action-buttons me-0">
-									<a href="#" class="nav-btn  btn-square orange w-100">登入</a>
+									<a href="#" class="nav-btn  btn-square orange w-100" data-bs-toggle="modal" data-bs-target="#loginbox">登入</a>
 								</div>
 
 								<div class="action-links text-start">
@@ -56,27 +57,27 @@
 
 								<div class="action-category">
 									<div class="category-item my-2">
-										<a href="#">
+										<a href="page01.html">
 											<img src="images/s-menu01.png" alt="月刊有聲書" class="img-fluid">
 										</a>
 									</div> 
 									<div class="category-item my-2">
-										<a href="#">
+										<a href="page02.html">
 											<img src="images/s-menu02.png" alt="月刊有聲書" class="img-fluid">
 										</a>
 									</div> 
 									<div class="category-item my-2">
-										<a href="#">
+										<a href="page03.html">
 											<img src="images/s-menu03.png" alt="月刊有聲書" class="img-fluid">
 										</a>
 									</div> 
 									<div class="category-item my-2">
-										<a href="#">
+										<a href="page04.html">
 											<img src="images/s-menu04.png" alt="月刊有聲書" class="img-fluid">
 										</a>
 									</div> 
 									<div class="category-item my-2">
-										<a href="#">
+										<a href="page05.html">
 											<img src="images/s-menu05.png" alt="月刊有聲書" class="img-fluid">
 										</a>
 									</div> 
@@ -116,7 +117,7 @@
 				<!-- 選中的單元category-col後面要加上 active -->
 				<div class="col p-0 p-lg-2 category-col">
 					<div class="category-item d-lg-block d-none">
-						<a href="#">
+						<a href="page01.html">
 							<picture class="default-img">
 								<source media="(max-width: 768px)" srcset="images/s-m01.webp">
 								<img src="images/s-m01.webp" alt="月刊有聲書">
@@ -129,7 +130,7 @@
 						</a>
 					</div>
 					<div class="category-item d-lg-none d-block">
-            <a href="#">
+            <a href="page01.html">
               <picture class="default-img">
                 <img src="images/m01.svg" alt="月刊有聲書">
               </picture>
@@ -143,7 +144,7 @@
 				<!-- 月刊學習影音 -->
 				<div class="col p-0 p-lg-2 category-col">
 					<div class="category-item d-lg-block d-none">
-						<a href="#">
+						<a href="page02.html">
 							<picture class="default-img">
 								<source media="(max-width: 768px)" srcset="images/s-m02.webp">
 								<img src="images/s-m02.webp" alt="">
@@ -155,7 +156,7 @@
 						</a>
 					</div>
 					<div class="category-item d-lg-none d-block">
-            <a href="#">
+            <a href="page02.html">
               <picture class="default-img">
                 <img src="images/m02.svg" alt="月刊學習影音">
               </picture>
@@ -169,7 +170,7 @@
 				<!-- 巧虎卡通 -->
 				<div class="col p-0 p-lg-2 category-col">
 					<div class="category-item d-lg-block d-none">
-						<a href="#">
+						<a href="page03.html">
 							<picture class="default-img">
 								<source media="(max-width: 768px)" srcset="images/s-m03.webp">
 								<img src="images/s-m03.webp" alt="巧虎卡通">
@@ -181,7 +182,7 @@
 						</a>
 					</div>
 					<div class="category-item d-lg-none d-block">
-            <a href="#">
+            <a href="page03.html">
               <picture class="default-img">
                 <img src="images/m03.svg" alt="巧虎卡通">
               </picture>
@@ -195,7 +196,7 @@
 				<!-- 遊戲樂園 -->
 				<div class="col p-0 p-lg-2 category-col">
 					<div class="category-item d-lg-block d-none">
-						<a href="#">
+						<a href="page04.html">
 							<picture class="default-img">
 								<source media="(max-width: 768px)" srcset="images/s-m04.webp">
 								<img src="images/s-m04.webp" alt="遊戲樂園">
@@ -207,7 +208,7 @@
 						</a>
 					</div>
 					<div class="category-item d-lg-none d-block">
-            <a href="#">
+            <a href="page04.html">
               <picture class="default-img">
                 <img src="images/m04.svg" alt="遊戲樂園">
               </picture>
@@ -221,7 +222,7 @@
 				<!-- 奇酷網影音 -->
 				<div class="col p-0 p-lg-2 category-col">
 					<div class="category-item d-lg-block d-none">
-						<a href="#">
+						<a href="page05.html">
 							<picture class="default-img">
 								<source media="(max-width: 768px)" srcset="images/s-m05.webp">
 								<img src="images/s-m05.webp" alt="奇酷網影音">
@@ -233,7 +234,7 @@
 						</a>
 					</div>
 					<div class="category-item d-lg-none d-block">
-            <a href="#">
+            <a href="page05.html">
               <picture class="default-img">
                 <img src="images/m05.svg" alt="奇酷網影音">
               </picture>
