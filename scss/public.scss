@@ -451,6 +451,10 @@ input[type=number] {
   border-bottom:3px dotted #ffce87 ;
 }
 
+.border-brown-bottom-s {
+  border-bottom:1px solid #aa9272 ;
+}
+
 .border-brown {
    border:1px solid #aa9272 ;
 }
@@ -762,16 +766,15 @@ input[type=number] {
 
 
 // 密碼眼睛
-#checkEye {
+#checkEye, #checkEye2 {
   position: absolute;
   top: 73%;
   right: 20px;
   transform: translateY(-50%);
-}
-#checkEye2 {
-  position: absolute;
-  top: 73%;
-  right: 20px;
-  transform: translateY(-50%);
+
+  &.m-use {
+    top: 47%;
+    right: 14px;
+  }
 }
 

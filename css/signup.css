@@ -104,6 +104,8 @@ input[type=number] { -moz-appearance: textfield; }
 
 .border-yellow-bottom { border-bottom: 3px dotted #ffce87; }
 
+.border-brown-bottom-s { border-bottom: 1px solid #aa9272; }
+
 .border-brown { border: 1px solid #aa9272; }
 
 .border-orange, .border-pink, .border-blue, .border-green, .border-purple { height: 3px; content: ''; background-repeat: repeat-x; }
@@ -188,9 +190,8 @@ input[type=number] { -moz-appearance: textfield; }
 .form-select:focus, .form-control:focus { color: #6e4435 !important; }
 .form-select::placeholder, .form-control::placeholder { color: #c1c1c1; }
 
-#checkEye { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
-
-#checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
+#checkEye, #checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
+#checkEye.m-use, #checkEye2.m-use { top: 47%; right: 14px; }
 
 .loginbox-650 { display: inline-block; max-width: 100%; width: 650px; }
 
