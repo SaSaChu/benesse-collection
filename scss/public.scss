@@ -566,8 +566,21 @@ input[type=number] {
   }
 }
 
+.link-blue {
+  display: inline-block;
+  color: #56ace2;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+
 // 斜線按鈕
-.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05 {
+.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06 {
   display: inline-block;
   width: 100%;
   font-size: 1.1rem;
@@ -620,6 +633,14 @@ input[type=number] {
                     130deg, 
                     $purple 0 13px,
                     rgba(205, 160, 212, 1.00) 0 25px);
+}
+.title-slash06 {
+  text-shadow: rgba(143, 93, 155, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 rgba(201, 156, 31, 1.00) inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    rgba(253, 214, 87, 1.00) 0 13px,
+                    rgba(255, 207, 50, 1.00) 0 25px);
 }
 
 // 方形按鈕
