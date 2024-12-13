@@ -731,6 +731,10 @@ input[type=number] {
       background-color: rgba(207, 165, 123, 1.00) !important;
       border: 0;
     }
+
+    > span {
+      vertical-align: baseline;
+    }
   }
 }
 

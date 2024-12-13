@@ -183,6 +183,7 @@ input[type=number] { -moz-appearance: textfield; }
 .page-item:last-child .page-link { line-height: 18px; border-top-right-radius: 20px !important; border-bottom-right-radius: 20px !important; }
 .page-item .page-link { width: 35px; height: 35px; line-height: 23px; color: #B3B7C6 !important; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border-color: #6e4435 !important; color: #6e4435 !important; }
 .page-item .page-link:hover, .page-item .page-link:active, .page-item .page-link.active-page { color: white !important; background-color: #cfa57b !important; border: 0; }
+.page-item .page-link > span { vertical-align: baseline; }
 
 .nav-btn { padding: 0.3rem 1.5rem 0.4rem 1.5rem; text-decoration: none; border-radius: 0; color: #FFFFFF; font-weight: 400; text-shadow: rgba(48, 56, 65, 0.5) 1px 2px 2px; }
 @media (max-width: 768px) { .nav-btn { padding: 0.3rem .8rem 0.4rem .8rem; } }
@@ -234,3 +235,11 @@ input[type=number] { -moz-appearance: textfield; }
 .step li.active + li:after { background-color: #cc9555; }
 
 ul { padding-left: 1rem !important; }
+
+.tablebox { font-weight: bolder; background-color: #c9a681; padding: .5rem 1rem; color: white; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; font-size: .8rem; }
+@media (max-width: 768px) { .tablebox { display: none; } }
+
+.table { padding: 1rem; color: #5e5e5e; font-size: .9rem; border-bottom: 1px solid #cfb190; }
+.table > div { color: #5e5e5e; font-size: .9rem; }
+@media (max-width: 768px) { .table > div { text-align: left; }
+  .table > div:before { display: inline-block; content: attr(title); vertical-align: baseline; font-weight: bolder; color: #6e4435; } }
