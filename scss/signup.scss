@@ -107,3 +107,49 @@
   background-color: rgba(204, 149, 85, 1.00);
 }
 
+
+ul {
+  padding-left: 1rem !important;
+}
+
+.tablebox {
+  font-weight: bolder;
+  background-color: rgba(201, 166, 129, 1.00);
+  padding: .5rem 1rem;
+  color: white;
+  @include border-radius(50px);
+  font-size: .8rem;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.table {
+  padding: 1rem;
+  color: #5e5e5e;
+  font-size: .9rem;
+  border-bottom: 1px solid rgba(207, 177, 144, 1.00);
+
+  > div {
+    color: #5e5e5e;
+    font-size: .9rem;
+
+    @include media-breakpoint-down(md) {
+      text-align: left;
+
+      &:before {
+        display: inline-block;
+        content:attr(title);
+        vertical-align: baseline;
+        font-weight: bolder;
+        color: $brown;
+      }
+    }
+  }
+}
+
+
+
+
+

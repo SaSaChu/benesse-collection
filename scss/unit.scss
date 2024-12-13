@@ -172,6 +172,35 @@ main {
 			}
 		}	
 	}
+
+	&.page06 {
+		.age-section {
+			.age-item {
+				&:hover, &.active {	
+					a {
+						color: $primary;
+					}
+				}
+
+				.age-item-img {
+					> img {
+						// transform 控制圖片眼睛對齊文字中間
+						transform: translateY(-35%);
+					}
+				}
+			}
+		}
+
+		.main-section {
+			.sidebar-swiper {
+				.sidebar-item {
+					&.active, &:hover {
+						background-color: rgba(249, 200, 93, 1.00);
+					}
+				}
+			}
+		}	
+	}
   
 	.age-section {
 		margin: 0 auto;
@@ -523,6 +552,7 @@ main {
 					.sidebar-item-text {
 						span {
 							color: white;
+							vertical-align: baseline;
 						}
 					}
 				}
@@ -563,7 +593,7 @@ main {
 						}
 
 						@include media-breakpoint-down(sm) {
-							margin-right: 0.25rem;
+							margin-right: 0.5rem;
 							margin-left: 0.25rem;
 							padding: 0.5rem 0;
 							// max-width: 25%;
@@ -577,6 +607,7 @@ main {
 					.sidebar-item-text {
 						span {
 							color: $brown;
+							vertical-align: baseline;
 						}
 					}
 				}
