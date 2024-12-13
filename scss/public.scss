@@ -395,6 +395,9 @@ header {
 .text-purple {
   color: $purple;
 }
+.text-red {
+  color: #cc5f5f;
+}
 
 
 
@@ -814,6 +817,25 @@ input[type=number] {
     }
   }
 }
+
+.table {
+  color: #5e5e5e !important;
+  font-weight: 300;
+
+  .table-warning {
+    background-color: rgba(201, 166, 129, 1.00) !important;
+    border-radius: 30px !important;
+  }
+
+  .table>:not(caption)>*>* {
+    background-color: rgba(201, 166, 129, 1.00) !important;
+  }
+
+  tr {
+    border-bottom: 1px solid rgba(214, 188, 160, 1.00);
+  }
+}
+
 
 
 // 密碼眼睛

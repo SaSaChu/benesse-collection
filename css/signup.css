@@ -75,6 +75,8 @@ header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
 .text-purple { color: #c38ccf; }
 
+.text-red { color: #cc5f5f; }
+
 .notebox { display: inline-block; width: 100%; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 3px solid #fe9aab; background-color: #fffcec; padding: 1rem; }
 
 .img-half { transform: scale(0.5); }
@@ -202,6 +204,11 @@ input[type=number] { -moz-appearance: textfield; }
 
 .nav-pills .nav-link { padding: .5rem 1.5rem !important; border-radius: 5px 5px 0 0 !important; color: white; background-color: #d3c7bc !important; }
 .nav-pills .nav-link.active { background-color: #f09aa8 !important; }
+
+.table { color: #5e5e5e !important; font-weight: 300; }
+.table .table-warning { background-color: #c9a681 !important; border-radius: 30px !important; }
+.table .table > :not(caption) > * > * { background-color: #c9a681 !important; }
+.table tr { border-bottom: 1px solid #d6bca0; }
 
 #checkEye, #checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
 #checkEye.m-use, #checkEye2.m-use { top: 47%; right: 14px; }
