@@ -402,6 +402,27 @@ header {
 
 
 // other
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-img {
+  width: 35%;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
 .notebox {
   display: inline-block;
   width: 100%;
@@ -560,6 +581,19 @@ input[type=number] {
 }
 
 //btn+link
+.next-btn {
+  display: inline-block;
+  padding: .5rem 1rem;
+  @include border-radius(50px);
+  border: 1px solid $brown;
+  color: $brown;
+
+  &:hover, &:active {
+    background-color: $brown;
+    color: white;
+  }
+}
+
 .link-brown {
   display: inline-block;
   color: $brown;
@@ -838,6 +872,10 @@ input[type=number] {
   tr {
     border-bottom: 1px solid rgba(214, 188, 160, 1.00);
   }
+}
+
+.navbar {
+  z-index: 3 !important;
 }
 
 
