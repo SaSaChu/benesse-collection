@@ -1,9 +1,4 @@
-/**
- * @author      OA Wu <comdan66@gmail.com>
- * @copyright   Copyright (c) 2015 - 2019, Ginkgo
- * @license     http://opensource.org/licenses/MIT  MIT License
- * @link        https://www.ioa.tw/
- */
+
 
 const timeUnit = require('../Ginkgo').timeUnit
 const print    = require('../Ginkgo').print
@@ -13,7 +8,7 @@ const Argv     = require('./Argv')
 
 const goal  = Argv.data.goal === 'aws-s3' ? 'Amazon S3' : 'GitHub Pages'
 const url   = Argv.data.goal === 'aws-s3' ? 'https://' + Argv.data.domain + '/' + (Argv.data.folder.length ? Argv.data.folder + '/' : '') + 'index.html' : 'https://' + Argv.githubUris.shift() + '.github.io/' + Argv.githubUris.shift() + '/index.html'
-const cache = Argv.data.goal === 'aws-s3' ? '若有設定 CDN 快取的話，請等 Timeout 後再試。' : '因為快取問題，請稍待' + Xterm.color.gray('約 1 分鐘', true) + '後再試。'
+const cache = Argv.data.goal === 'aws-s3' ? '若有會員中心 CDN 快取的話，請等 Timeout 後再試。' : '因為快取問題，請稍待' + Xterm.color.gray('約 1 分鐘', true) + '後再試。'
 const rate  = Argv.minifyRate === null    ? '尚未壓縮' : Argv.minifyRate
 
 module.exports = title => {

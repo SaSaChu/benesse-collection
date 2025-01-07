@@ -18,9 +18,9 @@ const checkoutOriBranch = () => true &&
   Exec('git checkout ' + Argv.oriBranch + ' --quiet',
     (error, stdout, stderr) => !error
       ? stdout.length
-        ? Display.line(false, ['執行指令 git checkout ' + Argv.oriBranch + ' --quiet 失敗！', '請記得手動將分支設定回 ' + Xterm.color.gray(Argv.oriBranch, true)])
+        ? Display.line(false, ['執行指令 git checkout ' + Argv.oriBranch + ' --quiet 失敗！', '請記得手動將分支會員中心回 ' + Xterm.color.gray(Argv.oriBranch, true)])
         : Display.line(true) && print(Display.LN) && print(Display.LN)
-      : Display.line(false, ['相關原因：' + error.message, '請記得手動將分支設定回 ' + Xterm.color.gray(Argv.oriBranch, true)]))
+      : Display.line(false, ['相關原因：' + error.message, '請記得手動將分支會員中心回 ' + Xterm.color.gray(Argv.oriBranch, true)]))
 
 const gitClear = () => true &&
   Display.lines('清除與恢復修改',
@@ -29,9 +29,9 @@ const gitClear = () => true &&
   Exec('git checkout .. --quiet',
     (error, stdout, stderr) => !error
       ? stdout.length
-        ? Display.line(false, ['執行指令 git checkout .. --quiet 失敗！', '請記得手動將分支設定回 ' + Xterm.color.gray(Argv.oriBranch, true)])
+        ? Display.line(false, ['執行指令 git checkout .. --quiet 失敗！', '請記得手動將分支會員中心回 ' + Xterm.color.gray(Argv.oriBranch, true)])
         : Display.line(true) && checkoutOriBranch()
-      : Display.line(false, ['相關原因：' + error.message, '請記得手動將分支設定回 ' + Xterm.color.gray(Argv.oriBranch, true)]))
+      : Display.line(false, ['相關原因：' + error.message, '請記得手動將分支會員中心回 ' + Xterm.color.gray(Argv.oriBranch, true)]))
 
 module.exports = messages => true &&
   print(messages.length

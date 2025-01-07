@@ -21,7 +21,7 @@ const files = (title, files, closure) => true &&
 module.exports = (title, closure) => {
   Display.title(title)
   
-  Display.lines('讀取設定檔案',
+  Display.lines('讀取會員中心檔案',
     ['執行動作', 'read deploy.rule.yaml'])
 
   if (!require('fs').existsSync(Path.yaml))
@@ -30,7 +30,7 @@ module.exports = (title, closure) => {
   let yaml = require('fs').readFileSync(Path.yaml, 'utf8')
   Display.line(true)
 
-  Display.line('轉譯設定檔案',
+  Display.line('轉譯會員中心檔案',
     Xterm.color.gray('執行動作', true).dim() + Display.markSemicolon() + Xterm.color.gray('compile deploy.yaml', true).dim().italic())
 
   yaml = GetYamlFile(yaml)

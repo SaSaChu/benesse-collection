@@ -1,9 +1,4 @@
-/**
- * @author      OA Wu <comdan66@gmail.com>
- * @copyright   Copyright (c) 2015 - 2019, Ginkgo
- * @license     http://opensource.org/licenses/MIT  MIT License
- * @link        https://www.ioa.tw/
- */
+
 
 const Path   = require('path')
 
@@ -44,9 +39,9 @@ Loader('EnvCheck')('檢查環境', Load('Check'), () => {
     : pushNewBranch()
 
   let checkGit = () => Load('CheckGit')('確認 Git 狀態',
-    Load('GitNewBranch').bind(null, '設定部署分支',
+    Load('GitNewBranch').bind(null, '會員中心部署分支',
       Load('Plugin').bind(null, '執行外掛',
-        Load('DeployFile').bind(null, '設定檔載入',
+        Load('DeployFile').bind(null, '會員中心檔載入',
           Load('MinifyFile').bind(null, '壓縮檔案', tmpStep),
           tmpStep.bind(null)))))
 

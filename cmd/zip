@@ -1,9 +1,4 @@
-/**
- * @author      OA Wu <comdan66@gmail.com>
- * @copyright   Copyright (c) 2015 - 2019, Ginkgo
- * @license     http://opensource.org/licenses/MIT  MIT License
- * @link        https://www.ioa.tw/
- */
+
 
 const Path = require('path')
 
@@ -23,6 +18,6 @@ process.stdout.write('\x1b[0f')
 Load('Display').mainTitle('Ginkgo 打包工具')
 
 Load('EnvCheck')('檢查環境',
-  Zip('File').bind(null, '設定檔載入',
+  Zip('File').bind(null, '會員中心檔載入',
     Zip('Zip').bind(null, '壓縮檔案',
       Zip('Finish').bind(null, '壓縮完成', startAt))))
