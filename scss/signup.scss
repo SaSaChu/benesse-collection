@@ -35,13 +35,47 @@
   &.pink {
     &:hover, &.active {
       border: 8px solid rgba(254, 149, 167, 1.00);
+
+      .title-slash {
+        text-shadow: rgba(198, 102, 125, .8) 1px 2px 2px;
+        box-shadow: 0 -5px 0 $pink2 inset;
+        background: repeating-linear-gradient(
+                    130deg, 
+                    $pink 0 13px,
+                    rgba(241, 171, 181, 1.00) 0 25px);
+      }
     }
   }
 
   &.purple {
     &:hover, &.active {
       border: 8px solid rgba(195, 140, 207, 1.00);
+
+      .title-slash {
+        text-shadow: rgba(143, 93, 155, .8) 1px 2px 2px;
+        box-shadow: 0 -5px 0 $purple2 inset;
+        background: repeating-linear-gradient(
+                    130deg, 
+                    $purple 0 13px,
+                    rgba(205, 160, 212, 1.00) 0 25px);
+      }
     }
+  }
+
+  .title-slash {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    @include border-radius(30px);
+    padding: 10px 0 12px 0;
+    text-shadow: rgba(201, 166, 129, 1.00) 1px 2px 2px;
+    box-shadow: 0 -5px 0 rgba(191, 149, 94, 1.00) inset;
+    background: repeating-linear-gradient(
+                130deg, 
+                rgba(212, 171, 107, 1.00) 0 13px,
+                rgba(217, 183, 131, 1.00) 0 25px);
   }
 }
 

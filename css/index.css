@@ -95,6 +95,10 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 /* Firefox */
 input[type=number] { -moz-appearance: textfield; }
 
+.star-list { position: absolute; top: 5px; left: 0; }
+
+.star-left15 { padding-left: 15px; }
+
 .login-btn-space { padding: 10px 0 12px 0 !important; }
 
 .h-22 { height: 22px; }
@@ -154,6 +158,14 @@ input[type=number] { -moz-appearance: textfield; }
 .price:before { display: inline-block; content: attr(title); position: absolute; top: 17px; left: 0; color: #6e4435; font-size: 1rem; }
 .price:after { display: inline-block; content: "元"; position: absolute; bottom: 11px; right: 0; color: #6e4435; font-size: 1rem; }
 
+.price2 { display: flex; justify-content: flex-end; align-items: center; width: 100%; font-weight: bolder; font-size: 1.2rem; color: #6e4435; text-align: right; position: relative; margin-top: 20px; }
+.price2:before { display: inline-block; content: attr(title); color: #6e4435; font-size: 1rem; position: absolute; left: 0; }
+.price2:after { display: inline-block; content: "元"; color: #6e4435; font-size: 1rem; padding-left: 10px; }
+
+.price-red { display: inline-block; width: 100%; font-weight: bolder; font-size: 3rem; color: #bf0a0a; text-align: right; position: relative; padding-right: 23px; margin-top: -10px; }
+.price-red:before { display: inline-block; content: attr(title); position: absolute; top: 17px; left: 0; color: #bf0a0a; font-size: 1rem; }
+.price-red:after { display: inline-block; content: "元"; position: absolute; bottom: 11px; right: 0; color: #bf0a0a; font-size: 1rem; }
+
 .next-btn { display: inline-block; padding: .5rem 1rem; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; border: 1px solid #6e4435; color: #6e4435; }
 .next-btn:hover, .next-btn:active { background-color: #6e4435; color: white; }
 
@@ -162,6 +174,11 @@ input[type=number] { -moz-appearance: textfield; }
 
 .link-blue { display: inline-block; color: #56ace2; background-color: transparent; border: 0; padding: 0; }
 .link-blue:hover { text-decoration: underline !important; }
+
+.title-slash-link { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px 0 12px 0; text-shadow: #c9a681 1px 2px 2px; box-shadow: 0 -5px 0 #bf955e inset; background: repeating-linear-gradient(130deg, #d4ab6b 0 13px, #d9b783 0 25px); }
+.title-slash-link:checked #planebox { display: inline-block; }
+
+#planebox { display: none; }
 
 .title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .3rem .5rem .5rem .5rem; }
 .title-slash01.br15, .title-slash02.br15, .title-slash03.br15, .title-slash04.br15, .title-slash05.br15, .title-slash06.br15 { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
@@ -223,8 +240,8 @@ input[type=number] { -moz-appearance: textfield; }
 
 .navbar { z-index: 3 !important; }
 
-#checkEye, #checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
-#checkEye.m-use, #checkEye2.m-use { top: 47%; right: 14px; }
+.checkEye, .checkEye2 { position: absolute; top: 73%; right: 20px; transform: translateY(-50%); }
+.checkEye.m-use, .checkEye2.m-use { top: 47%; right: 14px; }
 
 .category-section { margin: 0 auto; }
 .category-section .container { max-width: 1080px; }

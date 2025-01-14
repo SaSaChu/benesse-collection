@@ -39,20 +39,20 @@ $(function() {
 	}
 
 	// 密碼眼睛
-	$("#checkEye").click(function () {
+	$(".checkEye").click(function () {
 	  if($(this).hasClass('bi-eye')){
-	     $("#floatingPassword").attr('type', 'text');
+	     $(".floatingPassword").attr('type', 'text');
 	  }else{
-	     $("#floatingPassword").attr('type', 'password');
+	     $(".floatingPassword").attr('type', 'password');
 	  }
 	  $(this).toggleClass('bi-eye').toggleClass('bi-eye-slash');
 	});
 
-	$("#checkEye2").click(function () {
+	$(".checkEye2").click(function () {
 	  if($(this).hasClass('bi-eye')){
-	     $("#floatingPassword2").attr('type', 'text');
+	     $(".floatingPassword2").attr('type', 'text');
 	  }else{
-	     $("#floatingPassword2").attr('type', 'password');
+	     $(".floatingPassword2").attr('type', 'password');
 	  }
 	  $(this).toggleClass('bi-eye').toggleClass('bi-eye-slash');
 	}); 
