@@ -176,9 +176,7 @@ input[type=number] { -moz-appearance: textfield; }
 .link-blue:hover { text-decoration: underline !important; }
 
 .title-slash-link { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px 0 12px 0; text-shadow: #c9a681 1px 2px 2px; box-shadow: 0 -5px 0 #bf955e inset; background: repeating-linear-gradient(130deg, #d4ab6b 0 13px, #d9b783 0 25px); }
-.title-slash-link:checked #planebox { display: inline-block; }
-
-#planebox { display: none; }
+.title-slash-link:hover { text-shadow: #c9a681 1px 2px 2px; box-shadow: 0 -5px 0 #bf955e inset; background: repeating-linear-gradient(130deg, #d9b783 0 13px, #d4ab6b 0 25px); }
 
 .title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .3rem .5rem .5rem .5rem; }
 .title-slash01.br15, .title-slash02.br15, .title-slash03.br15, .title-slash04.br15, .title-slash05.br15, .title-slash06.br15 { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }

@@ -701,16 +701,16 @@ input[type=number] {
               rgba(212, 171, 107, 1.00) 0 13px,
               rgba(217, 183, 131, 1.00) 0 25px);
 
-  &:checked {
-    #planebox {
-      display: inline-block;
-    }
+  &:hover {
+    text-shadow: rgba(201, 166, 129, 1.00) 1px 2px 2px;
+    box-shadow: 0 -5px 0 rgba(191, 149, 94, 1.00) inset;
+    background: repeating-linear-gradient(
+                130deg, 
+                rgba(217, 183, 131, 1.00) 0 13px,
+                rgba(212, 171, 107, 1.00) 0 25px);
   }
 }
 
-#planebox {
-  display: none;
-}
 
 
 .title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06 {
@@ -988,4 +988,5 @@ input[type=number] {
     right: 14px;
   }
 }
+
 
