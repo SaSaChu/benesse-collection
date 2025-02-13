@@ -507,10 +507,14 @@ input[type=number] {
    border:1px solid #aa9272 ;
 }
 
-.border-orange, .border-pink, .border-blue, .border-green, .border-purple {
+.border-orange, .border-brown2, .border-pink, .border-blue, .border-green, .border-purple {
   height: 3px;
   content: '';
   background-repeat: repeat-x;
+}
+
+.border-brown2 {
+  background-image: url(../images/doll-brown.svg);
 }
 
 .border-orange {
@@ -713,7 +717,7 @@ input[type=number] {
 
 
 
-.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06 {
+.title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06, .title-slash07 {
   display: inline-block;
   width: 100%;
   font-size: 1.1rem;
@@ -774,6 +778,14 @@ input[type=number] {
                     130deg, 
                     rgba(253, 214, 87, 1.00) 0 13px,
                     rgba(255, 207, 50, 1.00) 0 25px);
+}
+.title-slash07 {
+  text-shadow: rgba(155, 106, 53, .8) 1px 2px 2px;
+  box-shadow: 0 -5px 0 rgba(155, 106, 53, 1.00) inset;
+  background: repeating-linear-gradient(
+                    130deg, 
+                    rgba(196, 150, 95, 1.00) 0 13px,
+                    rgba(206, 168, 123, 1.00) 0 25px);
 }
 
 // 方形按鈕
@@ -909,6 +921,35 @@ input[type=number] {
 
 
 // boostrap
+.accordion {
+  --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="8px" viewBox="0 0 14 8" version="1.1"><title>download</title><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="download" transform="translate(1, 1)" stroke="%23FFFFFF"><polyline id="路徑" points="0 0 6 6 12 0"/></g></g></svg>') !important;
+  --bs-accordion-btn-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="8px" viewBox="0 0 14 8" version="1.1"><title>download</title><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="download" transform="translate(1, 1)" stroke="%23FFFFFF"><polyline id="路徑" points="0 0 6 6 12 0"/></g></g></svg>') !important;
+}
+.accordion-item {
+  border: 0 !important;
+  margin-bottom: 15px;
+}
+.accordion-button {
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+  color: white !important;
+  background-color:rgba(196, 150, 95, 1.00) !important;
+}
+.accordion-body {
+  text-align: left;
+}
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color:rgba(196, 150, 95, 1.00) !important;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+}
 .modal-header {
   border-bottom: 0 !important;
 }
@@ -989,4 +1030,18 @@ input[type=number] {
   }
 }
 
+.scroll-boxs {
+  display: inline-block;
+  width: 100%;
+  max-height: 550px;
+  overflow-y: scroll;
+
+  @include media-breakpoint-down(md) {
+    max-height: 350px;
+  }
+
+  > a {
+    color: #0d6efd;
+  }
+}
 

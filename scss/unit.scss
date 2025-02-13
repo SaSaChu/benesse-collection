@@ -201,6 +201,35 @@ main {
 			}
 		}	
 	}
+
+	&.page07 {
+		.age-section {
+			.age-item {
+				&:hover, &.active {	
+					a {
+						color: $primary;
+					}
+				}
+
+				.age-item-img {
+					> img {
+						// transform 控制圖片眼睛對齊文字中間
+						transform: translateY(-35%);
+					}
+				}
+			}
+		}
+
+		.main-section {
+			.sidebar-swiper {
+				.sidebar-item {
+					&.active, &:hover {
+						background-color: rgba(196, 150, 95, 1.00);
+					}
+				}
+			}
+		}	
+	}
   
 	.age-section {
 		margin: 0 auto;
