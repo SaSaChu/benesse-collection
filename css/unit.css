@@ -88,6 +88,9 @@ header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
 .notebox { display: inline-block; width: 100%; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 3px solid #fe9aab; background-color: #fffcec; padding: 1rem; }
 
+.obj-image { max-width: 15%; }
+@media (max-width: 768px) { .obj-image { max-width: 40%; } }
+
 .img-half { transform: scale(0.5); }
 
 .numH { height: 95px; font-size: 3rem; text-align: center; }
@@ -181,6 +184,8 @@ input[type=number] { -moz-appearance: textfield; }
 
 .title-slash-link { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px 0 12px 0; text-shadow: #c9a681 1px 2px 2px; box-shadow: 0 -5px 0 #bf955e inset; background: repeating-linear-gradient(130deg, #d4ab6b 0 13px, #d9b783 0 25px); }
 .title-slash-link:hover { text-shadow: #c9a681 1px 2px 2px; box-shadow: 0 -5px 0 #bf955e inset; background: repeating-linear-gradient(130deg, #d9b783 0 13px, #d4ab6b 0 25px); }
+
+.title-slash-grey { display: inline-block; pointer-events: none; cursor: default; width: 100%; font-size: 1.1rem; font-weight: 500; color: #7e7e7e; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px 0 12px 0; text-shadow: #ffffff 1px 2px 2px; box-shadow: 0 -5px 0 #a7a7a7 inset; background: repeating-linear-gradient(130deg, #cecece 0 13px, #c5c5c5 0 25px); }
 
 .title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06, .title-slash07 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .3rem .5rem .5rem .5rem; }
 .title-slash01.br15, .title-slash02.br15, .title-slash03.br15, .title-slash04.br15, .title-slash05.br15, .title-slash06.br15, .title-slash07.br15 { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
@@ -386,10 +391,25 @@ main .main-section .content .item picture .overlay a.more { position: absolute; 
 main .main-section .content .item picture .overlay a.more:hover { background-color: #d89032; }
 main .main-section .content .item .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
 main .main-section .content .item .book-name:hover { text-decoration: underline !important; }
+main .main-section .content .item-page05 { flex: 0 0 calc(25% - 0.5rem); max-width: calc(25% - 1rem); }
+@media (max-width: 992px) { main .main-section .content .item-page05 { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
+main .main-section .content .item-page05:hover .overlay { display: block; }
+main .main-section .content .item-page05 picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: 1.34/1; overflow: hidden; }
+main .main-section .content .item-page05 picture.video-4 { aspect-ratio: 1.989/1; }
+main .main-section .content .item-page05 picture img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; position: absolute; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
+main .main-section .content .item-page05 picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: .5rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 15px; }
+main .main-section .content .item-page05 picture .overlay .text { font-size: 14px; color: #FFFFFF; text-align: start; }
+main .main-section .content .item-page05 picture .overlay a.booklist { font-size: .8rem; display: inline-block; width: 100%; color: white; }
+main .main-section .content .item-page05 picture .overlay a.booklist:hover { color: #fbb03b; }
+main .main-section .content .item-page05 picture .overlay a.booklist:before { content: '\F309'; font-family: bootstrap-icons; color: white; }
+main .main-section .content .item-page05 picture .overlay a.more { position: absolute; bottom: 1rem; left: 1rem; padding: 0.3rem 0; width: calc(100% - 2rem); font-size: .9rem; color: #FFFFFF; background-color: #fbb03b; border-radius: 30px; }
+main .main-section .content .item-page05 picture .overlay a.more:hover { background-color: #d89032; }
+main .main-section .content .item-page05 .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
+main .main-section .content .item-page05 .book-name:hover { text-decoration: underline !important; }
 main .main-section .content .item-3 { flex: 0 0 calc(100% / 3 - 0.5rem); max-width: calc(100% / 3 - .9rem); }
 @media (max-width: 992px) { main .main-section .content .item-3 { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
 main .main-section .content .item-3:hover .overlay { display: block; }
-main .main-section .content .item-3 picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: 1/.5; overflow: hidden; }
+main .main-section .content .item-3 picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: .89/.5; overflow: hidden; }
 main .main-section .content .item-3 picture img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; position: absolute; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
 main .main-section .content .item-3 picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: .5rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 15px; }
 main .main-section .content .item-3 picture .overlay .text { font-size: 14px; color: #FFFFFF; text-align: start; }
@@ -428,7 +448,7 @@ main .main-section .content .item-5-1 picture .overlay a.more { position: absolu
 main .main-section .content .item-5-1 picture .overlay a.more:hover { background-color: #d89032; }
 main .main-section .content .item-5-1 .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
 main .main-section .content .item-5-1 .book-name:hover { text-decoration: underline !important; }
-main.about { position: relative; margin-top: 5rem; overflow: hidden; background-color: #FAE8B2; }
+main.about { position: relative; margin-top: 1rem; overflow: hidden; background-color: #FAE8B2; }
 main.about .title-section { position: relative; z-index: 2; }
 main.about .title-section .about-img-box { position: relative; }
 main.about .title-section .about-img-box img { position: relative; width: 25%; z-index: 3; }

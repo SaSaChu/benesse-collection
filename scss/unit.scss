@@ -783,6 +783,130 @@ main {
 				}
 			}
 
+			.item-page05 {
+				flex: 0 0 calc(25% - 0.5rem);
+				max-width: calc(25% - 1rem);
+
+				@include media-breakpoint-down(lg) {
+					flex: 0 0 calc(50% - 0.5rem);
+					max-width: calc(50% - 0.5rem);
+				}
+
+				&:hover {
+					.overlay {
+						display: block;
+					}
+				}
+				
+				picture {
+					position: relative;
+					display: block;
+					width: 100%;
+					height: auto;
+					background-color: $white;
+					border-radius: 15px;
+					aspect-ratio: 1.34/1;
+					overflow: hidden;
+
+					&.video-4 {
+						aspect-ratio: 1.989/1;
+					}
+
+					// 確保陰影正確顯示
+					// &:has(img) {
+						// box-shadow: 0 0.125rem 0.25rem inset rgba(0, 0, 0, 0.075);
+					// }
+
+					img {
+						display: block;
+						width: 100%;
+						height: 100%;
+						padding: 0;
+						// width: auto;
+						// max-width: 100%;
+						// height: auto;
+						// max-height: 100%;
+						object-fit: contain;
+						// border-radius: 15px;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						object-position: center;
+
+						@include media-breakpoint-down(lg) {
+							// width: 100%;
+							// height: auto;
+							// border-radius: 15px;
+							// object-fit: cover;
+						}
+					}
+
+					.overlay {
+						display: none;
+						position: absolute;
+						top: 0;
+						left: 0;
+						padding:.5rem;
+						width: 100%;
+						height: 100%;
+						background-color: rgba(0, 0, 0, 0.6);
+						border-radius: 15px;
+
+						.text {
+							font-size: 14px;
+							color: $white;
+							text-align: start;
+						}
+
+						a.booklist {
+							font-size: .8rem;
+							display: inline-block;
+							width: 100%;
+							color: white;
+
+							&:hover {
+								color: $primary;
+							}
+
+							&:before {
+								content: '\F309';
+								font-family: bootstrap-icons;
+								color: white;
+							}
+						}
+
+						a.more {
+							position: absolute;
+							bottom: 1rem;
+							left: 1rem;
+							padding: 0.3rem 0;
+							width: calc(100% - 2rem);
+							font-size: .9rem;
+							color: $white;
+							background-color: $primary;
+							border-radius: 30px;
+
+							&:hover {
+								background-color: $primary2;
+							}
+						}
+					}
+				}
+
+				.book-name {
+					display: block;
+					margin-top: .5rem;
+					font-size: 1rem;
+					color: $brown;
+
+					&:hover {
+						text-decoration: underline !important;
+					}
+				}
+			}
+
 			.item-3 {
 				flex: 0 0 calc(100% / 3 - 0.5rem);
 				max-width: calc(100% / 3 - .9rem);
@@ -805,7 +929,7 @@ main {
 					height: auto;
 					background-color: $white;
 					border-radius: 15px;
-					aspect-ratio: 1/.5;
+					aspect-ratio: .89/.5;
 					overflow: hidden;
 
 					// 確保陰影正確顯示
@@ -1147,7 +1271,7 @@ main {
 
 	&.about {
 		position: relative;
-		margin-top: 5rem;
+		margin-top: 1rem;
 		overflow: hidden;
 		background-color: #FAE8B2;
 

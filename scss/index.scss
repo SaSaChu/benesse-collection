@@ -47,6 +47,10 @@ main {
         width: 40%;
         height: 3px;
         pointer-events: none;
+
+        @include media-breakpoint-down(md) {
+          width: 28%;
+        }
       }
 
       &:before {

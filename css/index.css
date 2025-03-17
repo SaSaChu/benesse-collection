@@ -88,6 +88,9 @@ header .cloud-bg img { width: 100%; height: 100%; object-fit: contain; }
 
 .notebox { display: inline-block; width: 100%; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 3px solid #fe9aab; background-color: #fffcec; padding: 1rem; }
 
+.obj-image { max-width: 15%; }
+@media (max-width: 768px) { .obj-image { max-width: 40%; } }
+
 .img-half { transform: scale(0.5); }
 
 .numH { height: 95px; font-size: 3rem; text-align: center; }
@@ -182,6 +185,8 @@ input[type=number] { -moz-appearance: textfield; }
 .title-slash-link { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px 0 12px 0; text-shadow: #c9a681 1px 2px 2px; box-shadow: 0 -5px 0 #bf955e inset; background: repeating-linear-gradient(130deg, #d4ab6b 0 13px, #d9b783 0 25px); }
 .title-slash-link:hover { text-shadow: #c9a681 1px 2px 2px; box-shadow: 0 -5px 0 #bf955e inset; background: repeating-linear-gradient(130deg, #d9b783 0 13px, #d4ab6b 0 25px); }
 
+.title-slash-grey { display: inline-block; pointer-events: none; cursor: default; width: 100%; font-size: 1.1rem; font-weight: 500; color: #7e7e7e; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px 0 12px 0; text-shadow: #ffffff 1px 2px 2px; box-shadow: 0 -5px 0 #a7a7a7 inset; background: repeating-linear-gradient(130deg, #cecece 0 13px, #c5c5c5 0 25px); }
+
 .title-slash01, .title-slash02, .title-slash03, .title-slash04, .title-slash05, .title-slash06, .title-slash07 { display: inline-block; width: 100%; font-size: 1.1rem; font-weight: 500; color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; padding: .3rem .5rem .5rem .5rem; }
 .title-slash01.br15, .title-slash02.br15, .title-slash03.br15, .title-slash04.br15, .title-slash05.br15, .title-slash06.br15, .title-slash07.br15 { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 
@@ -272,6 +277,7 @@ input[type=number] { -moz-appearance: textfield; }
 main { position: relative; z-index: 1; }
 main .featured-section h2 { position: relative; z-index: 1; }
 main .featured-section h2:before, main .featured-section h2:after { content: ''; position: absolute; top: 50%; transform: translateY(-50%); background-image: url(../images/doll-orange.svg); background-position: center; background-repeat: repeat-x; width: 40%; height: 3px; pointer-events: none; }
+@media (max-width: 768px) { main .featured-section h2:before, main .featured-section h2:after { width: 28%; } }
 main .featured-section h2:before { left: 0; }
 main .featured-section h2:after { right: 0; }
 main .featured-section h3 { padding: 0 2rem; }
