@@ -9,6 +9,8 @@ a { color: black; cursor: pointer; text-decoration: none !important; }
 a:after, a:before { color: black; vertical-align: middle !important; }
 a:hover { text-decoration: underline; }
 
+button { outline: non !important; border-width: 0; }
+
 select { outline: none !important; box-shadow: none !important; border-width: 0; }
 
 p { margin-bottom: 0; }
@@ -225,11 +227,13 @@ input[type=number] { -moz-appearance: textfield; }
 
 .accordion-item { border: 0 !important; margin-bottom: 15px; }
 
-.accordion-button { border-top-left-radius: var(--bs-accordion-inner-border-radius); border-top-right-radius: var(--bs-accordion-inner-border-radius); border-bottom-left-radius: var(--bs-accordion-inner-border-radius); border-bottom-right-radius: var(--bs-accordion-inner-border-radius); color: white !important; background-color: #c4965f !important; }
+.accordion-button { border-top-left-radius: var(--bs-accordion-inner-border-radius); border-top-right-radius: var(--bs-accordion-inner-border-radius); border-bottom-left-radius: var(--bs-accordion-inner-border-radius); border-bottom-right-radius: var(--bs-accordion-inner-border-radius); color: white !important; }
+.accordion-button.qa-background { background-color: #c4965f !important; }
 
 .accordion-body { text-align: left; }
 
-.accordion-button:not(.collapsed) { color: white !important; background-color: #c4965f !important; }
+.accordion-button:not(.collapsed) { color: white !important; }
+.accordion-button:not(.collapsed).qa-background { background-color: #c4965f !important; }
 
 .accordion-item:first-of-type > .accordion-header .accordion-button { border-top-left-radius: var(--bs-accordion-inner-border-radius); border-top-right-radius: var(--bs-accordion-inner-border-radius); border-bottom-left-radius: var(--bs-accordion-inner-border-radius); border-bottom-right-radius: var(--bs-accordion-inner-border-radius); }
 
@@ -410,6 +414,20 @@ main .main-section .content .item-5 picture .overlay a.more { position: absolute
 main .main-section .content .item-5 picture .overlay a.more:hover { background-color: #d89032; }
 main .main-section .content .item-5 .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
 main .main-section .content .item-5 .book-name:hover { text-decoration: underline !important; }
+main .main-section .content .item-5-1 { flex: 0 0 calc(100% / 5 - 0.5rem); max-width: calc(100% / 5 - .9rem); }
+@media (max-width: 992px) { main .main-section .content .item-5-1 { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
+main .main-section .content .item-5-1:hover .overlay { display: block; }
+main .main-section .content .item-5-1 picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: 1/1; overflow: hidden; }
+main .main-section .content .item-5-1 picture img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; position: absolute; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
+main .main-section .content .item-5-1 picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: .5rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 15px; }
+main .main-section .content .item-5-1 picture .overlay .text { font-size: 14px; color: #FFFFFF; text-align: start; }
+main .main-section .content .item-5-1 picture .overlay a.booklist { font-size: .8rem; display: inline-block; width: 100%; color: white; }
+main .main-section .content .item-5-1 picture .overlay a.booklist:hover { color: #fbb03b; }
+main .main-section .content .item-5-1 picture .overlay a.booklist:before { content: '\F309'; font-family: bootstrap-icons; color: white; }
+main .main-section .content .item-5-1 picture .overlay a.more { position: absolute; bottom: 1rem; left: 1rem; padding: 0.3rem 0; width: calc(100% - 2rem); font-size: .9rem; color: #FFFFFF; background-color: #fbb03b; border-radius: 30px; }
+main .main-section .content .item-5-1 picture .overlay a.more:hover { background-color: #d89032; }
+main .main-section .content .item-5-1 .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
+main .main-section .content .item-5-1 .book-name:hover { text-decoration: underline !important; }
 main.about { position: relative; margin-top: 5rem; overflow: hidden; background-color: #FAE8B2; }
 main.about .title-section { position: relative; z-index: 2; }
 main.about .title-section .about-img-box { position: relative; }

@@ -93,6 +93,13 @@ a {
   }
 }
 
+button {
+  outline: non !important;
+  // box-shadow: none;
+  border-width: 0;
+}
+
+
 select{
   outline: none !important;
   box-shadow: none !important;
@@ -935,14 +942,20 @@ input[type=number] {
   border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
   border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
   color: white !important;
-  background-color:rgba(196, 150, 95, 1.00) !important;
+  
+  &.qa-background {
+    background-color:rgba(196, 150, 95, 1.00) !important;
+  }
 }
 .accordion-body {
   text-align: left;
 }
 .accordion-button:not(.collapsed) {
   color: white !important;
-  background-color:rgba(196, 150, 95, 1.00) !important;
+  
+   &.qa-background {
+    background-color:rgba(196, 150, 95, 1.00) !important;
+  }
 }
 .accordion-item:first-of-type>.accordion-header .accordion-button {
   border-top-left-radius: var(--bs-accordion-inner-border-radius);

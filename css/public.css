@@ -9,6 +9,8 @@ a { color: black; cursor: pointer; text-decoration: none !important; }
 a:after, a:before { color: black; vertical-align: middle !important; }
 a:hover { text-decoration: underline; }
 
+button { outline: non !important; border-width: 0; }
+
 select { outline: none !important; box-shadow: none !important; border-width: 0; }
 
 p { margin-bottom: 0; }
@@ -225,11 +227,13 @@ input[type=number] { -moz-appearance: textfield; }
 
 .accordion-item { border: 0 !important; margin-bottom: 15px; }
 
-.accordion-button { border-top-left-radius: var(--bs-accordion-inner-border-radius); border-top-right-radius: var(--bs-accordion-inner-border-radius); border-bottom-left-radius: var(--bs-accordion-inner-border-radius); border-bottom-right-radius: var(--bs-accordion-inner-border-radius); color: white !important; background-color: #c4965f !important; }
+.accordion-button { border-top-left-radius: var(--bs-accordion-inner-border-radius); border-top-right-radius: var(--bs-accordion-inner-border-radius); border-bottom-left-radius: var(--bs-accordion-inner-border-radius); border-bottom-right-radius: var(--bs-accordion-inner-border-radius); color: white !important; }
+.accordion-button.qa-background { background-color: #c4965f !important; }
 
 .accordion-body { text-align: left; }
 
-.accordion-button:not(.collapsed) { color: white !important; background-color: #c4965f !important; }
+.accordion-button:not(.collapsed) { color: white !important; }
+.accordion-button:not(.collapsed).qa-background { background-color: #c4965f !important; }
 
 .accordion-item:first-of-type > .accordion-header .accordion-button { border-top-left-radius: var(--bs-accordion-inner-border-radius); border-top-right-radius: var(--bs-accordion-inner-border-radius); border-bottom-left-radius: var(--bs-accordion-inner-border-radius); border-bottom-right-radius: var(--bs-accordion-inner-border-radius); }
 

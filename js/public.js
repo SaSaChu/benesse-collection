@@ -40,21 +40,21 @@ $(function() {
 
 	// 密碼眼睛
 	$(".checkEye").click(function () {
-	  if($(this).hasClass('bi-eye')){
+	  if($(this).hasClass('bi-eye-slash')){
 	     $(".floatingPassword").attr('type', 'text');
 	  }else{
 	     $(".floatingPassword").attr('type', 'password');
 	  }
-	  $(this).toggleClass('bi-eye').toggleClass('bi-eye-slash');
+	  $(this).toggleClass('bi-eye-slash').toggleClass('bi-eye');
 	});
 
 	$(".checkEye2").click(function () {
-	  if($(this).hasClass('bi-eye')){
+	  if($(this).hasClass('bi-eye-slash')){
 	     $(".floatingPassword2").attr('type', 'text');
 	  }else{
 	     $(".floatingPassword2").attr('type', 'password');
 	  }
-	  $(this).toggleClass('bi-eye').toggleClass('bi-eye-slash');
+	  $(this).toggleClass('bi-eye-slash').toggleClass('bi-eye');
 	}); 
 
 	 // 共用區域
