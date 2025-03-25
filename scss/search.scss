@@ -231,110 +231,7 @@ main {
 		}	
 	}
   
-	.age-section {
-		margin: 0 auto;
-	
-		.age-swiper {
-		
-			@include media-breakpoint-down(lg) {
-				padding: 0 15px;
-			}
 
-			.swiper-slide {
-				width: auto;
-			}
-
-			.swiper-button-prev, .swiper-button-next {
-				width: auto;
-				color: #FFB74D;
-
-				&:after {
-					font-size: 20px;
-				}
-			}
-
-			.swiper-button-prev {
-				left: 0;
-			}
-
-			.swiper-button-next {
-				right: 0;
-			}
-		}
-	
-		.age-item {
-			text-align: center;
-		  	cursor: pointer;
-
-			&:hover, &.active {
-				a {
-					color: $primary;
-
-					.age-item-img {
-						.default-img {
-							display: none;
-						}
-		
-						.active-img {
-							display: inline-block;
-						}
-					}	
-				}
-			}
-
-		  	a {
-				display: flex;
-		  	 	align-items: center;
-				justify-content: center;
-				color: $brown;
-
-				.age-item-img {
-
-					.default-img {
-						display: inline-block;
-					}
-
-					.active-img {
-						display: none;
-					}
-
-					> img {
-						max-width: 35.5px;
-	
-						@include media-breakpoint-down(sm) {
-							max-width: 20px;
-						}
-					}
-				}
-
-				.age-item-text {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					margin-left: 0.5rem;
-
-					span {
-						text-align: left;
-						font-size: 1.25rem;
-
-						@include media-breakpoint-down(sm) {
-							font-size: 1rem;
-						}
-
-						&.sm-text-age {
-							font-size: .9rem;
-
-							@include media-breakpoint-down(sm) {
-								font-size: 13px;
-								line-height: 1;
-							}
-						}
-					}
-				}
-		  	}
-		}
-	}
 
 	.breadcrumb-section {
 		margin-top: 16px;
@@ -1417,3 +1314,19 @@ footer {
 	padding: 0 60px !important;
 }
 
+
+.swiper-button-prev {
+
+	&::after {
+    contetn:'\F133';
+    font-family:'bootstrap-icons';
+  }
+}
+
+.swiper-button-next {
+	
+	&::after {
+    contetn:'\F129';
+    font-family:'bootstrap-icons';
+	}
+}

@@ -5,7 +5,7 @@ $(function() {
     	loop: true,
 		slidesPerView: 5,
 		slidesPerGroup: 5,
-		spaceBetween: 30,
+		spaceBetween: 28,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,

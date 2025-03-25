@@ -299,27 +299,6 @@ main.page06 .main-section .sidebar-swiper .sidebar-item.active, main.page06 .mai
 main.page07 .age-section .age-item:hover a, main.page07 .age-section .age-item.active a { color: #fbb03b; }
 main.page07 .age-section .age-item .age-item-img > img { transform: translateY(-35%); }
 main.page07 .main-section .sidebar-swiper .sidebar-item.active, main.page07 .main-section .sidebar-swiper .sidebar-item:hover { background-color: #c4965f; }
-main .age-section { margin: 0 auto; }
-@media (max-width: 992px) { main .age-section .age-swiper { padding: 0 15px; } }
-main .age-section .age-swiper .swiper-slide { width: auto; }
-main .age-section .age-swiper .swiper-button-prev, main .age-section .age-swiper .swiper-button-next { width: auto; color: #FFB74D; }
-main .age-section .age-swiper .swiper-button-prev:after, main .age-section .age-swiper .swiper-button-next:after { font-size: 20px; }
-main .age-section .age-swiper .swiper-button-prev { left: 0; }
-main .age-section .age-swiper .swiper-button-next { right: 0; }
-main .age-section .age-item { text-align: center; cursor: pointer; }
-main .age-section .age-item:hover a, main .age-section .age-item.active a { color: #fbb03b; }
-main .age-section .age-item:hover a .age-item-img .default-img, main .age-section .age-item.active a .age-item-img .default-img { display: none; }
-main .age-section .age-item:hover a .age-item-img .active-img, main .age-section .age-item.active a .age-item-img .active-img { display: inline-block; }
-main .age-section .age-item a { display: flex; align-items: center; justify-content: center; color: #6e4435; }
-main .age-section .age-item a .age-item-img .default-img { display: inline-block; }
-main .age-section .age-item a .age-item-img .active-img { display: none; }
-main .age-section .age-item a .age-item-img > img { max-width: 35.5px; }
-@media (max-width: 576px) { main .age-section .age-item a .age-item-img > img { max-width: 20px; } }
-main .age-section .age-item a .age-item-text { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 0.5rem; }
-main .age-section .age-item a .age-item-text span { text-align: left; font-size: 1.25rem; }
-@media (max-width: 576px) { main .age-section .age-item a .age-item-text span { font-size: 1rem; } }
-main .age-section .age-item a .age-item-text span.sm-text-age { font-size: .9rem; }
-@media (max-width: 576px) { main .age-section .age-item a .age-item-text span.sm-text-age { font-size: 13px; line-height: 1; } }
 main .breadcrumb-section { margin-top: 16px; }
 main .breadcrumb-section li { font-size: 14px; color: #A1A1A1; }
 main .breadcrumb-section li.active { color: #A1A1A1; }
@@ -474,3 +453,7 @@ footer .copyright { color: #6e4435; font-size: .8rem; margin: 0; }
 .nav-btn-search { border: 0; }
 
 .s-p-x60 { padding: 0 60px !important; }
+
+.swiper-button-prev::after { contetn: '\F133'; font-family: 'bootstrap-icons'; }
+
+.swiper-button-next::after { contetn: '\F129'; font-family: 'bootstrap-icons'; }
