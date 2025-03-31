@@ -35,8 +35,8 @@ $(function() {
 	});
 
 	let bookSwiper = new Swiper('.featured-book-swiper', {
-		// autoplay: true,
-    	loop: true,
+		autoplay: true,
+    loop: true,
     
 		pagination: {
 			el: ".swiper-pagination",
