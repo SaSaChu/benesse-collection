@@ -48,8 +48,10 @@ header .hero-section { position: relative; z-index: 1; }
 header .hero-section .container { position: relative; z-index: 2; }
 header .hero-section h1 { position: relative; margin-bottom: 0; z-index: 1; }
 header .category-section { position: relative; margin: 0 auto; z-index: 1; background-color: #FFFFFF; }
+@media (max-width: 768px) { header .category-section .row { align-items: center; } }
 header .category-section .category-col:hover .default-img, header .category-section .category-col.active .default-img { display: none; }
 header .category-section .category-col:hover .active-img, header .category-section .category-col.active .active-img { display: block; }
+@media (max-width: 768px) { header .category-section .category-col:not(.active) img { max-width: 90%; } }
 header .category-section .category-col:nth-of-type(1) { order: 1; }
 header .category-section .category-col:nth-of-type(2) { order: 2; }
 header .category-section .category-col:nth-of-type(3) { order: 3; }

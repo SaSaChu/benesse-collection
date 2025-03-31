@@ -305,6 +305,12 @@ header {
 		z-index: 1;
 		background-color: $white;
 
+    .row {
+      @include media-breakpoint-down(md) {
+        align-items: center;
+      }
+    }
+
     .category-col {
       &:hover, &.active {
         .default-img {
@@ -313,6 +319,14 @@ header {
 
 				.active-img {
           display: block;
+        }
+      }
+
+      &:not(.active) {
+        @include media-breakpoint-down(md) {
+          img {
+            max-width: 90%;
+          }
         }
       }
 
