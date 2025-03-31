@@ -741,6 +741,7 @@ main {
 							display: inline-block;
 							width: 100%;
 							color: white;
+							margin-left: 10px;
 
 							&:hover {
 								color: $primary;
@@ -750,6 +751,7 @@ main {
 								content: '\F309';
 								font-family: bootstrap-icons;
 								color: white;
+								margin-left: -13px;
 							}
 						}
 
