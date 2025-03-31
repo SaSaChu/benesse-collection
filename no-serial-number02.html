@@ -173,17 +173,106 @@
 						  <!-- 密碼： -->
 						  <div class="col-12 position-relative">
 						  	<label for="floatingPassword" class="form-label float-start text-brown">請輸入密碼：<b class="text-danger">*</b></label>
-					      <input type="password" class="form-control border-brown-box" id="floatingPassword">
-					     	<i id="checkEye" class="bi bi-eye-slash text-brown"></i>
+					      <input type="password" class="form-control border-brown-box floatingPassword">
+ 								<i class="checkEye3 m-use bi-eye-slash text-brown"></i>
 					    </div>
 					    <div class="col-12 mt-1"><small class="text-danger">請輸入6~20位數英文加數字組合的密碼</small></div>
 
-					    <!-- 密碼： -->
+					    <!-- 再次輸入密碼： -->
 						  <div class="col-12 position-relative">
 						  	<label for="floatingPassword" class="form-label float-start text-brown">再次輸入密碼：<b class="text-danger">*</b></label>
-					      <input type="password" class="form-control border-brown-box" id="floatingPassword2">
-					     	<i id="checkEye2" class="bi bi-eye-slash text-brown"></i>
+					      <input type="password" class="form-control border-brown-box floatingPassword">
+ 								<i class="checkEye3 m-use bi-eye-slash text-brown"></i>
 					    </div>
+
+					    <div class="border-yellow-bottom mt-4"></div>
+
+					    <div class="col-12">
+					    	<div class="row align-items-center">
+          				<div class="col-md-4 col-12 text-start">
+          					<h5 class="text-brown">電子發票：</h5>
+          				</div>
+          				<div class="col-md-8 col-12">
+          					<select class="form-select border-brown-box" aria-label="Default select example">
+										  <option selected>請選擇</option>
+										  <option value="1">手機載具條碼</option>
+										  <option value="2">二聯式發票</option>
+										  <option value="3">三聯式發票</option>
+										</select>
+          				</div>
+          			</div>
+					    </div>
+
+					    <!-- 手機載具條碼 -->
+					    <div class="col-12">
+						    <div class="row align-items-center">
+          				<div class="col-md-4 col-12 text-start">
+          					<h5 class="text-brown">手機載具條碼：</h5>
+          				</div>
+          				<div class="col-md-8 col-12">
+          					<input type="" class="form-control border-brown-box"  style="text-transform: uppercase;">
+          				</div>
+          				<div class="col-12 mt-2">
+          					<span class="fs-6 lh-sm">
+										手機載具條碼輸入確認綁定後，消費時使用手機條碼載具，系統會自動將發票存入財政部電子發票整合服務平台。如因輸入資料錯誤所致損害，本公司無法補償。</span>
+          				</div>
+          				<div class="col-12 mt-2">
+          					<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+										  <label class="form-check-label" for="flexCheckChecked">
+										     我同意辦理退貨時，由巧連智代為處理發票及銷貨退回證明單，以加速退貨退款作業。依法規定，發票一經開立，不得更改或改開公司戶發票。<a href="https://www.einvoice.nat.gov.tw/ptl007w/1692842481285" class="link-primary" target="_black">財政部電子發票流程說明</a>
+										  </label>
+										</div>
+          				</div>
+          			</div>
+        			</div>
+
+        			<!-- 二聯式發票 -->
+					    <div class="col-12">
+						    <div class="row align-items-center">
+          				<div class="col-12 text-start">
+          					<h5 class="text-brown">電子發票將寄送至您填寫的E-mail中。</h5>
+          				</div>
+          				<div class="col-12 mt-2">
+          					<div class="form-check">
+										  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+										  <label class="form-check-label" for="flexCheckChecked">
+										     我同意辦理退貨時，由巧連智代為處理發票及銷貨退回證明單，以加速退貨退款作業。依法規定，發票一經開立，不得更改或改開公司戶發票。<a href="https://www.einvoice.nat.gov.tw/ptl007w/1692842481285" class="link-primary" target="_black">財政部電子發票流程說明</a>
+										  </label>
+										</div>
+          				</div>
+          			</div>
+        			</div>
+
+        			<!-- 三聯式發票 -->
+					    <div class="col-12">
+						    <div class="row align-items-center">
+          				<div class="col-md-4 col-12 text-start">
+          					<h5 class="text-brown">統一編號：</h5>
+          				</div>
+          				<div class="col-md-8 col-12">
+          					<input type="number" class="form-control border-brown-box">
+          				</div>
+          			</div>
+        			</div>
+        			 <div class="col-12">
+						    <div class="row align-items-center">
+          				<div class="col-md-4 col-12 text-start">
+          					<h5 class="text-brown">公司名稱：</h5>
+          				</div>
+          				<div class="col-md-8 col-12">
+          					<input type="" class="form-control border-brown-box">
+          				</div>
+          			</div>
+        			</div>
+        			<div class="col-12 mt-2">
+      					<div class="form-check">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+								  <label class="form-check-label" for="flexCheckChecked">
+								     我同意辦理退貨時，由巧連智代為處理發票及銷貨退回證明單，以加速退貨退款作業。依法規定，發票一經開立，不得更改或改開公司戶發票。<a href="https://www.einvoice.nat.gov.tw/ptl007w/1692842481285" class="link-primary" target="_black">財政部電子發票流程說明</a>
+								  </label>
+								</div>
+      				</div>
 
 	          </div>
           </div>

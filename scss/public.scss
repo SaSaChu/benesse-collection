@@ -1076,6 +1076,18 @@ input[type=number] {
   }
 }
 
+.checkEye3 {
+  position: absolute;
+  top: 71%;
+  right: 19px;
+  transform: translateY(-50%);
+
+  &.m-use {
+    top: 71%;
+    right: 19px;
+  }
+}
+
 .scroll-boxs {
   display: inline-block;
   width: 100%;
