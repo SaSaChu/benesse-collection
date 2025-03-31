@@ -294,6 +294,7 @@ main.page03 .main-section .sidebar-swiper .sidebar-item a .sidebar-item-text { t
 main.page04 .main-section .select-wrapper .dropdown-toggle { position: relative; }
 main.page04 .main-section .select-wrapper .dropdown-toggle.show:after { transform: rotate(180deg) translateY(50%); }
 main.page04 .main-section .select-wrapper .dropdown-toggle:after { content: ''; border: none; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); background-size: 16px 16px; background-repeat: no-repeat; width: 1rem; height: 1rem; transition: transform 0.3s ease; }
+main.page04 .main-section .sidebar04-swiper .sidebar-item.cant-play { pointer-events: none; cursor: default; background-color: #c1c1c1; }
 main.page04 .main-section .sidebar04-swiper .sidebar-item.active, main.page04 .main-section .sidebar04-swiper .sidebar-item:hover { background-color: #75cc92; }
 main.page05 .main-section .sidebar-swiper .sidebar-item.active, main.page05 .main-section .sidebar-swiper .sidebar-item:hover { background-color: #c38ccf; }
 main.page06 .age-section .age-item:hover a, main.page06 .age-section .age-item.active a { color: #fbb03b; }

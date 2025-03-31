@@ -153,6 +153,13 @@ main {
 			}
 			.sidebar04-swiper {
 				.sidebar-item {
+
+					&.cant-play {
+						pointer-events: none;
+						cursor: default;
+						background-color: #c1c1c1;
+					}
+
 					&.active, &:hover {
 						background-color: $green;
 					}
