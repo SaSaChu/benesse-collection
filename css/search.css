@@ -457,6 +457,6 @@ footer .copyright { color: #6e4435; font-size: .8rem; margin: 0; }
 
 .s-p-x60 { padding: 0 60px !important; }
 
-.swiper-button-prev::after { contetn: '\F133'; font-family: 'bootstrap-icons'; }
+.swiper-button-prev::after { content: '\F129'; font-family: 'bootstrap-icons'; }
 
-.swiper-button-next::after { contetn: '\F129'; font-family: 'bootstrap-icons'; }
+.swiper-button-next::after { content: '\F133'; font-family: 'bootstrap-icons'; }
