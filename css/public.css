@@ -122,6 +122,8 @@ input[type=number] { -moz-appearance: textfield; }
 .border-brown-left { border-left: 4px dotted #aa9272; }
 @media (max-width: 768px) { .border-brown-left { border-left: 0; } }
 
+.border-brown-top { border-top: 1px dotted #aa9272; }
+
 .border-pink-bottom { border-bottom: 3px solid #f09aa8; }
 
 .border-brown-bottom { border-bottom: 3px dotted #aa9272; }
