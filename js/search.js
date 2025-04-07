@@ -18,7 +18,7 @@ $(function() {
 
 	// 月刊學習影音
 	let videoSwiper = new Swiper('.featured-video-swiper', {
-		autoplay: true,
+		// autoplay: true,
 		loop: true,
 		slidesPerView: 4,
 		slidesPerGroup: 4,
@@ -35,7 +35,7 @@ $(function() {
 
 	// 巧虎影音
 	let tigerSwiper = new Swiper('.tiger-swiper', {
-		autoplay: true,
+		// autoplay: true,
 		loop: true,
 		slidesPerView: 4,
 		slidesPerGroup: 4,
@@ -52,7 +52,7 @@ $(function() {
 
 	// 奇酷網影音
 	let kidSchoolSwiper = new Swiper('.kid-school-swiper', {
-		autoplay: true,
+		// autoplay: true,
 		slidesPerView: 5,
 		slidesPerGroup: 5,
 		spaceBetween: 30,
