@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>巧連智 - 數位典藏學習網 - 巧虎卡通</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- 自定義樣式 -->
+    <link href="css/unit.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+
+    <!-- 共用外部 font 檔案 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+	  <!-- 導航欄 -->
+		<div class="navbar-section">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-gradient">
+					<!-- 左側區域：品牌和社群連結 -->
+					<div class="col-6 col-lg-5">
+						<div class="navbar-left">
+							<a class="navbar-brand d-none d-lg-block" href="index.html" title="巧連智">
+								<img src="images/s-logo.svg" alt="巧連智" height="50">
+							</a>
+
+							<div class="social-links">
+								<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg" alt="Facebook"></a>
+								<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg" alt="YouTube"></a>
+								<a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg" alt="Line"></a>
+								<!-- <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- 右側區域：導航選項 -->
+					<div class="col-6 col-lg-7">
+						<div class="navbar-right justify-content-end">
+							<div class="action-buttons">
+								<a href="#" class="nav-link d-none d-lg-block">關於數位典藏學習網</a>
+								<a href="#" class="nav-link d-none d-lg-block">付費方案</a>
+	              				<a href="#" class="nav-link d-none d-lg-block">常見問題</a>
+								<a href="#" class="fs-6 nav-btn nav-btn-login">登入</a>
+								<a href="#" class="fs-6 nav-btn nav-btn-search d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchbox">搜尋</a>
+							</div>
+
+							<!-- 手機-搜尋按鈕 -->
+							<button class="btn btn-mobile-menu d-lg-none me-2" data-bs-toggle="modal" data-bs-target="#searchbox"><i class="bi bi-search align-baseline" title="Search"></i>
+							</button>
+							<!-- 手機-list按鈕 -->
+							<button class="btn btn-mobile-menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+								<i class="bi bi-list align-baseline" title="Menu"></i>
+							</button>
+
+	            			<!-- 手機選單 -->
+							<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+								<div class="offcanvas-header">
+									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+								</div>
+								<div class="offcanvas-body">
+									<div class="action-buttons me-0">
+										<a href="#" class="nav-btn  btn-square orange w-100">登入</a>
+									</div>
+
+									<div class="action-links text-start">
+										<a href="#" class="nav-link brown"><img src="images/star-p.svg" class="w-10 me-2" title="About">關於數位典藏學習網</a>
+										<a href="#" class="nav-link brown"><img src="images/star-pur.svg" class="w-10 me-2" title="Pay">付費方案</a>
+										<a href="#" class="nav-link brown"><img src="images/star-pur.svg" class="w-10 me-2" title="FAQ">常見問題</a>
+									</div>
+
+									<div class="action-category">
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu01.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu02.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu03.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu04.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+										<div class="category-item my-2">
+											<a href="#">
+												<img src="images/s-menu05.png" alt="月刊有聲書" class="img-fluid">
+											</a>
+										</div> 
+									</div>
+
+									<div class="action-social text-center">
+										<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" class="social-link" target="_black"><img src="images/fb.svg"></a>
+										<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" class="social-link" target="_black"><img src="images/youtube.svg"></a>
+										<a href="https://www.benesse.com.tw/html/line/index.html" class="social-link" target="_black"><img src="images/line.svg"></a>
+										<!-- <a href="https://www.benesse.com.tw/html/digit/app.html" class="social-link" target="_black"><img src="images/app.svg"></a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- 標題區域 -->
+		<div class="hero-section text-center">
+
+			<div class="container">
+				<h1>
+					<a href="index.html"><img src="images/logo.webp" alt="巧連智數位典藏學習網" class="img-fluid"></a>
+				</h1>
+			</div>
+			<div class="cloud-bg">
+				<img src="images/cloud-s.webp" alt="雲朵" class="img-fluid">
+			</div>
+		</div>
+	</header>
+
+  <!-- 主要內容 -->
+  <main class="about">
+  	<div class="container">
+		<!-- 背景顏色 -->
+		<div class="bg-color" style="background-color: #FBF0DC"></div>
+		<!-- 標題區塊 -->
+		<div class="title-section">
+			<div class="row justify-content-center">
+				<div class="col-10 col-md-8 col-lg-6 col-xl-5">
+					<div class="about-img-box">
+						<img src="images/C_about01.png" alt="巧虎" class="about-img">
+					</div>
+					<div class="about-title">
+						<h2 class="rounded-pill border-5 p-3">平台操作介紹</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 關於我們區塊 -->
+		<section class="about-section pb-5">
+			<div class="row justify-content-center">
+				<div class="intro-item text-start text-brown fs-4">
+					<div class="col-11 col-md-12 col-lg-10 mx-auto mb-5">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p>數位典藏學習網，總共有五大單元，分別是：</p>
+								<p>01. 月刊有聲書</p>
+								<p>02. 月刊學習影音</p>
+								<p>03. 巧連智PLUS</p>
+								<p>04. 遊戲樂園</p>
+								<p>05. 奇酷網影音</p>
+								<p class="mt-3">分別可以從網站的上方，點擊巧虎與他們的夥伴們進入各大單元。</p>
+							</div>
+							<div class="col-12 col-lg-6 mt-3 mt-lg-0">
+								<picture class="d-inline-block shadow-sm ">
+									<img src="images/pic01.png" alt="首頁介紹畫面" class="img-fluid">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 01-list-月刊有聲書 -->
+				<div class="intro-item text-start text-brown fs-4">
+					<div class="col-11 col-md-12 col-lg-10 mx-auto mb-5">	
+						<div class="col-12">
+							<h3 class="text-orange text-start">月刊有聲書</h3>
+						</div>
+
+						<div class="col-12 pb-3 mb-3">
+							<div class="border-orange"></div>
+						</div>
+				
+						<div class="row mb-5">
+							<div class="col-12 col-lg-6">
+								<p>月刊有聲書針對不同年齡層，分為：</p>
+								<p>【寶寶版】、【幼幼版】、【快樂版】、【成長版】、【學習版】...等等版本。</p>
+								<p class="mt-3">點擊各版本，左側會出現年份，每個年份則有12個月號。</p>
+							</div>
+							<div class="col-12 col-lg-6 mt-3 mt-lg-0">
+								<picture class="d-inline-block shadow-sm">
+									<img src="images/pic06.png" alt="月刊有聲書單元畫面" class="img-fluid">
+								</picture>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p>點擊月號後會進入該月號的影片播放頁面，影片播放器則包含下列功能：</p>
+								<p>【從頭開始播放】、【從最後中斷處播放】、【暫停鈕】、【重複播放鈕】、【聲音鈕】、【靜音鈕】、【局部放大】、【全螢幕】、【到最後一頁】、【有聲無影鈕】</p>
+								<p class="mt-3">擁有多樣性的影音操作介面。</p>
+							</div>
+							<div class="col-12 col-lg-6 mt-3 mt-lg-0">
+								<picture class="d-inline-block shadow-sm">
+									<img src="images/pic07.png" alt="月刊有聲書播放頁面" class="img-fluid">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 02-list-月刊學習影音 -->
+				<div class="intro-item text-start text-brown fs-4">
+					<div class="col-11 col-md-12 col-lg-10 mx-auto mb-5">	
+						<div class="col-12">
+							<h3 class="text-pink text-start">月刊學習影音</h3>
+						</div>
+
+						<div class="col-12 pb-3 mb-3">
+							<div class="border-pink"></div>
+						</div>
+				
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p>月刊學習影音針對不同年齡層，分為：</p>
+								<p>【寶寶版】、【幼幼版】、【快樂版】、【成長版】、【學習版】...等等版本。</p>
+								<p class="mt-3">點擊各版本，左側可以選擇年份，年份的下方會對應12個月號，而點擊月號，右側就會出現該月號的學習影音內容。</p>
+								<p class="mt-3">內容分為【影片】及【音檔】兩種，分別為不同的內容唷！</p>
+							</div>
+							<div class="col-12 col-lg-6 mt-3 mt-lg-0">
+								<picture class="d-inline-block shadow-sm">
+									<img src="images/pic02.png" alt="月刊有聲書單元畫面" class="img-fluid">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 03-list-巧連智PLUS -->
+				<div class="intro-item text-start text-brown fs-4">
+					<div class="col-11 col-md-12 col-lg-10 mx-auto mb-5">	
+						<div class="col-12">
+							<h3 class="text-blue text-start">巧連智PLUS</h3>
+						</div>
+
+						<div class="col-12 pb-3 mb-3">
+							<div class="border-blue"></div>
+						</div>
+				
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p>巧連智Plus總共有四個單元，分為：</p>
+								<p>【生活習慣】、【認知學習】、【精彩故事】、【主角人物介紹】...等等版本。</p>
+								<p class="mt-3">點擊左側各單元，右側會直接顯示對應的影片清單。點擊影片清單進入影片播放頁，即可觀看影片。</p>
+							</div>
+							<div class="col-12 col-lg-6 mt-3 mt-lg-0">
+								<picture class="d-inline-block shadow-sm">
+									<img src="images/pic03.png" alt="巧連智PLUS單元畫面" class="img-fluid">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 04-list-遊戲樂園 -->
+				<div class="intro-item text-start text-brown fs-4">
+					<div class="col-11 col-md-12 col-lg-10 mx-auto mb-5">	
+						<div class="col-12">
+							<h3 class="text-green text-start">遊戲樂園</h3>
+						</div>
+
+						<div class="col-12 pb-3 mb-3">
+							<div class="border-green"></div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p>遊戲樂園集結了原【數位學習網】及【超級小學生奇酷網】的遊戲，包含：</p>
+								<p>【數學魔法列車】、【語文夢幻高塔】、【思考力冒險迷宮】以及【益智遊戲場】。</p>
+								<p class="mt-3">一進入遊戲樂園左側就可以選擇遊戲，遊戲的操作模式皆與原網站相同。</p>
+							</div>
+							<div class="col-12 col-lg-6 mt-3 mt-lg-0">
+								<picture class="d-inline-block shadow-sm">
+									<img src="images/pic04.png" alt="遊戲樂園單元畫面" class="img-fluid">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 05-list-奇酷網影音 -->
+				<div class="intro-item text-start text-brown fs-4">
+					<div class="col-11 col-md-12 col-lg-10 mx-auto mb-5">	
+						<div class="col-12">
+							<h3 class="text-purple text-start">奇酷網影音</h3>
+						</div>
+
+						<div class="col-12 pb-3 mb-3">
+							<div class="border-purple"></div>
+						</div>
+						
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p>奇酷網影音，包含原【超級小學生奇酷網】網站的影音館別，分別有：</p>
+								<p>【英語律動館】、【生花妙筆劇場】、【自然科學院】、【字字珠璣園地】、【唐詩吟誦廳】、【童話寓言堂】、【數學動腦城】、【瘋狂故事屋】...等等。</p>
+								<p class="mt-3">點擊左側各單元，右側會直接顯示對應的影片清單。點擊影片清單進入影片播放頁，即可觀看影片。</p>
+							</div>
+							<div class="col-12 col-lg-6 mt-3 mt-lg-0">
+								<picture class="d-inline-block shadow-sm">
+									<img src="images/pic05.png" alt="奇酷網影音單元畫面" class="img-fluid">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+  	<div class="page-footer py-4"></div>
+  </footer>
+
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 自定義 JS -->
+  <script src="js/public.js"></script>
+  <script src="js/unit.js"></script>
+</body>
+</html>
