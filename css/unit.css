@@ -285,7 +285,9 @@ input[type=number] { -moz-appearance: textfield; }
 main { position: relative; z-index: 1; }
 main.page01 .age-section .age-item:hover a, main.page01 .age-section .age-item.active a { color: #fbb03b; }
 main.page01 .age-section .age-item .age-item-img > img { transform: translateY(-35%); }
-main.page01 .main-section .sidebar-swiper .sidebar-item.active, main.page01 .main-section .sidebar-swiper .sidebar-item:hover { background-color: #fbb03b; }
+@media (min-width: 992px) { main.page01 .main-section .sidebar-swiper .swiper-wrapper { flex-direction: column; } }
+@media (min-width: 992px) { main.page01 .main-section .sidebar-swiper .swiper-wrapper .swiper-slide { margin-bottom: 10px; } }
+main.page01 .main-section .sidebar-swiper .swiper-wrapper .swiper-slide .sidebar-item.active, main.page01 .main-section .sidebar-swiper .swiper-wrapper .swiper-slide .sidebar-item:hover { background-color: #fbb03b; }
 main.page02 .age-section .age-item:hover a, main.page02 .age-section .age-item.active a { color: #f09aa8; }
 main.page02 .age-section .age-item .age-item-img > img { transform: translateY(-15%); }
 main.page02 .main-section .sidebar-swiper .sidebar-item.active, main.page02 .main-section .sidebar-swiper .sidebar-item:hover { background-color: #f09aa8; }

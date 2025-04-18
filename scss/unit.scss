@@ -45,9 +45,21 @@ main {
 
 		.main-section {
 			.sidebar-swiper {
-				.sidebar-item {
-					&.active, &:hover {
-						background-color: $primary;
+				.swiper-wrapper {
+					@include media-breakpoint-up(lg) {
+						flex-direction: column;
+					}
+
+					.swiper-slide {
+						@include media-breakpoint-up(lg) {
+							margin-bottom: 10px;
+						}
+
+						.sidebar-item {
+							&.active, &:hover {
+								background-color: $primary;
+							}
+						}
 					}
 				}
 			}
