@@ -694,6 +694,16 @@ main {
 					max-width: calc(50% - 0.5rem);
 				}
 
+				&.add-big {
+					flex: 0 0 calc(33% - 0.5rem);
+					max-width: calc(33% - 2rem);
+
+					@include media-breakpoint-down(md) {
+						flex: 0 0 calc(50% - 0.5rem);
+						max-width: calc(50% - 0.5rem);
+					}
+				}
+
 				&:hover {
 					.overlay {
 						display: block;
@@ -737,7 +747,7 @@ main {
 						bottom: 0;
 						object-position: center;
 
-						@include media-breakpoint-down(lg) {
+						@include media-breakpoint-down(md) {
 							// width: 100%;
 							// height: auto;
 							// border-radius: 15px;
@@ -781,6 +791,20 @@ main {
 							}
 						}
 
+						a.btn-unit {
+							display: inline-block;
+							padding: 0.3rem 0;
+							width: calc(100% - 2rem);
+							font-size: .9rem;
+							color: $white;
+							background-color: $primary;
+							border-radius: 30px;
+
+							&:hover {
+								background-color: $primary2;
+							}
+						}
+						
 						a.more {
 							position: absolute;
 							bottom: 1rem;

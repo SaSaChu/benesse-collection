@@ -178,6 +178,10 @@ input[type=number] { -moz-appearance: textfield; }
 .price-red:before { display: inline-block; content: attr(title); position: absolute; top: 17px; left: 0; color: #bf0a0a; font-size: 1rem; }
 .price-red:after { display: inline-block; content: "元"; position: absolute; bottom: 11px; right: 0; color: #bf0a0a; font-size: 1rem; }
 
+.booklist2 { font-size: 1rem; display: inline-block; width: 100%; color: #6e4435; text-align: left; margin-left: 10px; }
+.booklist2:hover { color: #fbb03b; }
+.booklist2:before { content: '\F309'; font-family: bootstrap-icons; color: #6e4435; margin-left: -15px; }
+
 .next-btn { display: inline-block; padding: .5rem 1rem; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; border: 1px solid #6e4435; color: #6e4435; }
 .next-btn:hover, .next-btn:active { background-color: #6e4435; color: white; }
 

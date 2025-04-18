@@ -691,6 +691,26 @@ input[type=number] {
 }
 
 //btn+link
+.booklist2 {
+  font-size: 1rem;
+  display: inline-block;
+  width: 100%;
+  color: $brown;
+  text-align: left;
+  margin-left: 10px;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:before {
+    content: '\F309';
+    font-family: bootstrap-icons;
+    color: $brown;
+    margin-left: -15px;
+  }
+}
+
 .next-btn {
   display: inline-block;
   padding: .5rem 1rem;
