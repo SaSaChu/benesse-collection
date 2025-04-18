@@ -247,6 +247,10 @@ main {
 
 			.swiper-slide {
 				width: auto;
+
+				@include media-breakpoint-down(lg) {
+					width: calc(100% / 3);
+				}
 			}
 
 			.swiper-button-prev, .swiper-button-next {
@@ -451,6 +455,10 @@ main {
 				.swiper-slide {
 					@include media-breakpoint-up(lg) {
 						margin-bottom: 10px;
+					}
+
+					@include media-breakpoint-down(lg) {
+						width: calc(100% / 2.2);
 					}
 				}
 			}
