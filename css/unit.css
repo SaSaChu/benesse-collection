@@ -285,9 +285,7 @@ input[type=number] { -moz-appearance: textfield; }
 main { position: relative; z-index: 1; }
 main.page01 .age-section .age-item:hover a, main.page01 .age-section .age-item.active a { color: #fbb03b; }
 main.page01 .age-section .age-item .age-item-img > img { transform: translateY(-35%); }
-@media (min-width: 992px) { main.page01 .main-section .sidebar-swiper .swiper-wrapper { flex-direction: column; } }
-@media (min-width: 992px) { main.page01 .main-section .sidebar-swiper .swiper-wrapper .swiper-slide { margin-bottom: 10px; } }
-main.page01 .main-section .sidebar-swiper .swiper-wrapper .swiper-slide .sidebar-item.active, main.page01 .main-section .sidebar-swiper .swiper-wrapper .swiper-slide .sidebar-item:hover { background-color: #fbb03b; }
+main.page01 .main-section .sidebar-item.active, main.page01 .main-section .sidebar-item:hover { background-color: #fbb03b; }
 main.page02 .age-section .age-item:hover a, main.page02 .age-section .age-item.active a { color: #f09aa8; }
 main.page02 .age-section .age-item .age-item-img > img { transform: translateY(-15%); }
 main.page02 .main-section .sidebar-swiper .sidebar-item.active, main.page02 .main-section .sidebar-swiper .sidebar-item:hover { background-color: #f09aa8; }
@@ -348,6 +346,8 @@ main .main-section .sidebar-swiper .select-wrapper > .form-select { padding: 0.3
 main .main-section .sidebar-swiper .select-wrapper > .form-select:focus { box-shadow: none; border-color: #f09aa8; }
 main .main-section .sidebar-swiper .select-wrapper > .form-select option { color: #f09aa8; background-color: #FFFFFF; }
 main .main-section .sidebar-swiper .sidebar-accordion .accordion-item .accordion-button:after { filter: brightness(0) invert(1); background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e"); font-weight: bold; }
+@media (min-width: 992px) { main .main-section .sidebar-swiper .swiper-wrapper { flex-direction: column; } }
+@media (min-width: 992px) { main .main-section .sidebar-swiper .swiper-wrapper .swiper-slide { margin-bottom: 10px; } }
 main .main-section .sidebar-swiper .sidebar-item { border-radius: 30px; background-color: #FFFFFF; text-align: start; cursor: pointer; overflow: hidden; }
 main .main-section .sidebar-swiper .sidebar-item:not(:last-child) { margin-bottom: 1rem; }
 main .main-section .sidebar-swiper .sidebar-item:hover .sidebar-item-img .default-img, main .main-section .sidebar-swiper .sidebar-item.active .sidebar-item-img .default-img { display: none; }

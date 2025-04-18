@@ -44,23 +44,9 @@ main {
 		}
 
 		.main-section {
-			.sidebar-swiper {
-				.swiper-wrapper {
-					@include media-breakpoint-up(lg) {
-						flex-direction: column;
-					}
-
-					.swiper-slide {
-						@include media-breakpoint-up(lg) {
-							margin-bottom: 10px;
-						}
-
-						.sidebar-item {
-							&.active, &:hover {
-								background-color: $primary;
-							}
-						}
-					}
+			.sidebar-item {
+				&.active, &:hover {
+					background-color: $primary;
 				}
 			}
 		}	
@@ -401,6 +387,7 @@ main {
 			}
 
 			.select-wrapper {
+
 				@include media-breakpoint-down(lg) {
 					text-align: left;
 				}
@@ -452,6 +439,18 @@ main {
 							background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 							font-weight: bold;
 						}
+					}
+				}
+			}
+
+			.swiper-wrapper {
+				@include media-breakpoint-up(lg) {
+					flex-direction: column;
+				}
+
+				.swiper-slide {
+					@include media-breakpoint-up(lg) {
+						margin-bottom: 10px;
 					}
 				}
 			}
