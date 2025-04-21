@@ -247,6 +247,10 @@ main {
 
 			.swiper-slide {
 				width: auto;
+				
+				@include media-breakpoint-up(lg) {
+					margin-right: 30px;
+				}
 
 				@include media-breakpoint-down(lg) {
 					width: calc(100% / 3);

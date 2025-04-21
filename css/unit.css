@@ -315,6 +315,7 @@ main.page07 .main-section .sidebar-swiper .sidebar-item.active, main.page07 .mai
 main .age-section { margin: 0 auto; }
 @media (max-width: 992px) { main .age-section .age-swiper { padding: 0 15px; } }
 main .age-section .age-swiper .swiper-slide { width: auto; }
+@media (min-width: 992px) { main .age-section .age-swiper .swiper-slide { margin-right: 30px; } }
 @media (max-width: 992px) { main .age-section .age-swiper .swiper-slide { width: calc(100% / 3); } }
 main .age-section .age-swiper .swiper-button-prev, main .age-section .age-swiper .swiper-button-next { width: auto; color: #FFB74D; }
 main .age-section .age-swiper .swiper-button-prev:after, main .age-section .age-swiper .swiper-button-next:after { font-size: 20px; }
