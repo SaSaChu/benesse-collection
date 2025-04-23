@@ -398,10 +398,11 @@ main .main-section .content .item { flex: 0 0 calc(25% - 0.5rem); max-width: cal
 @media (max-width: 992px) { main .main-section .content .item { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
 main .main-section .content .item.add-big { flex: 0 0 calc(33% - 0.5rem); max-width: calc(33% - 2rem); }
 @media (max-width: 768px) { main .main-section .content .item.add-big { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
-main .main-section .content .item:hover .overlay { display: block; }
+@media (min-width: 992px) { main .main-section .content .item:hover .overlay { display: block; } }
 main .main-section .content .item .mo-list { display: inline-block; width: 40px; height: 40px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #fbb03b; z-index: 99; position: absolute; top: -8px; left: -5px; line-height: 33px; }
 main .main-section .content .item picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: 1/.959; overflow: hidden; }
 main .main-section .content .item picture.video-4 { aspect-ratio: 1.989/1; }
+@media (max-width: 992px) { main .main-section .content .item picture:hover .overlay { display: block; } }
 main .main-section .content .item picture img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; position: absolute; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
 main .main-section .content .item picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: .5rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 15px; }
 main .main-section .content .item picture .overlay .text { font-size: 14px; color: #FFFFFF; text-align: start; }

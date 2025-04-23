@@ -709,8 +709,10 @@ main {
 				}
 
 				&:hover {
-					.overlay {
-						display: block;
+					@include media-breakpoint-up(lg) {
+						.overlay {
+							display: block;
+						}
 					}
 				}
 
@@ -739,6 +741,14 @@ main {
 
 					&.video-4 {
 						aspect-ratio: 1.989/1;
+					}
+
+					@include media-breakpoint-down(lg) {
+						&:hover {
+							.overlay {
+								display: block;
+							}
+						}
 					}
 
 					// 確保陰影正確顯示
