@@ -367,17 +367,21 @@ main .main-section .sidebar04-swiper .sidebar-item a .sidebar-item-text span { c
 main .main-section .content { display: flex; flex-wrap: wrap; row-gap: 1rem; column-gap: 1.3rem; justify-content: flex-start; }
 @media (max-width: 768px) { main .main-section .content { column-gap: 1rem; } }
 main .main-section .content.content-5 { column-gap: 1rem; justify-content: flex-start; }
-main .main-section .content .item { flex: 0 0 calc(25% - 0.5rem); max-width: calc(25% - 1rem); }
-@media (max-width: 992px) { main .main-section .content .item { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
-main .main-section .content .item:hover .overlay { display: block; }
+main .main-section .content .item { width: calc((100% - 84px) / 4); margin-right: 35px; }
+@media (min-width: 992px) { main .main-section .content .item:hover .overlay { display: block; } }
+@media (max-width: 992px) { main .main-section .content .item { width: 50%; } }
+main .main-section .content .item .mo-list { display: inline-block; width: 40px; height: 40px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #fbb03b; z-index: 99; position: absolute; top: -8px; left: -5px; line-height: 33px; }
 main .main-section .content .item picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: 1/.959; overflow: hidden; }
+@media (max-width: 992px) { main .main-section .content .item picture:hover .overlay { display: block; } }
 main .main-section .content .item picture.video-4 { aspect-ratio: 1.989/1; }
 main .main-section .content .item picture img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; position: absolute; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
 main .main-section .content .item picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: .5rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 15px; }
 main .main-section .content .item picture .overlay .text { font-size: 14px; color: #FFFFFF; text-align: start; }
-main .main-section .content .item picture .overlay a.booklist { font-size: .8rem; display: inline-block; width: 100%; color: white; }
+main .main-section .content .item picture .overlay a.booklist { font-size: .8rem; display: inline-block; width: 100%; color: white; margin-left: 10px; }
 main .main-section .content .item picture .overlay a.booklist:hover { color: #fbb03b; }
 main .main-section .content .item picture .overlay a.booklist:before { content: '\F309'; font-family: bootstrap-icons; color: white; }
+main .main-section .content .item picture .overlay a.btn-unit { display: inline-block; padding: 0.3rem 0; width: calc(100% - 2rem); font-size: .9rem; color: #FFFFFF; background-color: #fbb03b; border-radius: 30px; }
+main .main-section .content .item picture .overlay a.btn-unit:hover { background-color: #d89032; }
 main .main-section .content .item picture .overlay a.more { position: absolute; bottom: 1rem; left: 1rem; padding: 0.3rem 0; width: calc(100% - 2rem); font-size: .9rem; color: #FFFFFF; background-color: #fbb03b; border-radius: 30px; }
 main .main-section .content .item picture .overlay a.more:hover { background-color: #d89032; }
 main .main-section .content .item .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
@@ -411,16 +415,16 @@ main .main-section .content .item-3 picture .overlay a.more { position: absolute
 main .main-section .content .item-3 picture .overlay a.more:hover { background-color: #d89032; }
 main .main-section .content .item-3 .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
 main .main-section .content .item-3 .book-name:hover { text-decoration: underline !important; }
-main .main-section .content .item-5 { flex: 0 0 calc(100% / 5 - 0.5rem); max-width: calc(100% / 5 - .9rem); }
-@media (max-width: 992px) { main .main-section .content .item-5 { flex: 0 0 calc(50% - 0.5rem); max-width: calc(50% - 0.5rem); } }
+main .main-section .content .item-5 { width: calc((100% - 84px) / 5); margin-right: 35px; }
+@media (max-width: 992px) { main .main-section .content .item-5 { width: calc((100%- 84px) / 2); } }
 main .main-section .content .item-5:hover .overlay { display: block; }
 main .main-section .content .item-5 picture { position: relative; display: block; width: 100%; height: auto; background-color: #FFFFFF; border-radius: 15px; aspect-ratio: 1/.959; overflow: hidden; }
 main .main-section .content .item-5 picture img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; position: absolute; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
 main .main-section .content .item-5 picture .overlay { display: none; position: absolute; top: 0; left: 0; padding: .5rem; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); border-radius: 15px; }
 main .main-section .content .item-5 picture .overlay .text { font-size: 14px; color: #FFFFFF; text-align: start; }
-main .main-section .content .item-5 picture .overlay a.booklist { font-size: .8rem; display: inline-block; width: 100%; color: white; }
+main .main-section .content .item-5 picture .overlay a.booklist { font-size: .8rem; display: inline-block; width: 100%; color: white; margin-left: 10px; }
 main .main-section .content .item-5 picture .overlay a.booklist:hover { color: #fbb03b; }
-main .main-section .content .item-5 picture .overlay a.booklist:before { content: '\F309'; font-family: bootstrap-icons; color: white; }
+main .main-section .content .item-5 picture .overlay a.booklist:before { content: '\F309'; font-family: bootstrap-icons; color: white; margin-left: -13px; }
 main .main-section .content .item-5 picture .overlay a.more { position: absolute; bottom: 1rem; left: 1rem; padding: 0.3rem 0; width: calc(100% - 2rem); font-size: .9rem; color: #FFFFFF; background-color: #fbb03b; border-radius: 30px; }
 main .main-section .content .item-5 picture .overlay a.more:hover { background-color: #d89032; }
 main .main-section .content .item-5 .book-name { display: block; margin-top: .5rem; font-size: 1rem; color: #6e4435; }
@@ -465,6 +469,9 @@ footer .copyright { color: #6e4435; font-size: .8rem; margin: 0; }
 .nav-btn-search { border: 0; }
 
 .s-p-x60 { padding: 0 60px !important; }
+
+.s-p-x30 { padding: 0 30px !important; }
+@media (max-width: 992px) { .s-p-x30 { padding: 1rem 30px !important; } }
 
 .swiper-button-prev::after { content: '\F129'; font-family: 'bootstrap-icons'; }
 
