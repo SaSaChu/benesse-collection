@@ -579,6 +579,35 @@
       </div>
     </div>
   </div>
+
+  <!-- 公告Modal -->
+  <!-- js 目前只有首頁需要，所以控制放在 banner.js 中，未來其他頁面需要時，可以複製使用或將程式碼移到共用的 js 頁面-->
+  <div class="modal fade" id="noticebox" tabindex="-1" aria-labelledby="staticBackdropLabel">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content list-bg-unit01">
+        <div class="modal-header pb-0">
+          <h5 class="modal-title text-brown" id="noticeboxLabel" class="text-center">公告
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="border-orange w-100 mb-3"></div>
+            <div class="content">
+              <p class="text-brown text-start mb-3">
+                親愛的使用者，因系統偵測到您使用新的裝置、瀏覽器、或太久沒有登入，為維護帳戶安全，故需要雙重驗證，系統已將六位數驗證碼，發送至您的註冊<span class=" align-baseline text-pink2 mx-2">手機/email</span>再請協助收取簡訊或email，已完成驗證程序。
+              </p>
+              <img src="images/until01/2309.jpg" alt="公告圖片" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="w-115 btn-square brown" data-bs-dismiss="modal" aria-label="Close">關 閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
