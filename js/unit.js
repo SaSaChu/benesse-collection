@@ -35,11 +35,11 @@ $(function() {
 			let slideCount = $('.sidebar-swiper .swiper-slide').length;
 			let sidebarSwiper = new Swiper('.sidebar-swiper', {
 				initialSlide: activeIndex,
-				centeredSlides: slideCount > 2.2 ? true : false,
+				// centeredSlides: slideCount > 2.2 ? true : false,
 				direction: 'horizontal',
-				slidesPerView: 2.2,	
+				slidesPerView: 2.2,
 				spaceBetween: 10,
-				loop: true,
+				loop: false,
 				breakpoints: {
 					768: {
 						slidesPerView: 3,
