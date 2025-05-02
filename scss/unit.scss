@@ -709,7 +709,7 @@ main {
 				}
 
 				&:hover {
-					@include media-breakpoint-up(lg) {
+					@include media-breakpoint-up(xl) {
 						.overlay {
 							display: block;
 						}
@@ -743,7 +743,7 @@ main {
 						aspect-ratio: 1.989/1;
 					}
 
-					@include media-breakpoint-down(lg) {
+					@include media-breakpoint-down(xl) {
 						&:hover {
 							.overlay {
 								display: block;
