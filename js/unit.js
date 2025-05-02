@@ -58,8 +58,8 @@ $(function() {
 
 	if($('.sidebar04-swiper').length > 0) {
 		let swiperWrapper = $('.sidebar04-swiper .swiper-wrapper');
-		// 檢查是否有 swiper-slide，若無則抓取預設的第一個 accordion 內容
-		if ($('.sidebar04-swiper .swiper-slide').length === 0) {
+			// 檢查是否有 swiper-slide，若無則抓取預設的第一個 accordion 內容
+			if ($('.sidebar04-swiper .swiper-slide').length === 0) {
 			
 			let defaultItems = $('#accordionPanelsStayOpen').find('.show .sidebar-item');
 			
@@ -83,17 +83,19 @@ $(function() {
 			});
 
 			$('.select-wrapper .dropdown-toggle').text(targetTitle);
+
+			sidebar04Swiper.update();
 		});
 
 		let activeIndex = $('.sidebar04-swiper .swiper-slide:has(.sidebar-item.active)').index();
 		let slideCount = $('.sidebar04-swiper .swiper-slide').length;
 		let sidebar04Swiper = new Swiper('.sidebar04-swiper', {
 			initialSlide: activeIndex,
-			centeredSlides: slideCount > 2.2 ? true : false,
+			// centeredSlides: slideCount > 2.2 ? true : false,
 			direction: 'horizontal',
 			slidesPerView: 2.2,	
 			spaceBetween: 10,
-			loop: true,
+			loop: false,
 			breakpoints: {
 				768: {
 					slidesPerView: 3,
