@@ -1,5 +1,69 @@
-@import "Ginkgo";
+@use "sass:math";
+@import "_/_Lib";
+@import "_/Core";
+@import "Lalilo";
+@import "_/Bootstrap";
 @import "public";
+
+
+$primary: #fbb03b; // 橘色
+$primary2: #d89032; // 深橘色
+$success: #4CAF50; // 綠色
+$white: #FFFFFF;
+$gray-700: #495057;
+
+$pink: #f09aa8;
+$pink2: #dd7a8d;
+
+$blue: #56ace2;
+$blue2: #3e99c6;
+
+$green: #75cc92;
+$green2: #4aaf64;
+
+$purple: #c38ccf;
+$purple2: #bd7fcc;
+
+
+$border-radius: 1rem;
+
+$brown: #6e4435; // 咖啡色
+$yellow-light: #fffdf9;
+
+// 斷點會員中心
+$breakpoints: (
+  xxs: 320px,
+  xs: 375px,
+  s: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  2xl: 1440px,
+  3xl: 1920px,
+
+);
+
+// Mixins
+@mixin media-breakpoint-up($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin hover-scale {
+  transition: all .3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 
 // 分類區塊
 .category-col {

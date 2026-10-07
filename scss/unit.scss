@@ -118,7 +118,7 @@ main {
 			.age-item {
 				&:hover, &.active {	
 					a {
-						color: $primary;
+						color: #fbb03b !important;
 					}
 				}
 
@@ -134,7 +134,7 @@ main {
 		.main-section {
 			.sidebar-item {
 				&.active, &:hover {
-					background-color: $primary;
+					background-color: #fbb03b !important;
 				}
 			}
 		}	
